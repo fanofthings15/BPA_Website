@@ -1,0 +1,95 @@
+body {
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #f8f9fa;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    margin: 0.25em 0;
+
+    padding: 0em;
+}
+
+.lg {
+    font-size: 2.5em;
+}
+
+.sm {
+    font-size: 1.25em;
+}
+
+header {
+    width: 100%;
+    height: 5em;
+
+    box-sizing: border-box;
+
+    padding: 0.5em 3em;
+
+    display: flex;
+
+    position: fixed;
+}
+
+header div {
+    height: 100%;
+
+    display: flex;
+    align-items:center;
+}
+
+.button {
+    padding: 0.75em;
+
+    color: #f8f9fa;
+    background-color: #c92a2a;
+
+    border-radius: 1em;
+}
+
+.header-text {
+    padding: 0;
+    margin: 0;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.spaced-row {
+    display: flex;
+
+    gap: 1em;
+}
+
+main {
+    padding-top: 5em;
+}
+
+.presented {
+    height: 40em;
+
+    background-color: #ced4da;
+}
+
+.left-half-center {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presented-text {
+    width: 25em;
+}
+
+.margin-top {
+    margin-top: 1em;
+}
