@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Sports;
+    src: url(imgs/Supers_Sports_Combined.otf);
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -69,7 +74,7 @@ body {
     padding-top: 60px;
 }
 
-.header div
+.header div.icos
 {
     height: 128px;
     width: 128px;
@@ -103,3 +108,16 @@ body {
     width: 100%;
     height: auto;
 }
+.Title
+{
+    height: 100px;
+    width: 100%;
+    font-family: Sports;
+    color:#000000;
+    font-size: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ONLINE ORDER PAGE */
+
