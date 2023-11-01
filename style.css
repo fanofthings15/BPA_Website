@@ -1,126 +1,104 @@
-@font-face {
-    font-family: Sports;
-    src: url(imgs/Supers_Sports_Combined.otf);
-  }
-
 body {
+    width: 100vw;
+
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    min-height: 400vh;
-    background: url(imgs/alum.jpg);
-    background-size: contain;
-}
-.header {
-    background: url(imgs/alum.jpg);
-    background-size: cover;
-    height: 30vh;
-    /* padding: 25vh; */
-    text-align: center;
-    color: #000000;
-  }
-#navbar
-{
-    overflow: hidden;
-    background: url(imgs/wood.jpg);
-    background-size:auto;
-}
-#navbar img#user
-{
-    padding-right: 1%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 3%;
-    height: auto;
-    float: right;
-}
-#navbar img#logo
-{
-    padding-left: 1%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 3%;
-    height: auto;
-    float: left;
-}
-#navbar a 
-{
-    float:left;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 100%;
-    font-size: 125%;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-}
 
-.sticky 
-{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.content 
-{
-    padding: 16px;
-}
-  
-.sticky + .content 
-{
-    padding-top: 60px;
-}
+    background-color: #f8f9fa;
 
-.header div.icos
-{
-    height: 128px;
-    width: 128px;
-    display:inline-block;
-    margin: 5%;
-    position: absolute;
-}
-.header #I1
-{
-    top: 4.5%;
-    left: 7%;
+    font-family: 'Oswald', sans-serif;
+
+    scrollbar-width: none;
     
+    overflow-x: hidden;
 }
-.header #I2
-{
-    top: 5%;
-    left: 29%;
+
+p {
+    margin: 0.25em 0;
+
+    padding: 0em;
 }
-.header #I3
-{
-    top: 6%;
-    left: 50%;
+
+.lg {
+    font-size: 2.5em;
 }
-.header #I4
-{
-    top: 4.5%;
-    left: 71%;
+
+.sm {
+    font-size: 1.25em;
 }
-.header img
-{
+
+header {
     width: 100%;
-    height: auto;
+    height: 5em;
+
+    box-sizing: border-box;
+
+    padding: 0.5em 3em;
+
+    display: flex;
+
+    position: fixed;
+
+    background-color: #f8f9fa;
+    z-index: 100;
 }
-.Title
-{
-    height: 100px;
-    width: 100%;
-    font-family: Sports;
-    color:#000000;
-    font-size: 100px;
-    text-align: center;
+
+header div {
+    height: 100%;
+
+    display: flex;
+    align-items:center;
+}
+
+.button {
+    padding: 0.75em;
+
+    color: #f8f9fa;
+    background-color: #c92a2a;
+
+    border-radius: 0.75em 0 0.75em 0;
+}
+
+.header-text {
+    padding: 0;
+    margin: 0;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.spaced-row {
+    display: flex;
+
+    gap: 1em;
+
+    transform: skewX(-20deg);
+}
+
+main {
+    padding-top: 5em;
+}
+
+.presented {
+    height: 40em;
+
+    background-color: #ced4da;
+}
+
+.left-half-center {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-/* ONLINE ORDER PAGE */
+.presented-text {
+    width: 25em;
+}
 
-#Events{
-    height: 15vh;
+.margin-top {
+    margin-top: 1em;
 }

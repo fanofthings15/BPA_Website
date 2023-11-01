@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Sports;
+    src: url(imgs/Supers_Sports_Combined.otf);
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 400vh;
+    background: url(imgs/alum.jpg);
+    background-size: contain;
+}
+.header {
+    background: url(imgs/alum.jpg);
+    background-size: cover;
+    height: 30vh;
+    /* padding: 25vh; */
+    text-align: center;
+    color: #000000;
+  }
+#navbar
+{
+    overflow: hidden;
+    background: url(imgs/wood.jpg);
+    background-size:auto;
+}
+#navbar img#user
+{
+    padding-right: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 3%;
+    height: auto;
+    float: right;
+}
+#navbar img#logo
+{
+    padding-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 3%;
+    height: auto;
+    float: left;
+}
+#navbar a 
+{
+    float:left;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-size: 125%;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.sticky 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.content 
+{
+    padding: 16px;
+}
+  
+.sticky + .content 
+{
+    padding-top: 60px;
+}
+
+.header div.icos
+{
+    height: 128px;
+    width: 128px;
+    display:inline-block;
+    margin: 5%;
+    position: absolute;
+}
+.header #I1
+{
+    top: 4.5%;
+    left: 7%;
+    
+}
+.header #I2
+{
+    top: 5%;
+    left: 29%;
+}
+.header #I3
+{
+    top: 6%;
+    left: 50%;
+}
+.header #I4
+{
+    top: 4.5%;
+    left: 71%;
+}
+.header img
+{
+    width: 100%;
+    height: auto;
+}
+.Title
+{
+    height: 100px;
+    width: 100%;
+    font-family: Sports;
+    color:#000000;
+    font-size: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ONLINE ORDER PAGE */
+
+#Events{
+    height: 15vh;
+}
