@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Sports;
+    src: url(../fonts/supers-sports.combined.otf);
+}
+
+@font-face {
+    font-family: sports_title;
+    src: url(../fonts/azn-unified.oblique.otf);
+}
+
+@font-face {
+    font-family: bodytext;
+    src: url(../fonts/forgotten-futurist.rg-regular.otf);
+}
+body {
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    /* background-color: #f8f9fa; */
+    background-color: #242424;
+
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: bodytext, serif;
+
+    scrollbar-width: none;
+}
+
+p {
+    margin: 0.25em 0;
+
+    padding: 0em;
+}
+
+.lg {
+    font-size: 4em;
+}
+
+.sm {
+    font-size: 1.5em;
+}
+
+.lg, .sm { color: white; }
+
+header {
+    width: 100%;
+    height: 5em;
+
+    box-sizing: border-box;
+
+    padding: 0.5em 3em;
+
+    display: flex;
+
+    position: fixed;
+
+    /* background-color: #f8f9fa; */
+    background-color: #332e2e;
+    z-index: 100;
+}
+
+header div {
+    height: 100%;
+
+    display: flex;
+    align-items:center;
+}
+
+.button {
+    padding: 0.75em;
+
+    color: #f8f9fa;
+    background-color: #c92a2a;
+
+    border-radius: 0.75em 0 0.75em 0;
+}
+
+.header-text {
+    padding: 0;
+    margin: 0;
+    font-size: 3em;
+    font-family: sports_title; 
+    color: white;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.spaced-row {
+    display: flex;
+
+    gap: 1em;
+
+    transform: skewX(-20deg);
+}
+
+main {
+    padding-top: 5em;
+    font-family: bodytext;
+}
+
+.presented {
+    height: 40em;
+
+    /*background-color: #ced4da;*/
+    background-image: url("../imgs/big_burger_fries.jpg");
+    /* background-size: contain; */
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #332e2e;
+   
+}
+
+.left-half-center {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presented-text {
+    width: 25em;
+}
+
+.margin-top {
+    margin-top: 1em;
+}
