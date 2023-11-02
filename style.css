@@ -1,15 +1,30 @@
+@font-face {
+    font-family: Sports;
+    src: url(../fonts/supers-sports.combined.otf);
+}
+
+@font-face {
+    font-family: sports_title;
+    src: url(../fonts/azn-unified.oblique.otf);
+}
+
+@font-face {
+    font-family: bodytext;
+    src: url(../fonts/forgotten-futurist.rg-regular.otf);
+}
 body {
     width: 100vw;
 
     margin: 0;
     padding: 0;
 
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    background-color: #242424;
 
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: bodytext, serif;
 
     scrollbar-width: none;
-    
     overflow-x: hidden;
 }
 
@@ -20,12 +35,14 @@ p {
 }
 
 .lg {
-    font-size: 2.5em;
+    font-size: 4em;
 }
 
 .sm {
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
+
+.lg, .sm { color: white; }
 
 header {
     width: 100%;
@@ -39,7 +56,8 @@ header {
 
     position: fixed;
 
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    background-color: #332e2e;
     z-index: 100;
 }
 
@@ -62,6 +80,9 @@ header div {
 .header-text {
     padding: 0;
     margin: 0;
+    font-size: 3em;
+    font-family: sports_title; 
+    color: white;
 }
 
 .grow {
@@ -78,17 +99,25 @@ header div {
 
 main {
     padding-top: 5em;
+    font-family: bodytext;
 }
 
 .presented {
-    height: 40em;
-
-    background-color: #ced4da;
+    height: 45em;
+    /*background-color: #ced4da;*/
+    background-image: url("imgs/big_burger_fries.jpg");
+    /* background-size: contain; */
+    background-size:cover;
+    background-position: 100% 70%;
+    background-repeat: no-repeat;
+    background-color: #332e2e;
+    overflow: hidden;
+   
 }
 
 .left-half-center {
     width: 50%;
-    height: 100%;
+    height: 90%;
 
     display: flex;
     justify-content: center;
@@ -101,4 +130,18 @@ main {
 
 .margin-top {
     margin-top: 1em;
+}
+
+a,a:visited{
+    transition: .5s;
+    text-decoration: none;
+    background-color: #c92a2a;
+    color: #f8f9fa;
+    border: 0;
+}
+a:hover{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: black;
+    border: 0;
 }
