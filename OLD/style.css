@@ -2,6 +2,7 @@
     font-family: Sports;
     src: url(imgs/Supers_Sports_Combined.otf);
   }
+.sportsfont { font-family: Sports; }
 
 body {
     margin: 0;
