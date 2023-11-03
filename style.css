@@ -132,16 +132,60 @@ main {
     margin-top: 1em;
 }
 
-a,a:visited{
+.button.sm ,.button.sm:visited{
     transition: .5s;
+    
     text-decoration: none;
     background-color: #c92a2a;
-    color: #f8f9fa;
+    color: #e6e6e6;
     border: 0;
 }
-a:hover{
+.button.sm:hover{
     background-color: #ffffff;
     text-decoration: none;
     color: black;
     border: 0;
+}
+.Cards{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Cards .card{
+    height: 15em;
+    width: 29em;
+    border-radius: 1em;
+    background-color: #303030;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-size: cover;
+    transition: 0.6s;
+}
+.Cards .card p{
+    position: relative;
+    top: 1em;
+    font-family: bodytext;
+    font-size: 4em;
+    opacity: 100%;
+    z-index: 5;
+}
+
+.card#C1:hover{
+    background-image: url(imgs/Ipad.jpeg);
+    background-position: 100% 65%;
+}
+.card#C2:hover{
+    background-image: url(imgs/Burger.jpeg);
+    background-position: 25% 65%;
+}
+.card#C3:hover{
+    background-image: url(imgs/Location.jpeg);
+    background-position: 25% 65%;
+    color:black;
+}
+.card#C4:hover{
+    background-image: url(imgs/People.jpeg);
+    background-position: 25% 65%;
 }
