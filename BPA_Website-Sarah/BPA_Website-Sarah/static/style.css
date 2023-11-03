@@ -40,6 +40,7 @@ p {
 
 .sm {
     font-size: 1.5em;
+    font-family: bodytext, serif;
 }
 
 .lg, .sm { color: white; }
@@ -84,6 +85,17 @@ header div {
     font-family: sports_title; 
     color: white;
 }
+
+.centered-title {
+    font-family: sports_title; 
+    color: white;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: .5em 0;
+    font-size: 5em;
+    
+ }
 
 .grow {
     flex-grow: 1;
