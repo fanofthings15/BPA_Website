@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+
+        <title>Game Day Grill: Burgers & More</title>
+        <meta name="title" content="Game Day Grill: Burgers & More" />
+        <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:url" content="https://metatags.io/" /> -->
+        <meta property="og:title" content="Game Day Grill: Burgers & More" />
+        <meta property="og:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
+        <meta property="twitter:title" content="Game Day Grill: Burgers & More" />
+        <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
+    </head>
+
+    <body>
+        <header>
+            <div class="grow">
+                <p class="header-text">Game Day Grill</h1>
+            </div>
+            <div class="spaced-row">
+                <a href="#Order" class="button sm" >Order Now</a>
+                <a href="#Menu" class="button sm">Menu</a>
+                <a href="#Locations" class="button sm">Locations</a>
+                <a href="#Events" class="button sm">Special Events</a>
+            </div>
+        </header>
+        <main>
+            <div class="presented">
+                <div class="left-half-center">
+                    <div class="presented-text">
+                        <p class="lg">Great food. Great drinks.</p>
+                        <p class="sm">See what makes us special. Visit our restaurants or order online today!</p>
+                        <div class="spaced-row margin-top">
+                            <a href="#Order" class="button sm">Order Now</a>
+                            <a href="#Locations" class="button sm">Locations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Cards">
+                   <a href="#Order" class="card" id="C1"><p>Order Now</p></a> 
+                   <a href="#Menu" class="card" id="C2"><p>Menu</p></a> 
+                   <a href="#Locations" class="card" id="C3"><p>Locations</p></a> 
+                   <a href="#Events" class="card" id="C4"><p>Special Events</p></a> 
+            </div>
+            <div style="height: 100vh"></div>
+        </main>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
