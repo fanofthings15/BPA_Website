@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet">
+        <link rel = "stylesheet" href = "slideshow.css">
+        <script src="script.js"></script>
+
+        <title>Game Day Grill: Burgers & More</title>
+        <meta name="title" content="Game Day Grill: Burgers & More" />
+        <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:url" content="https://metatags.io/" /> -->
+        <meta property="og:title" content="Game Day Grill: Burgers & More" />
+        <meta property="og:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
+        <meta property="twitter:title" content="Game Day Grill: Burgers & More" />
+        <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
+    </head>
+
+    <body>
+        <header>
+            <div class="grow">
+                <p class="header-text">Game Day Grill</h1>
+            </div>
+            <div class="spaced-row">
+                <p class="button sm">Order Now</p>
+                <p class="button sm">Menu</p>
+                <p class="button sm">Locations</p>
+                <p class="button sm">Special Events</p>
+            </div>
+        </header>
+        <main>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="imgs/fish_and_chips.jpg" style="width:100%">
+                  <div class="text fish ">FISH AND CHIPS <br> FRIDAYS</div>
+                  <div class = "smalltext">Join us every Friday and elevate your game day experience with this classic combo - crispy, golden-brown fish filets and perfectly seasoned fries. </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  
+                  <img src="imgs/fish_and_chips.jpg" style="width:100%">
+                  <div class="text">THE MEAL</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="imgs/big_burger_fries.jpg" style="width:100%">
+                  <div class="text">BURGER</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script src ="slideshow.js"></script>
+
+                <div class = "tableofcontents">
+                    <div class = "centered-title">OUR MENU</div>
+                    <div class = "toc-title">
+
+                    <div>
+                </div>
+        </main>
+    </body>
+</html>

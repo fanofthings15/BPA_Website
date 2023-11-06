@@ -85,6 +85,17 @@ header div {
     color: white;
 }
 
+.centered-title {
+    font-family: sports_title; 
+    color: white;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: .5em 0;
+    font-size: 5em;
+    
+ }
+
 .grow {
     flex-grow: 1;
 }
