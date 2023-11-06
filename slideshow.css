@@ -7,17 +7,17 @@ img {vertical-align: middle;
 
 @font-face {
   font-family: Sports;
-  src: url(../fonts/supers-sports.combined.otf);
+  src: url(fonts/supers-sports.combined.otf);
 }
 
 @font-face {
   font-family: sports_title;
-  src: url(../fonts/azn-unified.oblique.otf);
+  src: url(fonts/azn-unified.oblique.otf);
 }
 
 @font-face {
   font-family: bodytext;
-  src: url(../fonts/forgotten-futurist.rg-regular.otf);
+  src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
 
 /* Slideshow container */
