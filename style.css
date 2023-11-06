@@ -156,7 +156,7 @@ main {
     height: 15em;
     width: 29em;
     border-radius: 1em;
-    background-color: #303030;
+    background-image: url(imgs/wood.jpg);
     text-align: center;
     text-decoration: none;
     color: white;
@@ -175,6 +175,7 @@ main {
 .card#C1:hover{
     background-image: url(imgs/Ipad.jpeg);
     background-position: 100% 65%;
+    color: black;
 }
 .card#C2:hover{
     background-image: url(imgs/Burger.jpeg);
