@@ -1,5 +1,4 @@
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+*
 .mySlides {display: none}
 img {vertical-align: middle;
     max-height: 50vh;
@@ -7,13 +6,18 @@ img {vertical-align: middle;
 }
 
 @font-face {
-    font-family: sports_title;
-    src: url(../fonts/azn-unified.oblique.otf);
+  font-family: Sports;
+  src: url(../fonts/supers-sports.combined.otf);
 }
 
 @font-face {
-    font-family: bodytext;
-    src: url(../fonts/forgotten-futurist.rg-regular.otf);
+  font-family: sports_title;
+  src: url(../fonts/azn-unified.oblique.otf);
+}
+
+@font-face {
+  font-family: bodytext;
+  src: url(../fonts/forgotten-futurist.rg-regular.otf);
 }
 
 /* Slideshow container */
@@ -109,7 +113,7 @@ img {vertical-align: middle;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #c92a2a;
 }
 
 /* Fading animation */
