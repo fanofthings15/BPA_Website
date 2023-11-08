@@ -25,7 +25,7 @@ body {
     font-family: bodytext, serif;
 
     scrollbar-width: none;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 p {
@@ -40,7 +40,6 @@ p {
 
 .sm {
     font-size: 1.5em;
-    font-family: bodytext, serif;
 }
 
 .lg, .sm { color: white; }
@@ -116,15 +115,14 @@ main {
 
 .presented {
     height: 45em;
-    max-width:100vw;
-
     /*background-color: #ced4da;*/
-    background-image: url("../imgs/big_burger_fries.jpg");
+    background-image: url("imgs/big_burger_fries.jpg");
     /* background-size: contain; */
-    background-size: cover;
+    background-size:cover;
     background-position: 100% 70%;
     background-repeat: no-repeat;
     background-color: #332e2e;
+    overflow: hidden;
    
 }
 
@@ -143,4 +141,63 @@ main {
 
 .margin-top {
     margin-top: 1em;
+}
+
+.button.sm ,.button.sm:visited{
+    transition: .5s;
+    
+    text-decoration: none;
+    background-color: #c92a2a;
+    color: #e6e6e6;
+    border: 0;
+}
+.button.sm:hover{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: black;
+    border: 0;
+}
+.Cards{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Cards .card{
+    height: 15em;
+    width: 29em;
+    border-radius: 1em;
+    background-image: url(imgs/wood.jpg);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-size: cover;
+    transition: 0.6s;
+}
+.Cards .card p{
+    position: relative;
+    top: 1em;
+    font-family: bodytext;
+    font-size: 4em;
+    opacity: 100%;
+    z-index: 5;
+}
+
+.card#C1:hover{
+    background-image: url(imgs/Ipad.jpeg);
+    background-position: 100% 65%;
+    color: black;
+}
+.card#C2:hover{
+    background-image: url(imgs/Burger.jpeg);
+    background-position: 25% 65%;
+}
+.card#C3:hover{
+    background-image: url(imgs/Location.jpeg);
+    background-position: 25% 65%;
+    color:black;
+}
+.card#C4:hover{
+    background-image: url(imgs/People.jpeg);
+    background-position: 25% 65%;
 }
