@@ -1,0 +1,10 @@
+name phone address
+
+Staff bios/profiles
+Location-specific reviews
+Inventory or services (if unique)
+Driving directions
+Parking information
+Accessibility information
+Pet friendliness
+Anything else you think is useful to the customer and truly unique to that location.

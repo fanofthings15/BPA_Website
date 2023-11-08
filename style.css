@@ -55,10 +55,11 @@ header {
     display: flex;
 
     position: fixed;
-
-    /* background-color: #f8f9fa; */
+     
     background-color: #332e2e;
     z-index: 100;
+
+    user-select: none;
 }
 
 header div {
