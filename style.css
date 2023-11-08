@@ -83,6 +83,8 @@ header div {
     font-size: 3em;
     font-family: sports_title; 
     color: white;
+
+    user-select: none;
 }
 
 .centered-title {
