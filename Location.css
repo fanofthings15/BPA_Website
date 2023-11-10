@@ -1,0 +1,52 @@
+/* .LCards{
+width: 100%;
+height: 45em;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.lcard{
+    color: white;
+    width: 10em;
+    height: 20em;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1em;
+    flex: 1 1 calc(50% - 50px);
+} */
+
+.LCards{
+    margin-top: 5em;
+    width: 100%;
+    height: 45em;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    color: white;
+    transform: skewX(-20deg);
+}
+.lcard{
+    height: 15em;
+    width: 29em;
+    background-image: url(imgs/wood.jpg);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-size: cover;
+    transition: 0.6s;
+    margin-left: 6em;
+    margin-right: 6em;
+    transform: translate(-3em, 0);
+    
+    border-radius: 1em 0 1em 0;
+}
+.LCards .lcard p{
+    position: relative;
+    top: 1em;
+    font-family: bodytext;
+    font-size: 4em;
+    opacity: 100%;
+    z-index: 5;
+}
