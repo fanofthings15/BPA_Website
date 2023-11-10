@@ -25,7 +25,7 @@ flex-wrap: wrap;
     justify-content:center;
     flex-wrap: wrap;
     color: white;
-    transform: skewX(-20deg);
+    transform: skewX(-15deg);
 }
 .lcard{
     height: 15em;
