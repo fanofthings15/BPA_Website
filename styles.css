@@ -2,15 +2,27 @@ html {
     /* scroll-behavior: smooth; */
     
 }
+@font-face {
+    font-family: Sports;
+    src: url(fonts/supers-sports.combined.otf);
+}
+
+@font-face {
+    font-family: sports_title;
+    src: url(fonts/azn-unified.oblique.otf);
+}
+
+@font-face {
+    font-family: bodytext;
+    src: url(fonts/forgotten-futurist.rg-regular.otf);
+}
 body {
     width: 100vw;
 
     margin: 0;
     padding: 0;
 
-    background-color: #f8f9fa;
-
-    font-family: 'Oswald', sans-serif;
+    background-color: #242424;
 
     scrollbar-width: none;
 }
@@ -41,7 +53,7 @@ header {
 
     position: fixed;
 
-    background-color: #f8f9fa;
+    background-color: #332E2E;
     z-index: 100;
 }
 
@@ -120,11 +132,12 @@ main {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: inherit;
     font-size: 20px;
     margin: auto;
     width: 225px;
     display: block;
+    transform: skewX(-20deg);
+    border-radius: 0.75em 0 0.75em 0;
 }
 
 .color-change-button:hover { /* hover button transition */
@@ -140,7 +153,7 @@ main {
     transition: background-color 0.5s ease;
 }
 .picture:hover .michigan-state { /* keep bg black while in div */
-    background-color: black;
+    background-color: #A9A9A9;
 }
 .picture { /* first div for michigan state */
     display: inline-block; 
@@ -163,7 +176,7 @@ main {
     transform: scale(1.1);
 }
 .picturetwo:hover .michigan { /* keep bg color same while in div */
-    background-color:#4C2500;
+    background-color:#A9A9A9;
 }
 .michigan { /*michigan picture */
     align-items: center;
@@ -208,7 +221,7 @@ main {
     transform: scale(1.1);
 }
 .picturefour:hover .lions {
-    background-color:#B64000 ;
+    background-color:#A9A9A9;
 }
 .lions {
     border-style: solid;
@@ -234,7 +247,7 @@ main {
     transform: scale(1.1);
 }
 .picturefive:hover .pistons {
-    background-color: #BA951D;
+    background-color:#A9A9A9;
 }
 .pistons {
     border-style: solid;

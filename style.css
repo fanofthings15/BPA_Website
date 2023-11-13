@@ -1,16 +1,16 @@
 @font-face {
     font-family: Sports;
-    src: url(../fonts/supers-sports.combined.otf);
+    src: url(fonts/supers-sports.combined.otf);
 }
 
 @font-face {
     font-family: sports_title;
-    src: url(../fonts/azn-unified.oblique.otf);
+    src: url(fonts/azn-unified.oblique.otf);
 }
 
 @font-face {
     font-family: bodytext;
-    src: url(../fonts/forgotten-futurist.rg-regular.otf);
+    src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
 body {
     width: 100vw;
@@ -21,7 +21,6 @@ body {
     /* background-color: #f8f9fa; */
     background-color: #242424;
 
-    /* font-family: 'Oswald', sans-serif; */
     font-family: bodytext, serif;
 
     scrollbar-width: none;
