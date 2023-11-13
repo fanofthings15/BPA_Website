@@ -1,0 +1,16 @@
+.wrapper {
+    padding: 10em 20em;
+}
+
+.order-menus {
+    display: flex;
+
+    gap: 1em;
+}
+
+.order-menus a {
+    flex-grow: 2;
+
+    height: 4em;
+    line-height: 4em;
+}

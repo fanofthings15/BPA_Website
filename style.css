@@ -38,11 +38,15 @@ p {
     font-size: 4em;
 }
 
+.md {
+    font-size: 2.5em;
+}
+
 .sm {
     font-size: 1.5em;
 }
 
-.lg, .sm { color: white; }
+.lg, .sm, .md { color: white; }
 
 header {
     width: 100%;
