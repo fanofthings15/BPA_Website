@@ -152,16 +152,19 @@ main {
     color: #e6e6e6;
     border: 0;
 }
+
 .button.sm:hover{
     background-color: #ffffff;
     text-decoration: none;
     color: black;
     border: 0;
 }
+
 .Cards{
     margin-top: 1em;
     display: flex;
     justify-content: space-around;
+    gap: 1em;
 }
 
 .Cards .card{

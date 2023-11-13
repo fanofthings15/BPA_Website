@@ -1,22 +1,3 @@
-/* .LCards{
-width: 100%;
-height: 45em;
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-}
-.lcard{
-    color: white;
-    width: 10em;
-    height: 20em;
-    background-color: aquamarine;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 1em;
-    flex: 1 1 calc(50% - 50px);
-} */
-
 .LCards{
     margin-top: 5em;
     width: 100%;
@@ -35,7 +16,7 @@ flex-wrap: wrap;
     text-decoration: none;
     color: white;
     background-size: cover;
-    transition: 0.6s;
+    transition: 0.2s;
     margin-left: 6em;
     margin-right: 6em;
     transform: translate(-3em, 0);
@@ -49,4 +30,26 @@ flex-wrap: wrap;
     font-size: 4em;
     opacity: 100%;
     z-index: 5;
+}
+
+.lcard#LC1:hover{
+    background-image: url(imgs/RoyalOakSign.jpg);
+    background-position: 100%;
+    color: rgba(0, 0, 0, 0);
+}
+.lcard#LC2:hover{
+    background-image: url(imgs/TroySign.jpg);
+    /* background-image: url(imgs/troysign.jpg); */
+    background-position: 25% 65%;
+    color: rgba(0, 0, 0, 0);
+}
+.lcard#LC3:hover{
+    background-image: url(imgs/Berkleysign.jpg);
+    background-position: 25% 65%;
+    color: rgba(0, 0, 0, 0);
+}
+.lcard#LC4:hover{
+    background-image: url(imgs/BloomfieldSign.jpg);
+    background-position: 25% 65%;
+    color: rgba(0, 0, 0, 0);
 }
