@@ -2,8 +2,6 @@ name phone address
 
 Staff bios/profiles
 Location-specific reviews
-Inventory or services (if unique)
-Driving directions
 Parking information
 Accessibility information
 Pet friendliness
