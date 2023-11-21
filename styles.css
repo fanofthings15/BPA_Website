@@ -1,7 +1,3 @@
-html {
-    /* scroll-behavior: smooth; */
-    
-}
 @font-face {
     font-family: Sports;
     src: url(fonts/supers-sports.combined.otf);
@@ -239,7 +235,6 @@ main {
     transition: transform 0.5s ease;
     width:250;
     height:400;
-
 }
 .picturefive:hover {
     width:275;
@@ -252,6 +247,32 @@ main {
 .pistons {
     border-style: solid;
     border-color: #BEC0C2;
+    border-width: 5px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 1em;
+    object-fit: cover;
+    transition: background-color 0.5s ease;
+}
+.picturesix {
+    display: inline-block;
+    flex-direction: column;
+    padding: 25px 0px 50px 50px;
+    transition: transform 0.5s ease;
+    width:250;
+    height:400;
+    margin-left: 5em;
+}
+.picturesix:hover {
+    width:275;
+    height: 250;
+    transform: scale(1.1);
+}
+.picturesix:hover .detriot-tigers {
+    background-color:#A9A9A9;
+}
+.detriot-tigers {
+    border-style: solid;
+    border-color: #FA4616;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
