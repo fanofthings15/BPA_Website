@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet">
+        <link href="locations.css" rel = "stylesheet">
+
+        <title>Game Day Grill: Burgers & More</title>
+        <meta name="title" content="Game Day Grill: Burgers & More" />
+        <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:url" content="https://metatags.io/" /> -->
+        <meta property="og:title" content="Game Day Grill: Burgers & More" />
+        <meta property="og:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
+        <meta property="twitter:title" content="Game Day Grill: Burgers & More" />
+        <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
+    </head>
+
+    <body>
+        <header>
+            <div class="grow">
+                <a id="logoB" href="index.html">
+                    <img src = "imgs/game-day-grill-logo-simple2.png" class = "logo">
+                </a>
+                <p class="header-text">Game Day Grill</h1>
+            </div>
+            <div class="spaced-row">
+                <a href="#Order" class="button sm" >Order Now</a>
+                <a href="menu.html" class="button sm">Menu</a>
+                <a href="locations.html" class="button sm">Locations</a>
+                <a href="events.html" class="button sm">Special Events</a>
+            </div>
+        </header>
+    <main>
+        <div class="tabContainer">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#c92a2a')">Berkley</button>
+                <button onclick="showPanel(1,'#c92a2a')">Troy</button>
+                <button onclick="showPanel(2,'#c92a2a')">Bloomfield Hills</button>
+                <button onclick="showPanel(3,'#c92a2a')">Royal Oak</button>
+            </div>
+
+            <div class="tabPanel" id="Berkley">
+                <a class="Directions" href="https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">Driving Directions</a>
+                <div class="Phone">(248)-555-0127</div>
+                <div class="LBodyText">Free parking avalible to the south side of the building<br>
+                    Wheel Chair accessible<br>
+                    Brail and audio menus available<br>
+                    Service animals welcome indoors<br>
+                    Outdoor seating (pets welcome) <br>
+                    Seat and booths <br>
+                    kids Steats available
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.8673172635117!2d-83.18304038857188!3d42.536873160507355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c66430e197a7%3A0xdcb1d3339efff00c!2s5055%20Delemere%20Ave%2C%20Royal%20Oak%2C%20MI%2048073!5e0!3m2!1sen!2sus!4v1700234221856!5m2!1sen!2sus"></iframe>
+            </div>
+
+            <div class="tabPanel" id="Troy">
+                <a class="Directions" href="https://maps.google.com/maps/dir//4333+John+R+Rd+Troy,+MI+48085/@42.5816012,-83.1109446,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c3632d726293:0x65d3677a1eecaaee" target="_blank">Driving Directions</a>
+                <div class="Phone">(248)-555-0117</div>
+                <div class="LBodyText">Free parking avalible to the south side of the building<br>
+                    Wheel Chair accessible<br>
+                    Brail and audio menus available<br>
+                    Service animals welcome indoors<br>
+                    Outdoor seating (pets welcome) <br>
+                    Seat and booths <br>
+                    kids Steats available
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.760527145242!2d-83.11351952348829!3d42.58160512107561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c3632d726293%3A0x65d3677a1eecaaee!2s4333%20John%20R%20Rd%2C%20Troy%2C%20MI%2048085!5e0!3m2!1sen!2sus!4v1700492383885!5m2!1sen!2sus"></iframe>
+            </div>
+
+            <div class="tabPanel" id="Bloomfield-Hills">
+                <a class="Directions" href="https://maps.google.com/maps/dir//4200+Andover+Rd+Bloomfield+Hills,+MI+48302/@42.5788683,-83.2855238,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824bf4ab369c9a9:0x5f250e0b95b8ed19" target="_blank">Driving Directions</a>
+                <div class="Phone">(248)-555-0115</div>
+                <div class="LBodyText">Free parking avalible to the south side of the building<br>
+                    Wheel Chair accessible<br>
+                    Brail and audio menus available<br>
+                    Service animals welcome indoors<br>
+                    Outdoor seating (pets welcome) <br>
+                    Seat and booths <br>
+                    kids Steats available
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.8892928908776!2d-83.28809872348842!3d42.578872221249014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824bf4ab369c9a9%3A0x5f250e0b95b8ed19!2s4200%20Andover%20Rd%2C%20Bloomfield%20Hills%2C%20MI%2048302!5e0!3m2!1sen!2sus!4v1700492490991!5m2!1sen!2sus"></iframe>
+            </div>
+
+            <div class="tabPanel" id="Royal-Oak"></div>
+    </main>
+
+
+    <script src="Tabs.js"></script>
+</body>
+</html>
