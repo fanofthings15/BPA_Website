@@ -1,6 +1,6 @@
 @font-face {
     font-family: Sports;
-    src: url(../fonts/supers-sports.combined.otf);
+    src: url(fonts/supers-sports.combined.otf);
 }
 
 @font-face {
@@ -14,6 +14,8 @@
 }
 
 .logo { height: 5em; width: 5em; margin: 0;}
+#logoB{padding: 0; background: none;border: none;}
+
 body {
     width: 100vw;
 
@@ -59,10 +61,11 @@ header {
     display: flex;
 
     position: fixed;
-
-    /* background-color: #f8f9fa; */
+     
     background-color: #332e2e;
     z-index: 100;
+
+    user-select: none;
 }
 
 header div {
@@ -155,16 +158,19 @@ main {
     color: #e6e6e6;
     border: 0;
 }
+
 .button.sm:hover{
     background-color: #ffffff;
     text-decoration: none;
     color: black;
     border: 0;
 }
+
 .Cards{
     margin-top: 1em;
     display: flex;
     justify-content: space-around;
+    gap: 1em;
 }
 
 .Cards .card{
