@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="style.css" rel="stylesheet">
         <link rel = "stylesheet" href = "slideshow.css">
+        <link rel = "stylesheet" href = "menu.css">
         <script src="script.js"></script>
 
         <title>Game Day Grill: Burgers & More</title>
@@ -32,12 +33,13 @@
     <body>
         <header>
           <div class="grow">
+            <img src = "imgs/game-day-grill-logo-simple2.png" class = "logo">
             <p class="header-text">Game Day Grill</h1>
         </div>
         <div class="spaced-row">
             <a href="#Order" class="button sm" >Order Now</a>
             <a href="menu.html" class="button sm">Menu</a>
-            <a href="LocationSelect.html" class="button sm">Locations</a>
+            <a href="#Locations" class="button sm">Locations</a>
             <a href="#Events" class="button sm">Special Events</a>
         </div>
         </header>
@@ -47,19 +49,27 @@
 
                 <div class="mySlides fade">
                   <img src="imgs/fish_and_chips.jpg" style="width:100%">
-                  <div class="text fish ">FISH AND CHIPS <br> FRIDAYS</div>
+                  <div class="text slidestitle">FISH AND CHIPS <br> FRIDAYS</div>
                   <div class = "smalltext">Join us every Friday and elevate your game day experience with this classic combo - crispy, golden-brown fish filets and perfectly seasoned fries. </div>
                 </div>
                 
                 <div class="mySlides fade">
                   
-                  <img src="imgs/fish_and_chips.jpg" style="width:100%">
-                  <div class="text">THE MEAL</div>
+                  <img src="imgs/churros.jpg" style="width:100%" class = "churros">
+                  <div class="text slidestitle">DELICIOUS CHURROS</div>
                 </div>
                 
                 <div class="mySlides fade">
-                  <img src="imgs/big_burger_fries.jpg" style="width:100%">
-                  <div class="text">BURGER</div>
+                  <img src="imgs/sundae.jpg" style="width:100%">
+                  <div class="text sundae">SUNDAES</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="imgs/fried_chicken.jpg" style="width:100%">
+                  <div class="text">CRISPY FRIED CHICKEN</div>
+                  <div class = "smalltext" style = "color:white;">
+                  Experience game-time satisfaction with each mouthwatering, irresistibly crunchy, and juicy bite of our fried chicken.
+                  </div>
                 </div>
                 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -72,16 +82,26 @@
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
                 </div>
                 
                 <script src ="slideshow.js"></script>
+                <h1 class = "centered-title">OUR MENU</h1>
 
-                <div class = "tableofcontents">
-                    <div class = "centered-title">OUR MENU</div>
-                    <div class = "toc-title">
-
-                    <div>
+                <div id="grid">
+                  <div>APPETIZERS</div>
+                  <div>BURGERS</div>
+                  <div>SANDWICHES</div>
+                  <div>ENTREES</div>
+                  <div>DRINKS</div>
+                  <div>DESSERTS</div>
+                  <!-- <div>5</div>
+                  <div>6</div>
+                  <div>7</div>
+                  <div>8</div>
+                  <div>9</div> -->
                 </div>
         </main>
+        <!-- <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a> -->
     </body>
 </html>

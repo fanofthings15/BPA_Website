@@ -1,8 +1,0 @@
-name phone address
-
-Staff bios/profiles
-Location-specific reviews
-Parking information
-Accessibility information
-Pet friendliness
-Anything else you think is useful to the customer and truly unique to that location.

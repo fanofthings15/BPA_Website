@@ -7,17 +7,17 @@ img {vertical-align: middle;
 
 @font-face {
   font-family: Sports;
-  src: url(fonts/supers-sports.combined.otf);
+  src: url(../fonts/supers-sports.combined.otf);
 }
 
 @font-face {
   font-family: sports_title;
-  src: url(fonts/azn-unified.oblique.otf);
+  src: url(../fonts/azn-unified.oblique.otf);
 }
 
 @font-face {
   font-family: bodytext;
-  src: url(fonts/forgotten-futurist.rg-regular.otf);
+  src: url(../fonts/forgotten-futurist.rg-regular.otf);
 }
 
 /* Slideshow container */
@@ -39,12 +39,12 @@ img {vertical-align: middle;
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color:#c92a2a;
+  padding: 8px;
+  margin-top: -.5em;
+  color:white;
   font-weight: bold;
-  font-size: 2em;
-  transition: 0.6s ease;
+  font-size: 3em;
+  transition: 0.4s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -58,7 +58,8 @@ img {vertical-align: middle;
 /* On hover, add a red background color with a little bit see-through */
 .prev:hover, .next:hover {
   /* background-color: rgb(201, 42, 42,0.8); */
-  color:white;
+  color:#c92a2a;
+  
 }
 
 /* Caption text */
@@ -75,7 +76,7 @@ img {vertical-align: middle;
   font-family: sports_title;
 }
 
-.fish { 
+.slidestitle { 
   font-size: 3em;
   padding: 8px 12px;
   position: absolute;
@@ -85,12 +86,14 @@ img {vertical-align: middle;
   text-align: center;
   font-family: sports_title;
   color: white;
+  
 }
+
 
 .smalltext {
   font-family: bodytext;
   max-width: 30%;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 8px 12px;
   position: absolute;
   bottom: 20%;
@@ -119,7 +122,7 @@ img {vertical-align: middle;
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.25s;
 }
 
 @keyframes fade {
@@ -129,5 +132,5 @@ img {vertical-align: middle;
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next,.text {font-size: 11px} 
 }
