@@ -151,7 +151,7 @@ main {
 }
 
 .button.sm ,.button.sm:visited{
-    transition: .5s;
+    transition: .3s;
     
     text-decoration: none;
     background-color: #c92a2a;
