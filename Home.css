@@ -1,0 +1,64 @@
+.WingsC{
+    border-radius: 1em;
+    background-color: #2e2e2e;
+    margin:2em;
+    margin-top: 5em;
+    padding: 1em 3em;
+    width: calc(100% -4em);
+    height: 30em;
+    display: flex;
+    box-sizing: border-box;
+    gap: 2em;
+}
+.WingsC img{
+    border-radius: 1em;
+    transform: rotate(90deg);
+    margin: 0 0  0 0;
+    width:auto;
+    height: 28em;
+}
+.WingsC .Wingstext p{
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.WingsC .Wingstext p b{
+    color: #c92a2a;
+    font-size: 3em;
+}
+
+
+
+.MicC{
+    border-radius: 1em;
+    background-color: #2e2e2e;
+    margin:2em;
+    margin-top: 5em;
+    padding: 1em 3em;
+    width: calc(100% -4em);
+    height: 30em;
+    display: flex;
+    box-sizing: border-box;
+    gap: 2em;
+}
+.MicC img{
+    border-radius: 1em;
+    margin: 0 0  0 0;
+    width:auto;
+    height: 28em;
+}
+.MicC .MicCtext p{
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.MicC .MicCtext p b{
+    color: #c92a2a;
+    font-size: 3em;
+}
