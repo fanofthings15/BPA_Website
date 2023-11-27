@@ -1,16 +1,80 @@
 .wrapper {
-    padding: 10em 20em;
+    padding: 6em 16em;
+
+    display: flex;
+
+    gap: 2em;
+}
+
+.ordering-pane {
+    align-self: flex-start;
+    flex-shrink: 0;
+
+    width: 24em;
+    /* flex: 0 0 20em; */
+    /* min-width: 20em; */
+
+    border: 1px solid #fff;
+
+    border-radius: 1em;
+}
+
+.ordering-title {
+    margin: 0;
+    padding: 0.5em 0;
+
+    width: 100%;
+    text-align: center;
+
+    border-bottom: 1px solid #fff;
+}
+
+.order-items {
+    min-height: 7em;
+}
+
+.order-place-row {
+    border-top: 1px solid #fff;
+
+    padding: 1em 2em;
+}
+
+.order-info {
+    flex-grow: 1;
 }
 
 .order-menus {
+    flex-grow: 1;
+
     display: flex;
 
     gap: 1em;
+
+    flex-wrap: wrap;
 }
 
-.order-menus a {
-    flex-grow: 2;
+.order-menus div {
+    min-width: 16em;
+    width: calc(50% - 0.5em);
 
-    height: 4em;
-    line-height: 4em;
+    background-color: var(--accent-color);
+
+    border-radius: 1em;
+}
+
+.order-menus div img {
+    width: 100%;
+
+    border-radius: 1em 1em 0 0;
+}
+
+.order-menus div a {
+    text-align: center;
+    width: 100%;
+    display: block;
+
+    padding: 0.25em 0;
+    margin: 0;
+
+    font-size: 200%;
 }

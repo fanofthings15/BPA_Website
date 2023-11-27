@@ -12,6 +12,11 @@
     font-family: bodytext;
     src: url(../fonts/forgotten-futurist.rg-regular.otf);
 }
+
+:root {
+    --accent-color: #c92a2a;
+}
+
 body {
     width: 100vw;
 
@@ -79,6 +84,8 @@ header div {
     background-color: #c92a2a;
 
     border-radius: 0.75em 0 0.75em 0;
+
+    transform: skewX(-20deg);
 }
 
 .header-text {
@@ -110,8 +117,12 @@ header div {
     display: flex;
 
     gap: 1em;
+}
 
-    transform: skewX(-20deg);
+.rg-spaced-row {
+    display: flex;
+
+    gap: 1em;
 }
 
 main {
