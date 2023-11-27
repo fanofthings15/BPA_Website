@@ -1,4 +1,4 @@
-
+html { scroll-behavior: smooth;}
 
 
 #grid {
@@ -8,23 +8,64 @@
     grid-gap: 0.75em;
     margin-left: 1.5em;
     margin-right: 1.5em;
+     
+    
   }
-  #grid > div {
+
+  #grid div { grid-column: span 2;}
+  #grid > a> div {
     background-color: #c92a2a;
     color: white;
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 0.75em;
+    text-decoration: none;
+    grid-column: span 2;
+    
   }
-  #grid > div:hover {
-    transition: 0.3s;
+  #grid > a div:hover {
+    transition: 0.4s;
     background-color: white;
     color: black;
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 0.75em;
+    
   }
+
+  #grid a { text-decoration: none;}
   /* #grid > div:nth-child(1) {
     grid-column: span 2;
   }
   #grid > div:nth-child(2) {
     grid-row: span 4;
   } */
+
+  .menu-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.75em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .menu-grid > div {
+    background-color: #353535;
+    color: white;
+    font-size: 2vw;
+    padding: 0.75em;
+    grid-column: span 2;
+  }
+
+  /* .menu-grid > div:hover {
+    transition: 0.4s;
+    background-color: white;
+    color: black;
+    font-size: 4vw;
+    padding: 0.75em;
+  } */
+
+  .menu-subtitle
+  {
+    color:white;
+    font-size: 1.5em;
+    font-family: sports_title;
+  }

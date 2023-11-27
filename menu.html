@@ -14,6 +14,9 @@
         <title>Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
         <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+
+        <!-- logo icon -->
+        <link rel="icon" href="imgs/game-day-grill.ico" type="image/x-icon"/>
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
@@ -34,15 +37,15 @@
       <header>
         <div class="grow">
             <a id="logoB" href="index.html">
-                <img src = "imgs/game-day-grill-logo-simple2.png" class = "logo">
+                <img src = "imgs/game-day-grill-logo-simple2.png" class = "logo" alt = "Game Day Grill Logo">
             </a>
             <p class="header-text">Game Day Grill</h1>
         </div>
         <div class="spaced-row">
-            <a href="#Order" class="button sm" >Order Now</a>
-            <a href="menu.html" class="button sm">Menu</a>
-            <a href="locations.html" class="button sm">Locations</a>
-            <a href="events.html" class="button sm">Special Events</a>
+            <a href="#Order" class="button sm" >ORDER NOW</a>
+            <a href="menu.html" class="button sm">MENU</a>
+            <a href="locations.html" class="button sm">LOCATIONS</a>
+            <a href="events.html" class="button sm">SPECIAL EVENTS</a>
         </div>
     </header>
         <main>
@@ -50,7 +53,7 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                  <img src="imgs/fish_and_chips.jpg" style="width:100%">
+                  <img src="imgs/fish_and_chips.jpg" style="width:100%" alt = "Plate of Fish and Chips">
                   <div class="text slidestitle">FISH AND CHIPS <br> FRIDAYS</div>
                   <div class = "smalltext">Join us every Friday and elevate your game day experience with this classic combo - crispy, golden-brown fish filets and perfectly seasoned fries. </div>
                 </div>
@@ -90,19 +93,75 @@
                 <script src ="slideshow.js"></script>
                 <h1 class = "centered-title">OUR MENU</h1>
 
+                
+
                 <div id="grid">
+                  <a href = "#appetizers"><div>APPETIZERS</div></a>
+                  <a href = "#burgers"><div>BURGERS</div></a>
+                  <a href = "#sandwiches"><div>SANDWICHES</div></a>
+                  <a href = "#entrees"><div>ENTREES</div></a>
+                  <a href = "#drinks"><div>DRINKS</div></a>
+                  <a href = "#desserts"><div>DESSERTS</div></a>
+                </div>
+
+                <!-- <div id="grid">
                   <div>APPETIZERS</div>
                   <div>BURGERS</div>
                   <div>SANDWICHES</div>
                   <div>ENTREES</div>
                   <div>DRINKS</div>
                   <div>DESSERTS</div>
-                  <!-- <div>5</div>
-                  <div>6</div>
-                  <div>7</div>
-                  <div>8</div>
-                  <div>9</div> -->
+                </div> -->
+
+                <!--appetizers-->
+                <div id = "appetizers">
+                <h1 class = "centered-title"><br>APPETIZERS</h1>
+                <div class="menu-grid">
+                  <div><span class = "menu-subtitle">ONION RINGS</span>
+                    <p>A heaping plate of crispy, beer-battered onion rings. Comes with zesty sauce.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">WINGS</span>
+                    <p>6pc or 10pc bone-in chicken wings. <br> Served with your choice of sauce: BBQ, Honey BBQ, Buffalo, Garlic Parmesan, Lemon Pepper, Teriyaki, or Plain.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">NACHOS</span>
+
+                  </div>
+                  <div><span class ="menu-subtitle">CHEESE CURDS</span>
+
+                  </div>
+                  <div><span class ="menu-subtitle">FRIED PICKLES</span>
+
+                  </div>
+                  <div><span class ="menu-subtitle">SOFT PRETZEL BITES</span>
+
+                  </div>
                 </div>
+              </div>
+
+              <!-- burgers -->
+              <div id = "burgers">
+                <h1 class = "centered-title"><br>BURGERS</h1>
+                <div class="menu-grid">
+                  <div><span class = "menu-subtitle">CLASSIC CHEESEBURGER</span>
+                    <p>A 1/3 pound of fresh ground beef patty with American cheese, tomatoes, lettuce, onion, ketchup, mustard, and pickles, all on a toasted sesame seed bun.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">WINGS</span>
+                    <p>6pc or 10pc bone-in chicken wings. <br> Served with your choice of sauce: BBQ, Honey BBQ, Buffalo, Garlic Parmesan, Lemon Pepper, Teriyaki, or Plain.</p>
+                  </div>
+                  <div><span class ="menu-subtitle"></span>
+
+                  </div>
+                  <div><span class ="menu-subtitle">CHEESE CURDS</span>
+                    <p>Comes with melted nacho cheese, sour cream, tomatoes, and your choice of shredded chicken or ground beef. </p>
+                  </div>
+                  <div><span class ="menu-subtitle">FRIED PICKLES</span>
+
+                  </div>
+                  <div><span class ="menu-subtitle">SOFT PRETZEL BITES</span>
+
+                  </div>
+                </div>
+              </div>
         </main>
         <!-- <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a> -->
     </body>
