@@ -78,3 +78,54 @@
 
     font-size: 200%;
 }
+
+.location-selector {
+    box-sizing: border-box;
+
+    padding: 1em;
+
+    width: 100%;
+
+    background-color: #fff;
+
+    border-radius: 1em;
+}
+
+.location-selector * {
+    color: #000;
+}
+
+.location-selector > .center-row > .button:hover {
+    background-color: #000 !important;
+}
+
+.on-white-button:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+select {
+    background-color: #f1f3f5;
+
+    border: 1px solid #adb5bd;
+
+    padding: 1em;
+
+    border-radius: 1em;
+
+    font-size: 1em;
+
+    font-family: bodytext, "Serif";
+}
+
+option {
+    font-family: "Oswald", serif;
+}
+
+.center-row {
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+}
