@@ -23,8 +23,6 @@ Make events page.
 
     charity event
 
-    open mic night
-
     viewing partys for sports
 
     band night
