@@ -40,6 +40,7 @@ p {
 
 .lg {
     font-size: 4em;
+    font-family: sports_title;
 }
 
 .sm {
@@ -62,7 +63,7 @@ header {
 
     position: fixed;
      
-    background-color: #1b1b1b;
+    background-color: #171717;
     z-index: 100;
 
     user-select: none;
@@ -82,6 +83,8 @@ header div {
     background-color: #c92a2a;
 
     border-radius: 0.75em 0 0.75em 0;
+    text-transform: uppercase;
+
 }
 
 .header-text {
@@ -121,7 +124,7 @@ main {
 }
 
 .presented {
-    height: 45em;
+    height: 50em;
     /*background-color: #ced4da;*/
     background-image: url("imgs/big_burger_fries.jpg");
     /* background-size: contain; */
@@ -143,7 +146,7 @@ main {
 }
 
 .presented-text {
-    width: 25em;
+    width: 30em;
 }
 
 .margin-top {
@@ -243,7 +246,8 @@ footer .footer-list { font-size: 2em; text-align: center;}
     text-decoration: none;
     grid-row: span 2;
     margin: 1.5em 1em;
+    background-color: green;
     
   }
 .inline li {display: inline;}
-.inline img {height: 3em;}
+.inline img {height: 3em; display: flex; justify-content: space-evenly; flex-direction: row;}
