@@ -256,7 +256,7 @@ main {
 .picturesix {
     display: inline-block;
     flex-direction: column;
-    padding: 25px 0px 50px 50px;
+    margin-left: 5em;
     transition: transform 0.5s ease;
     width:250;
     height:400;
@@ -273,6 +273,32 @@ main {
 .detriot-tigers {
     border-style: solid;
     border-color: #FA4616;
+    border-width: 5px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 1em;
+    object-fit: cover;
+    transition: background-color 0.5s ease;
+}
+.pictureseven {
+    display: inline-block;
+    flex-direction: column;
+    margin-left: 5em;
+    transition: transform 0.5s ease;
+    width:250;
+    height:400;
+    margin-left: 5em;
+}
+.pictureseven:hover {
+    width:275;
+    height: 250;
+    transform: scale(1.1);
+}
+.pictureseven:hover .eastern {
+    background-color:#A9A9A9;
+}
+.eastern {
+    border-style: solid;
+    border-color: #046A38;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
