@@ -1,32 +1,21 @@
-Do reservations on locations page
+work on locations page
     make a calendar with fake reservations 
     alow you to make them
+    add Chapter info to locations page.
 
 WORK ON HOME PAGE
 
-    wing eating contest.
-    Every Sunday, challengers are invited to take part in the famed 50-wing challenge. 
-    You’ll have one hour to eat 50 of the Game Day Grills delectable BBQ wings in the hopes of earning a plaque to put on the Wall of Fame.
-    If you’re able to finish the challenge you’ll receive a Winter Inn t-shirt, $15 gift certificate, and, of course, bragging rights as the wing champion.
-
-    open mic night
-
-        Shift the spotlight from the game to the stage! Join us for Open Mic Night,
-         a vibrant blend of sports and entertainment. Whether you're a seasoned performer or a first-timer,
-          showcase your talent in stand-up comedy, live music, and more. Enjoy great food, your favorite brews, 
-          and cheer on local talent. It's a night of camaraderie, cheers, and unforgettable performances. 
-          Don't miss the game in the spotlight – join us for a lively celebration!
-
-
-
-
-
-
     viewing party for sports
+        with the sports calendar button
 
+    See More events Button that leads to the special events page. 
 
-clean up events page. 
-    put the sports page someware
+    reviews    
+
+    Menu
+
+Make events page. 
+    put the sports page somewhere
     
     add rest of event
 
@@ -42,4 +31,6 @@ clean up events page.
 
     new year party
 
+    WING EATING CONTEST
 
+    OPEN MIC NIGHT

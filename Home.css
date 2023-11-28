@@ -1,3 +1,7 @@
+@font-face {
+    font-family: sports_title;
+    src: url(fonts/azn-unified.oblique.otf);
+}
 .WingsC{
     border-radius: 1em;
     background-color: #2e2e2e;
@@ -25,9 +29,10 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.WingsC .Wingstext p b{
+.WingsC .Wingstext p span{
     color: #c92a2a;
     font-size: 3em;
+    font-family: sports_title, bodytext, serif;
 }
 
 
@@ -58,7 +63,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.MicC .MicCtext p b{
+.MicC .MicCtext p span{
     color: #c92a2a;
     font-size: 3em;
+    font-family: sports_title, bodytext, serif;
 }
