@@ -16,19 +16,6 @@ WORK ON HOME PAGE
 
 Make events page. 
     put the sports page somewhere
-    
-    add rest of event
 
-    trivia night
-
-    charity event
-
-    viewing partys for sports
-
-    band night
-
-    new year party
-
-    WING EATING CONTEST
-
-    OPEN MIC NIGHT
+    viewing party for sports
+        with the sports calendar button
