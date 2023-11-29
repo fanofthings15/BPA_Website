@@ -152,9 +152,11 @@ main {
     background-color: #A9A9A9;
 }
 .picture { /* first div for michigan state */
-    display: inline-block; 
-    padding: 50px 0px 50px 50px; 
+    display: inline-block;
+    /* padding: 25px 0px 50px 50px; */
+    margin-left: 5em;
     transition: transform 0.5s ease;
+    margin-bottom: 5em;
 }
 .picture:hover { /* div transtions and scaling MSU */
     width:275;
@@ -165,6 +167,7 @@ main {
     display: inline-block; 
     margin-left: 5em;
     transition: transform 0.5s ease;
+    margin-bottom: 5em;
 }
 .picturetwo:hover { /* div transitions and scaling michigan*/
     width:275;
@@ -188,6 +191,7 @@ main {
     display: inline-block;
     margin-left: 5em;
     transition: transform 0.5s ease;
+    margin-bottom: 5em;
 }
 .picturethree:hover {
     width:275;
@@ -208,8 +212,10 @@ main {
 }
 .picturefour {
     display: inline-block;
+    /* padding: 50px 0px 50px 50px;  */
     margin-left: 5em;
     transition: transform 0.5s ease;
+    margin-bottom: 5em;
 }
 .picturefour:hover {
     width:275;
@@ -231,10 +237,11 @@ main {
 .picturefive {
     display: inline-block;
     flex-direction: column;
-    padding: 25px 0px 50px 50px;
+    margin-left: 5em;
     transition: transform 0.5s ease;
     width:250;
     height:400;
+    margin-bottom: 5em;
 }
 .picturefive:hover {
     width:275;
@@ -261,6 +268,7 @@ main {
     width:250;
     height:400;
     margin-left: 5em;
+    margin-bottom: 5em;
 }
 .picturesix:hover {
     width:275;
@@ -287,6 +295,7 @@ main {
     width:250;
     height:400;
     margin-left: 5em;
+    margin-bottom: 5em;
 }
 .pictureseven:hover {
     width:275;
@@ -299,6 +308,33 @@ main {
 .eastern {
     border-style: solid;
     border-color: #046A38;
+    border-width: 5px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 1em;
+    object-fit: cover;
+    transition: background-color 0.5s ease;
+}
+.pictureeight {
+    display: inline-block;
+    flex-direction: column;
+    margin-left: 5em;
+    transition: transform 0.5s ease;
+    width:250;
+    height:400;
+    margin-left: 5em;
+    margin-bottom: 5em;
+}
+.pictureeight:hover {
+    width:275;
+    height: 250;
+    transform: scale(1.1);
+}
+.pictureeight:hover .western {
+    background-color:#A9A9A9;
+}
+.western {
+    border-style: solid;
+    border-color: #532E1F;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
