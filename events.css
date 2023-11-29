@@ -6,6 +6,7 @@
     display: none;
   }
 h1{
+font-family: sports_title, bodytext, serif;
 width: 100%;
 text-align: center;
 font-size: 7em;
@@ -16,8 +17,8 @@ margin: 1em 0 1em 0;
 .EventStyle1{
     border-radius: 1em;
     background-color: #2e2e2e;
-    margin:2em;
-    padding: 1em 3em;
+    margin:4em 2em 2em 4em;
+    padding: 1em 2em;
     width: calc(100% -4em);
     height: 30em;
     display: flex;
@@ -26,10 +27,8 @@ margin: 1em 0 1em 0;
 }
 .EventStyle1 img{
     border-radius: 1em;
-    transform: rotate(90deg);
-    margin: 0 0  0 0;
+    margin: 0;
     width:auto;
-    height: 28em;
 }
 .EventStyle1 .EventTextStyle1 p{
     margin: 0;
@@ -44,11 +43,26 @@ margin: 1em 0 1em 0;
     font-size: 3em;
     font-family: sports_title, bodytext, serif;
 }
+#Calbutton{
+position: absolute;
+left:25%;
+top: 87%;
+padding: 1em;
+height: auto;
+width: auto;
+padding: 0.75em;
+color: #f8f9fa;
+background-color: #c92a2a;
+border-radius: 0.75em 0 0.75em 0;
+font-size: 2em;
+transform: skewX(-20deg);
+text-decoration: none;
+}
 
 .EventStyle2{
     border-radius: 1em;
     background-color: #2e2e2e;
-    margin:2em;
+    margin:4em 2em 2em 4em;
     padding: 1em 3em;
     width: calc(100% -4em);
     height: 30em;
@@ -60,7 +74,6 @@ margin: 1em 0 1em 0;
     border-radius: 1em;
     margin: 0 0  0 0;
     width:auto;
-    height: 28em;
 }
 .EventStyle2 .EventTextStyle2 p{
     margin: 0;
@@ -75,3 +88,40 @@ margin: 1em 0 1em 0;
     font-size: 3em;
     font-family: sports_title, bodytext, serif;
 }
+#Wings img{
+    transform: rotate(90deg);
+    border-radius: 1em;
+    margin: 0;
+    width:auto;
+    height: 27em;
+}
+#Mic img{
+    border-radius: 1em;
+    margin: 0;
+    width:auto;
+    height: 28em;
+}
+#Trivia img{
+    border-radius: 1em;
+    margin: 0;
+    width:auto;
+    height: 27em;
+}
+#Charity img {
+    border-radius: 1em;
+    margin: 0;
+    width:auto;
+    height: 26em;
+}
+#Band img{
+    border-radius: 1em;
+    margin: 0;
+    width:auto;
+    height: 27em;
+}
+#New-years img{
+
+}
+
+
+

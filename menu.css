@@ -10,7 +10,8 @@
     margin-right: 1.5em;
   }
   #grid > div {
-    background-color: #c92a2a;
+    /* background-color: #c92a2a; */
+    background-image: url(imgs/wood.jpg);
     color: white;
     font-size: 4vw;
     padding: 0.75em;
