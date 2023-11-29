@@ -1,5 +1,114 @@
 :root {
-    --img-buttons-per-line: 2;
+    --img-buttons-per-line: 3;
+}
+
+.fixed-row {
+    height: calc(100% - var(--header-height));
+    width: 100%;
+
+    display: flex;
+    position: fixed;
+
+    z-index: 2;
+}
+
+.menu-container {
+    flex-grow: 1;
+
+    padding: 3em 4em;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.banner {
+    height: 24em;
+    width: 100%;
+
+    margin-bottom: 2em;
+
+    background-image: url("https://media.istockphoto.com/id/1305337925/photo/crispy-chicken-burger-with-cheese-tomato-onions-and-lettuce.webp?s=2048x2048&w=is&k=20&c=HsJnGMEyAoIdfLf907c3SuqLxX_aUPIATf_JxJQCm9Y=");
+    background-position: center;
+}
+
+.order-menus {
+    flex-grow: 1;
+
+    display: flex;
+
+    gap: 2em;
+
+    flex-wrap: wrap;
+}
+
+.order-menus div {
+    /* min-width: 16em; */
+    width: calc((100% / var(--img-buttons-per-line)) - ((2em * (var(--img-buttons-per-line) - 1)) / var(--img-buttons-per-line)));
+
+    background-color: var(--accent-color);
+
+    transition: transform ease-in 0.15s;
+
+    cursor: pointer;
+}
+
+.order-menus div:hover {
+    transform: scale(1.05);
+}
+
+.order-menus div img {
+    width: 100%;
+
+    /* border-radius: 1em 1em 0 0; */
+}
+
+.order-menus div a {
+    text-align: center;
+    width: 100%;
+    display: block;
+
+    padding: 0.25em 0;
+    margin: 0;
+
+    font-size: 200%;
+
+    user-select: none;
+}
+
+.order-sidebar {
+    width: 22em;
+
+    background-color: #343a40;
+
+    /* opacity: 0; */
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    user-select: none;
+}
+
+.sidebar-title {
+    height: 4em;
+    width: 100%;
+
+    border-bottom: 1px solid #adb5bd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar-fluff {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em;
 }
 
 .wrapper {
@@ -57,52 +166,6 @@
 
 .order-info {
     flex-grow: 1;
-}
-
-.order-menus {
-    flex-grow: 1;
-
-    display: flex;
-
-    gap: 2em;
-
-    flex-wrap: wrap;
-}
-
-.order-menus div {
-    /* min-width: 16em; */
-    width: calc((100% / var(--img-buttons-per-line)) - ((2em * (var(--img-buttons-per-line) - 1)) / var(--img-buttons-per-line)));
-
-    background-color: var(--accent-color);
-
-    border-radius: 1em;
-
-    transition: transform ease-in 0.15s;
-
-    cursor: pointer;
-}
-
-.order-menus div:hover {
-    transform: scale(1.05);
-}
-
-.order-menus div img {
-    width: 100%;
-
-    border-radius: 1em 1em 0 0;
-}
-
-.order-menus div a {
-    text-align: center;
-    width: 100%;
-    display: block;
-
-    padding: 0.25em 0;
-    margin: 0;
-
-    font-size: 200%;
-
-    user-select: none;
 }
 
 .location-selector {
