@@ -1,16 +1,32 @@
+:root {
+    --img-buttons-per-line: 2;
+}
+
 .wrapper {
-    padding: 6em 16em;
+    padding: var(--standard-body-y-margin) 16em;
 
     display: flex;
 
     gap: 2em;
 }
 
+.phantom-order-area {
+    width: 24em;
+    flex-shrink: 0;
+}
+
+.sticky-order-area {
+    width: 24em;
+
+    position: fixed;
+    right: var(--standard-body-x-margin);
+}
+
 .ordering-pane {
     align-self: flex-start;
     flex-shrink: 0;
 
-    width: 24em;
+    width: 100%;
     /* flex: 0 0 20em; */
     /* min-width: 20em; */
 
@@ -48,18 +64,26 @@
 
     display: flex;
 
-    gap: 1em;
+    gap: 2em;
 
     flex-wrap: wrap;
 }
 
 .order-menus div {
-    min-width: 16em;
-    width: calc(50% - 0.5em);
+    /* min-width: 16em; */
+    width: calc((100% / var(--img-buttons-per-line)) - ((2em * (var(--img-buttons-per-line) - 1)) / var(--img-buttons-per-line)));
 
     background-color: var(--accent-color);
 
     border-radius: 1em;
+
+    transition: transform ease-in 0.15s;
+
+    cursor: pointer;
+}
+
+.order-menus div:hover {
+    transform: scale(1.05);
 }
 
 .order-menus div img {
@@ -77,9 +101,13 @@
     margin: 0;
 
     font-size: 200%;
+
+    user-select: none;
 }
 
 .location-selector {
+    margin-top: 1em;
+
     box-sizing: border-box;
 
     padding: 1em;

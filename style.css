@@ -15,6 +15,10 @@
 
 :root {
     --accent-color: #c92a2a;
+
+    --header-height: 5em;
+    --standard-body-y-margin: 6em;
+    --standard-body-x-margin: 16em;
 }
 
 body {
@@ -59,7 +63,7 @@ p {
 
 header {
     width: 100%;
-    height: 5em;
+    height: var(--header-height);
 
     box-sizing: border-box;
 
@@ -90,6 +94,9 @@ header div {
     border-radius: 0.75em 0 0.75em 0;
 
     transform: skewX(-20deg);
+
+    cursor: pointer;
+    user-select: none;
 }
 
 .header-text {
