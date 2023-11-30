@@ -136,6 +136,10 @@ header div {
     gap: 1em;
 }
 
+.row {
+    display: flex;
+}
+
 .spaced-column {
     display: flex;
 

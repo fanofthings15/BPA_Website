@@ -21,14 +21,75 @@
     scrollbar-width: none;
 }
 
-.banner {
-    height: 24em;
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.sm-gap {
+    gap: 0.5em;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow {
+    height: 26em;
     width: 100%;
 
     margin-bottom: 2em;
 
-    background-image: url("https://media.istockphoto.com/id/1305337925/photo/crispy-chicken-burger-with-cheese-tomato-onions-and-lettuce.webp?s=2048x2048&w=is&k=20&c=HsJnGMEyAoIdfLf907c3SuqLxX_aUPIATf_JxJQCm9Y=");
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    /* background-image: url("https://media.istockphoto.com/id/1305337925/photo/crispy-chicken-burger-with-cheese-tomato-onions-and-lettuce.webp?s=2048x2048&w=is&k=20&c=HsJnGMEyAoIdfLf907c3SuqLxX_aUPIATf_JxJQCm9Y=");
+    background-position: center; */
+}
+
+.slideshow .dots {
+    height: 2em;
+}
+
+/* .dot-container {
+    flex-shrink: 0;
+
+    width: 100%;
+    height: 2em;
+
+    justify-content: center;
+} */
+
+.dot {
+    height: 1em;
+    width: 1em;
+
+    border-radius: 50%;
+
+    background-color: #fff;
 }
 
 .order-menus {
