@@ -8,8 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="style.css" rel="stylesheet">
         <link href="order.css" rel="stylesheet">
-        <link href="menu.css" rel="stylesheet">
+        <!-- <link href="menu.css" rel="stylesheet"> -->
         <script src="script.js"></script>
+        <script src="slideshow2.js"></script>
 
         <title>Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
@@ -47,23 +48,20 @@
                 <div class="menu-container">
                     <div class="slideshow">
                         <div class="row grow full-width lg-gap" style="align-items: stretch;">
-                            <div class="center-container no-shrink">
+                            <div id="left-arrow" class="arrow-container center-container no-shrink">
                                 <span class="arrow">&lt;</span>
                             </div>
                             <div class="grow full-height center-container">
-                                <img id="slideshow-img" src="imgs/slideshow/burger.png">
+                                <img class="active-slideshow-img slideshow-img" src="imgs/slideshow/burger.png">
+                                <img class="slideshow-img" src="imgs/slideshow/fish-and-chips.png">
                             </div>
-                            <div class="center-container">
+                            <div id="right-arrow" class="arrow-container center-container">
                                 <span class="arrow">&gt;</span>
                             </div>
                         </div>
                         <div class="dots row full-width center-container">
                             <div class="sm-gap center-container full-height">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
+                                <div class="active-dot dot"></div>
                                 <div class="dot"></div>
                             </div>
                         </div>
