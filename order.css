@@ -145,7 +145,7 @@
     flex-wrap: wrap;
 }
 
-.order-menus div {
+.order-menus a {
     /* min-width: 16em; */
     width: calc((100% / var(--img-buttons-per-line)) - ((2em * (var(--img-buttons-per-line) - 1)) / var(--img-buttons-per-line)));
 
@@ -154,19 +154,21 @@
     transition: transform ease-in 0.15s;
 
     cursor: pointer;
+
+    text-decoration: none;
 }
 
-.order-menus div:hover {
+.order-menus a:hover {
     transform: scale(1.05);
 }
 
-.order-menus div img {
+.order-menus a img {
     width: 100%;
 
     /* border-radius: 1em 1em 0 0; */
 }
 
-.order-menus div a {
+.order-menus a span {
     text-align: center;
     width: 100%;
     display: block;
@@ -179,7 +181,6 @@
     user-select: none;
 
     color: #fff;
-    text-decoration: none;
 }
 
 .order-sidebar {
