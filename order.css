@@ -3,7 +3,7 @@
 }
 
 .fixed-row {
-    height: calc(100% - var(--header-height));
+    height: calc(100% - 5em);
     width: 100%;
 
     display: flex;
@@ -106,7 +106,7 @@
     /* min-width: 16em; */
     width: calc((100% / var(--img-buttons-per-line)) - ((2em * (var(--img-buttons-per-line) - 1)) / var(--img-buttons-per-line)));
 
-    background-color: var(--accent-color);
+    background-color: #c92a2a;
 
     transition: transform ease-in 0.15s;
 
@@ -134,6 +134,8 @@
     font-size: 200%;
 
     user-select: none;
+
+    color: #fff;
 }
 
 .order-sidebar {
