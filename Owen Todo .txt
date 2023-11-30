@@ -1,15 +1,10 @@
 work on locations page
-    make a calendar with fake reservations 
-    alow you to make them
     add Chapter info to locations page.
 
 
 
 
-WORK ON HOME PAGE
-
-    reviews    
-
+WORK ON HOME PAGE 
     Menu
 
 
@@ -18,4 +13,3 @@ Get CopyWrite free images to replace/ change every image
 
 
 Add Image for the sports card.
-fix the whole sports page

@@ -117,7 +117,7 @@
     margin:4em 2em 2em 4em;
     padding: 1em 2em;
     width: calc(100% -4em);
-    height: 40em;
+    height: 20em;
     display: flex;
     box-sizing: border-box;
     gap: 2em;
@@ -125,18 +125,11 @@
 }
 .Review{
 width: 25%;
-height: 100%;
-background-color: #c92a2a;
+height: auto;
 color: white;
 font-size: 1.5em;
 text-align: center;
 }
-#R1{
-
-}
-#R2{
-
-}
-#R3{
-
+.Review p{
+    margin: 3em 0 0 0;
 }
