@@ -10,6 +10,7 @@
         <link rel = "stylesheet" href = "slideshow.css">
         <link rel = "stylesheet" href = "menu.css">
         <script src="script.js"></script>
+        <script defer src = "scroll-animation.js"></script>
 
         <title>Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
@@ -33,7 +34,7 @@
         <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
     </head>
 
-    <body>
+    <body class = "no-scrollbar">
       <header>
         <div class="grow">
             <a id="logoB" href="index.html">
@@ -53,27 +54,28 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                  <img src="imgs/fish_and_chips.jpg" style="width:100%" alt = "Plate of Fish and Chips">
-                  <div class="text slidestitle">FISH AND CHIPS <br> FRIDAYS</div>
-                  <div class = "smalltext">Join us every Friday and elevate your game day experience with this classic combo - crispy, golden-brown fish filets and perfectly seasoned fries. </div>
+                  <img src="imgs/slideshow/burger.png" style="width:100%" alt = "THE CLASSIC CHEESEBURGER MEAL: 
+                  A 1/3 pound of fresh ground beef patty with American cheese, tomatoes, lettuce, 
+                  onion, ketchup, mustard, and pickles, all on a toasted sesame seed bun. GAME DAY GRILL FAN FAVORITE">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="imgs/slideshow/fish-and-chips.png" style="width:100%" alt = "FISH AND CHIPS FRIDAYS: 
+                  Join us every Friday and elevate your game day experience with this classic combo - crispy, golden-brown fish filets 
+                  and perfectly seasoned fries.">
                 </div>
                 
                 <div class="mySlides fade">
                   
-                  <img src="imgs/churros.jpg" style="width:100%" class = "churros">
-                  <div class="text slidestitle">DELICIOUS CHURROS</div>
+                  <img src="imgs/slideshow/icecream.png" style="width:100%" alt = "ICE CREAM: 
+                  Finsish the night off with a sweet treat! With over 15 flavors to choose from,
+                  you're sure to find the perfect scoop.">
+                  
                 </div>
                 
                 <div class="mySlides fade">
-                  <img src="imgs/sundae.jpg" style="width:100%">
-                  <div class="text sundae">SUNDAES</div>
-                </div>
-
-                <div class="mySlides fade">
                   <img src="imgs/fried_chicken.jpg" style="width:100%">
-                  <div class="text">CRISPY FRIED CHICKEN</div>
-                  <div class = "smalltext" style = "color:white;">
-                  Experience game-time satisfaction with each mouthwatering, irresistibly crunchy, and juicy bite of our fried chicken.
+                  
                   </div>
                 </div>
                 
@@ -97,11 +99,11 @@
 
                 <div id="grid">
                   <a href = "#appetizers"><div>APPETIZERS</div></a>
-                  <a href = "#burgers"><div>BURGERS</div></a>
-                  <a href = "#sandwiches"><div>SANDWICHES</div></a>
+                  <a href = "#burgers" ><div>BURGERS</div></a>
+                  <a href = "#sandwiches" ><div>SANDWICHES</div></a>
                   <a href = "#entrees"><div>ENTREES</div></a>
-                  <a href = "#drinks"><div>DRINKS</div></a>
-                  <a href = "#desserts"><div>DESSERTS</div></a>
+                  <a href = "#drinks" ><div>DRINKS</div></a>
+                  <a href = "#desserts" ><div>DESSERTS</div></a>
                 </div>
 
                 <!-- <div id="grid">
@@ -127,10 +129,10 @@
                     <p>Comes with melted nacho cheese, sour cream, tomatoes, and your choice of shredded chicken or ground beef. </p>
                   </div>
                   <div><span class ="menu-subtitle">CHEESE CURDS</span>
-                    <p>Wisconsin-style cheddar cheese curds. </p>
+                    <p>Delightful, bite-sized nuggets of fresh Wisconsin cheddar cheese.</p>
                   </div>
                   <div><span class ="menu-subtitle">FRIED PICKLES</span>
-                    <p>Battered and fried pickle slices.</p>
+                    <p> Dill pickle slices coated in a seasoned batter, then fried to a golden crisp.</p>
                   </div>
                   <div><span class ="menu-subtitle">SOFT PRETZEL BITES</span>
                     <p>10 piece soft pretzel bites. Comes with melted nacho cheese.</p>
@@ -149,16 +151,17 @@
                     <p>Fresh ground beef patty burger topped with swiss cheese and sauteed mushrooms.</p>
                    </div>
                   <div><span class ="menu-subtitle">BBQ BURGER</span>
-                    <p></p>
+                    <p>A grilled patty topped with bacon, cheddar, caramelized onions, and tangy barbecue sauce in a toasted bun.</p>
                   </div>
-                  <div><span class ="menu-subtitle">CHEESE CURDS</span>
-                    
+                  <div><span class ="menu-subtitle">SLIDERS</span>
+                    <p>All the flavor of our classic burgers, at half the size. Comes in plain, classic cheeseburger, BBQ, veggie, or variety.</p>
                   </div>
-                  <div><span class ="menu-subtitle">FRIED PICKLES</span>
-
+                  <div><span class ="menu-subtitle">CALIFORNIA BURGER</span>
+                    <p>Fresh ground beef patty with cheese, tomatoes, lettuce, and avocado with aoli on a toasted brioche bun.
+                    </p>
                   </div>
-                  <div><span class ="menu-subtitle">SOFT PRETZEL BITES</span>
-
+                  <div><span class ="menu-subtitle">VEGGIE BURGER</span>
+                    <p>A delicious, meat-free take on the classic burger. Made with a fresh vegetable blend with your choice of toppings. </p>
                   </div>
                 </div>
               </div>

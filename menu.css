@@ -19,7 +19,7 @@ html { scroll-behavior: smooth;}
     font-size: 3.5vw;
     padding: 0.75em;
     text-decoration: none;
-    grid-column: span 2;
+    grid-column: span 1;
     
   }
   #grid > a div:hover {
@@ -43,7 +43,7 @@ html { scroll-behavior: smooth;}
     display: grid;
     grid-template-rows: repeat(3, 3fr);
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.75em;
+    grid-gap: 1em;
     margin-left: 1.5em;
     margin-right: 1.5em;
   }
@@ -52,7 +52,7 @@ html { scroll-behavior: smooth;}
     color: white;
     font-size: 2vw;
     padding: 0.75em;
-    grid-column: span 2;
+    grid-column: span 1;
   }
 
   /* .menu-grid > div:hover {
@@ -65,7 +65,12 @@ html { scroll-behavior: smooth;}
 
   .menu-subtitle
   {
-    color:white;
+    color:#c92a2a;
     font-size: 1.5em;
     font-family: sports_title;
   }
+
+.show { opacity: 1;}
+.hidden {opacity: 0; transition: all 10s; }
+
+ 
