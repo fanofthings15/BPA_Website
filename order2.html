@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="style.css" rel="stylesheet">
         <link href="order.css" rel="stylesheet">
+        <link href="menu.css" rel="stylesheet">
         <script src="script.js"></script>
 
         <title>Game Day Grill: Burgers & More</title>
@@ -45,15 +46,15 @@
             <div class="fixed-row">
                 <div class="menu-container">
                     <div class="slideshow">
-                        <div class="row grow full-width">
-                            <div class="full-height center-container">
-                                <p>&lt;</p>
+                        <div class="row grow full-width lg-gap" style="align-items: stretch;">
+                            <div class="center-container no-shrink">
+                                <span class="arrow">&lt;</span>
                             </div>
-                            <div class="grow full-height">
-
+                            <div class="grow full-height center-container">
+                                <img id="slideshow-img" src="imgs/slideshow/burger.png">
                             </div>
-                            <div class="full-height center-container">
-                                <p>&gt;</p>
+                            <div class="center-container">
+                                <span class="arrow">&gt;</span>
                             </div>
                         </div>
                         <div class="dots row full-width center-container">
@@ -70,7 +71,7 @@
                     <div class="order-menus">
                         <div>
                             <img src="imgs/Burger.jpeg">
-                            <a class="md">Appetizers & Sides</a>
+                            <a href="#appetizers" class="md">Appetizers & Sides</a>
                         </div>
                         <div>
                             <img src="imgs/Burger.jpeg">
@@ -93,6 +94,57 @@
                             <a class="md">Dessert</a>
                         </div>
                     </div>
+
+                <!--appetizers-->
+                <div id = "appetizers">
+                    <h1 class = "centered-title"><br>APPETIZERS</h1>
+                    <div class="menu-grid">
+                      <div><span class = "menu-subtitle">ONION RINGS</span>
+                        <p>A heaping plate of crispy, beer-battered onion rings. Comes with zesty sauce.</p>
+                      </div>
+                      <div><span class ="menu-subtitle">WINGS</span>
+                        <p>6pc or 10pc bone-in chicken wings. <br> Served with your choice of sauce: BBQ, Honey BBQ, Buffalo, Garlic Parmesan, Lemon Pepper, Teriyaki, or Plain.</p>
+                      </div>
+                      <div><span class ="menu-subtitle">NACHOS</span>
+                        <p>Comes with melted nacho cheese, sour cream, tomatoes, and your choice of shredded chicken or ground beef. </p>
+                      </div>
+                      <div><span class ="menu-subtitle">CHEESE CURDS</span>
+                        <p>Delightful, bite-sized nuggets of fresh Wisconsin cheddar cheese.</p>
+                      </div>
+                      <div><span class ="menu-subtitle">FRIED PICKLES</span>
+                        <p> Dill pickle slices coated in a seasoned batter, then fried to a golden crisp.</p>
+                      </div>
+                      <div><span class ="menu-subtitle">SOFT PRETZEL BITES</span>
+                        <p>10 piece soft pretzel bites. Comes with melted nacho cheese.</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- burgers -->
+                  <div id = "burgers">
+                    <h1 class = "centered-title"><br>BURGERS</h1>
+                    <div class="menu-grid">
+                      <div><span class = "menu-subtitle">CLASSIC CHEESEBURGER</span>
+                        <p>A 1/3 pound of fresh ground beef patty with American cheese, tomatoes, lettuce, onion, ketchup, mustard, and pickles, all on a toasted sesame seed bun.</p>
+                      </div>
+                      <div><span class ="menu-subtitle">MUSHROOM AND SWISS BURGER</span>
+                        <p>Fresh ground beef patty burger topped with swiss cheese and sauteed mushrooms.</p>
+                       </div>
+                      <div><span class ="menu-subtitle">BBQ BURGER</span>
+                        <p>A grilled patty topped with bacon, cheddar, caramelized onions, and tangy barbecue sauce in a toasted bun.</p>
+                      </div>
+                      <div><span class ="menu-subtitle">SLIDERS</span>
+                        <p>All the flavor of our classic burgers, at half the size. Comes in plain, classic cheeseburger, BBQ, veggie, or variety.</p>
+                      </div>
+                      <div><span class ="menu-subtitle">CALIFORNIA BURGER</span>
+                        <p>Fresh ground beef patty with cheese, tomatoes, lettuce, and avocado with aoli on a toasted brioche bun.
+                        </p>
+                      </div>
+                      <div><span class ="menu-subtitle">VEGGIE BURGER</span>
+                        <p>A delicious, meat-free take on the classic burger. Made with a fresh vegetable blend with your choice of toppings. </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="order-sidebar">
                     <div class="sidebar-title">
