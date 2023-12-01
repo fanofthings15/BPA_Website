@@ -36,12 +36,20 @@
     user-select: none;
 }
 
+.arrow:hover { color:black;}
+
 .arrow-container {
     cursor: pointer;
 
     background-color: #e03131;
 
     padding: 1em;
+}
+
+.arrow-container:hover {
+    background-color: white;
+    color:black;
+    transition: 0.4s;
 }
 
 

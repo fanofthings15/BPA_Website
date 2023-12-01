@@ -13,21 +13,20 @@ html { scroll-behavior: smooth;}
   }
 
   #grid div { grid-column: span 2;}
-  #grid > a> div {
+  #grid > a > div {
     background-color: #c92a2a;
     color: white;
     font-size: 3.5vw;
-    padding: 0.75em;
-  text-decoration: none;
+    padding: 0.5em;
+    text-decoration: none;
     grid-column: span 1;
+    text-align: center;
     
   }
   #grid > a div:hover {
     transition: 0.4s;
     background-color: white;
     color: black;
-    font-size: 3.5vw;
-    padding: 0.75em;
 
   }
 
@@ -55,6 +54,8 @@ html { scroll-behavior: smooth;}
     grid-column: span 1;
   }
 
+  .menu-grid > .grid-wide { grid-column: span 2; text-align: center; height: 50%;}
+
   /* .menu-grid > div:hover {
     transition: 0.4s;
     background-color: white;
@@ -72,5 +73,7 @@ html { scroll-behavior: smooth;}
 
 .show { opacity: 1;}
 .hidden {opacity: 0; transition: all 10s; }
+
+#wings > div > div { grid-column: span 2;}
 
  
