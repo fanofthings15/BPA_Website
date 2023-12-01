@@ -34,6 +34,7 @@
     color: #fff;
 
     user-select: none;
+    background-color: #c92a2a;
 }
 
 .arrow-container {
@@ -217,7 +218,20 @@
     align-items: center;
 
     padding: 2em;
+
+    
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 
 .wrapper {
     padding: var(--standard-body-y-margin) 16em;
@@ -351,3 +365,5 @@ option {
     font-size: 1.5em;
     font-family: sports_title;
   }
+
+   #wings > div > div {grid-column: span 2;} 
