@@ -70,7 +70,7 @@ html { scroll-behavior: smooth;}
     font-family: sports_title;
   }
 
-.show { opacity: 1;}
-.hidden {opacity: 0; transition: all 10s; }
+  #wings > div > div {grid-column: span 2;} 
+
 
  

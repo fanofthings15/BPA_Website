@@ -367,3 +367,5 @@ option {
   }
 
    #wings > div > div {grid-column: span 2;} 
+
+   .align-right { align-content: right;}
