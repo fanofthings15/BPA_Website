@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet">
+        <link rel = "stylesheet" href = "slideshow.css">
+        <link rel = "stylesheet" href = "menu.css">
+        <script src="script.js"></script>
+<script defer src = "scroll-animation.js"></script>
+
+        <title>Game Day Grill: Burgers & More</title>
+        <meta name="title" content="Game Day Grill: Burgers & More" />
+        <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        
+<!-- logo icon -->
+        <link rel="icon" href="imgs/game-day-grill.ico" type="image/x-icon"/>
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:url" content="https://metatags.io/" /> -->
+        <meta property="og:title" content="Game Day Grill: Burgers & More" />
+        <meta property="og:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
+        <meta property="twitter:title" content="Game Day Grill: Burgers & More" />
+        <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
+    </head>
+
+    <body class = "no-scrollbar">
+      <header>
+        <div class="grow">
+            <a id="logoB" href="index.html">
+                <img src = "imgs/game-day-grill-logo-simple2.png" class = "logo">
+            </a>
+            <p class="header-text">Game Day Grill</h1>
+        </div>
+        <div class="spaced-row">
+            <a href="order.html" class="button sm" >Order Now</a>
+            <a href="menu.html" class="button sm">Menu</a>
+            <a href="locations.html" class="button sm">Locations</a>
+            <a href="events.html" class="button sm">Special Events</a>
+        </div>
+    </header>
+        <main>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="imgs/slideshow/burger.png" style="width:100%" alt = "THE CLASSIC CHEESEBURGER MEAL: 
+                  A 1/3 pound of fresh ground beef patty with American cheese, tomatoes, lettuce, 
+                  onion, ketchup, mustard, and pickles, all on a toasted sesame seed bun. GAME DAY GRILL FAN FAVORITE">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="imgs/slideshow/fish-and-chips.png" style="width:100%" alt = "FISH AND CHIPS FRIDAYS: 
+                  Join us every Friday and elevate your game day experience with this classic combo - crispy, golden-brown fish filets 
+                  and perfectly seasoned fries.">
+                </div>
+                
+                <div class="mySlides fade">
+                  
+                  <img src="imgs/slideshow/icecream.png" style="width:100%" alt = "ICE CREAM: 
+                  Finsish the night off with a sweet treat! With over 15 flavors to choose from,
+                  you're sure to find the perfect scoop.">
+                  
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="imgs/fried_chicken.jpg" style="width:100%">
+                  
+                  </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+                
+                <script src ="slideshow.js"></script>
+                <h1 class = "centered-title">OUR MENU</h1>
+
+                
+
+                <div id="grid">
+<a href = "#appetizers"><div>APPETIZERS</div></a>
+                  <a href = "#burgers" ><div>BURGERS</div></a>
+                  <a href = "#sandwiches" ><div>SANDWICHES</div></a>
+                  <a href = "#entrees"><div>ENTREES</div></a>
+                  <a href = "#drinks" ><div>DRINKS</div></a>
+                  <a href = "#desserts" ><div>DESSERTS</div></a>
+                </div>
+
+                <!-- <div id="grid">
+                  <div>APPETIZERS</div>
+                  <div>BURGERS</div>
+                  <div>SANDWICHES</div>
+                  <div>ENTREES</div>
+                  <div>DRINKS</div>
+                  <div>DESSERTS</div>
+                  </div> -->
+
+                <!--appetizers-->
+                <div id = "appetizers">
+                <h1 class = "centered-title"><br>APPETIZERS</h1>
+                <div class="menu-grid">
+                  <div><span class = "menu-subtitle">ONION RINGS</span>
+                    <p>A heaping plate of crispy, beer-battered onion rings. Comes with zesty sauce.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">WINGS</span>
+                    <p>6pc or 10pc bone-in chicken wings. <br> Served with your choice of sauce: BBQ, Honey BBQ, Buffalo, Garlic Parmesan, Lemon Pepper, Teriyaki, or Plain.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">NACHOS</span>
+                    <p>Comes with melted nacho cheese, sour cream, tomatoes, and your choice of shredded chicken or ground beef. </p>
+                  </div>
+                  <div><span class ="menu-subtitle">CHEESE CURDS</span>
+                    <p>Delightful, bite-sized nuggets of fresh Wisconsin cheddar cheese.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">FRIED PICKLES</span>
+                    <p> Dill pickle slices coated in a seasoned batter, then fried to a golden crisp.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">SOFT PRETZEL BITES</span>
+                    <p>10 piece soft pretzel bites. Comes with melted nacho cheese.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- burgers -->
+              <div id = "burgers">
+                <h1 class = "centered-title"><br>BURGERS</h1>
+                <div class="menu-grid">
+                  <div><span class = "menu-subtitle">CLASSIC CHEESEBURGER</span>
+                    <p>A 1/3 pound of fresh ground beef patty with American cheese, tomatoes, lettuce, onion, ketchup, mustard, and pickles, all on a toasted sesame seed bun.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">MUSHROOM AND SWISS BURGER</span>
+                    <p>Fresh ground beef patty burger topped with swiss cheese and sauteed mushrooms.</p>
+                   </div>
+                  <div><span class ="menu-subtitle">BBQ BURGER</span>
+                    <p>A grilled patty topped with bacon, cheddar, caramelized onions, and tangy barbecue sauce in a toasted bun.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">SLIDERS</span>
+                    <p>All the flavor of our classic burgers, at half the size. Comes in plain, classic cheeseburger, BBQ, veggie, or variety.</p>
+                  </div>
+                  <div><span class ="menu-subtitle">CALIFORNIA BURGER</span>
+                    <p>Fresh ground beef patty with cheese, tomatoes, lettuce, and avocado with aoli on a toasted brioche bun.
+                    </p>
+                  </div>
+                  <div><span class ="menu-subtitle">VEGGIE BURGER</span>
+                    <p>A delicious, meat-free take on the classic burger. Made with a fresh vegetable blend with your choice of toppings. </p>
+                  </div>
+                </div>
+                </div>
+        </main>
+        <!-- <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a> -->
+    </body>
+</html>
