@@ -121,7 +121,7 @@ main {
     text-align: center;
     margin-bottom: 2em;
 }
-.color-change-button { /* all the buttons for calenders */
+.color-change-button { /* all the buttons for calendars */
     background-color:#c92a2a;
     color:white;
     padding: 10px 10px 10px 10px;
@@ -275,10 +275,10 @@ main {
     height: 250;
     transform: scale(1.1);
 }
-.picturesix:hover .detriot-tigers {
+.picturesix:hover .detroit-tigers {
     background-color:#A9A9A9;
 }
-.detriot-tigers {
+.detroit-tigers {
     border-style: solid;
     border-color: #FA4616;
     border-width: 5px;

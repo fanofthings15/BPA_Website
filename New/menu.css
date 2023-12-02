@@ -21,6 +21,7 @@ html { scroll-behavior: smooth;}
     text-decoration: none;
     grid-column: span 1;
     text-align: center;
+    transition: 0.4s;
     
   }
   #grid > a div:hover {
@@ -71,9 +72,9 @@ html { scroll-behavior: smooth;}
     font-family: sports_title;
   }
 
-.show { opacity: 1;}
-.hidden {opacity: 0; transition: all 10s; }
 
 #wings > div > div { grid-column: span 2;}
+
+
 
  

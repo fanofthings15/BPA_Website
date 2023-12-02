@@ -36,7 +36,7 @@
     user-select: none;
 }
 
-.arrow:hover { color:black;}
+.arrow:hover { color:black; }
 
 .arrow-container {
     cursor: pointer;
@@ -46,7 +46,7 @@
     padding: 1em;
 }
 
-.arrow-container:hover {
+.arrow-container:hover +.arrow {
     background-color: white;
     color:black;
     transition: 0.4s;
@@ -363,3 +363,7 @@ option {
     font-size: 1.5em;
     font-family: sports_title;
   }
+
+.menu-grid > .grid-wide { grid-column: span 2; text-align: center; height: 50%;}
+
+#wings > div > div { grid-column: span 2;}
