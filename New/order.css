@@ -15,14 +15,46 @@
 .menu-container {
     flex-grow: 1;
 
-    padding: 3em 4em 8em 3em;
+    padding: 4em 6em 8em 6em;
 
     overflow-y: scroll;
     scrollbar-width: none;
 }
 
+span {
+    color: #f8f9fa;
+}
+
+.secondary-text {
+    color: #dee2e6;
+}
+
+.sm-text {
+    font-size: 1em;
+}
+
+.md-text {
+    font-size: 1.5em;
+}
+
+.lg-text {
+    font-size: 2.5em;
+}
+
+.xl-text {
+    font-size: 4em;
+}
+
 .sm-padding {
     padding: 1em;
+}
+
+.ternary-bg {
+    background-color: #495057;
+}
+
+.sm-radius {
+    border-radius: 1em;
 }
 
 .arrow {
@@ -157,7 +189,7 @@
     flex-wrap: wrap;
 }
 
-.order-menus a {
+.order-category {
     /* min-width: 16em; */
     width: calc((100% / var(--img-buttons-per-line)) - ((2em * (var(--img-buttons-per-line) - 1)) / var(--img-buttons-per-line)));
 
@@ -170,17 +202,17 @@
     text-decoration: none;
 }
 
-.order-menus a:hover {
+.order-category:hover {
     transform: scale(1.05);
 }
 
-.order-menus a img {
+.order-category img {
     width: 100%;
 
     /* border-radius: 1em 1em 0 0; */
 }
 
-.order-menus a span {
+.order-category span {
     text-align: center;
     width: 100%;
     display: block;
@@ -219,6 +251,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sidebar-footer {
+    border-top: 1px solid #adb5bd;
 }
 
 #sidebar-fluff {
@@ -346,8 +382,8 @@ option {
     grid-template-rows: repeat(3, 3fr);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
+    /* margin-left: 3em;
+    margin-right: 3em; */
   }
   .menu-grid > div {
     background-color: #353535;
