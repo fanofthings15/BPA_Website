@@ -14,7 +14,7 @@ html { scroll-behavior: smooth;}
 
   #grid div { grid-column: span 2;}
   #grid > a > div {
-    background-color: #c92a2a;
+    background-image: url(imgs/wood.jpg);
     color: white;
     font-size: 3.5vw;
     padding: 0.5em;
