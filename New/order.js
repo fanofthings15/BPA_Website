@@ -136,7 +136,7 @@ window.onload = () => {
 
         checkingOut = true;
 
-        window.location.replace("/New/checkout");
+        window.location.replace("/New/checkout.html");
     });
 }
 
