@@ -3,20 +3,50 @@ const switchMs = 5000;
 let orderSlideshowDots;
 let orderSlideshowImgs;
 let activeSlide = 0;
+let totalPrice = 0;
+let checkingOut = false;
 
-const items = {
+const itemData = {
     "onionRings": {"price": 6, "title": "Onion Rings", "additions": []},
     "wingsBonein": {"price": 6, "title": "Bone-in wings", "additions": ["Plain"]},
-    "nachos": {"price": 7, "title": "Nachos", "secondary": ["Cheese"]},
-    "cheeseCurds": {"price": 6, "title": "Cheese Curds", "secondary": []},
-    "friedPickles": {"price": 5, "title": "Fried Pickles", "secondary": ["Queso Dip"]},
-    "softPretzelBites": {"price": 6, "title": "Soft Pretzel Bites", "secondary": ["Queso Dip"]},
-    "classicCheeseburger": {"price": 14, "title": "Classic Cheeseburger", "secondary": []},
-    "mushroomSwissBurger": {"price": 15, "title": "Mushroom Swiss Burger", "secondary": []},
-    "bbqBurger": {"price": 16, "title": "BBQ Burger", "secondary": []}
+    "nachos": {"price": 7, "title": "Nachos", "additions": ["Cheese"]},
+    "cheeseCurds": {"price": 6, "title": "Cheese Curds", "additions": []},
+    "friedPickles": {"price": 5, "title": "Fried Pickles", "additions": ["Queso Dip"]},
+    "softPretzelBites": {"price": 6, "title": "Soft Pretzel Bites", "additions": ["Queso Dip"]},
+    "classicCheeseburger": {"price": 14, "title": "Classic Cheeseburger", "additions": []},
+    "mushroomSwissBurger": {"price": 15, "title": "Mushroom Swiss Burger", "additions": []},
+    "bbqBurger": {"price": 16, "title": "BBQ Burger", "additions": []},
+    "sliders": {"price": 12, "title": "Sliders", "additions": ["Plain"]},
+    "californiaBurger": {"price": 16, "title": "California Burger", "additions": []},
+    "veggieBurger": {"price": 15, "title": "Veggie Burger", "additions": []},
+    "kabobs": {"price": 11, "title": "Kabobs", "additions": ["Chicken"]},
+    "hotDogs": {"price": 8, "title": "Hot Dogs", "additions": ["Plain"]},
+    "porkChops": {"price": 15, "title": "Pork Chops", "additions": ["Mashed Potatoes"]},
+    "friedChicken": {"price": 14, "title": "Fried Chicken", "additions": ["Dipping Sauce"]},
+    "tacos": {"price": 12, "title": "Tacos", "additions": ["Soup"]},
+    "fishAndChips": {"price": 15, "title": "Fish And Chips", "additions": ["Fries"]},
+    "wingsBonein": {"price": 6, "title": "Bone-in Wings", "additions": []},
+    "wingsBoneless": {"price": 6, "title": "Boneless Wings", "additions": []},
+    "wingsCrispy": {"price": 6, "title": "Crispy Wings", "additions": []},
+    "arnoldPalmer": {"price": 2, "title": "Arnold Palmer", "additions": []},
+    "sparklingFruitPunch": {"price": 4, "title": "Sparkling Fruit Punch", "additions": []},
+    "cherryLimeade": {"price": 4, "title": "Cherry Limeade", "additions": []},
+    "signatureRootBeer": {"price": 3, "title": "Signature Root Beer", "additions": []},
+    "soda": {"price": 2, "title": "Soda Cup", "additions": []},
+    "iceCream": {"price": 5, "title": "Ice Cream", "additions": ["Select flavor in-store"]},
+    "milkshakes": {"price": 6, "title": "Milkshakes", "additions": ["Whipped Cream", "Sprinkles", "Select flavor in-store"]},
+    "hotFudgeBrownie": {"price": 4, "title": "Hot Fudge Brownie", "additions": []},
+    "creamPuff": {"price": 5, "title": "Cream Puff", "additions": []},
+    "strawberryCheesecake": {"price": 6, "title": "Strawberry Cheesecake", "additions": []},
+    "bananaSplit": {"price": 8, "title": "Banana Split", "additions": ["Select flavors in-store"]}
 }
 
+const orderList = {};
+
 window.onload = () => {
+    const totalPriceElement = document.getElementById("total-price");
+    const orderListElement = document.getElementById("order-list");
+
     orderSlideshowDots = document.getElementById("order-slideshow-dots").children;
     orderSlideshowImgs = document.getElementById("order-slideshow-imgs").children;
 
@@ -51,9 +81,63 @@ window.onload = () => {
 
     for (const itemAddButton of itemAddButtons) {
         itemAddButton.addEventListener("click", (e) => {
-            console.log(e.target.id)
-        })
+            const item = itemData[e.target.id];
+
+            const itemId = String(Math.floor(Math.random() * 999999));
+
+            let additionsHTML = "";
+
+            for (const addition of item.additions) {
+                additionsHTML += `<span class="sm-text">- ${addition}</span>`;
+            }
+
+            const itemBoxHTML = `<div class="order-item-box" id="item-${itemId}">
+                <div class="order-main-item-info">
+                    <span class="md-text">${item.title}</span>
+                    ${additionsHTML}
+                </div>
+                <div class="order-secondary-item-info">
+                    <span class="md-text">$${item.price}</span>
+                    <span class="symbol item-remove" id="${itemId}">X</span>
+                </div>
+            </div>`;
+
+            orderListElement.innerHTML += itemBoxHTML;
+
+            totalPrice += item.price;
+
+            totalPriceElement.innerText = `$${totalPrice}`;
+
+            orderList[itemId] = Object.keys(itemData)[Object.values(itemData).indexOf(item)];
+        });
     }
+
+    document.addEventListener("click", (e) => {
+        if (!e.target.classList.contains("item-remove")) {
+            return;
+        }
+
+        const itemId = e.target.id;
+
+        document.getElementById(`item-${itemId}`).remove();
+
+        const price = itemData[orderList[itemId]].price;
+
+        totalPrice -= price;
+
+        totalPriceElement.innerText = `$${totalPrice}`;
+
+        delete orderList[itemId];
+    });
+
+    document.getElementById("checkout-button").addEventListener("click", (e) => {
+        localStorage.orderList = orderList;
+        localStorage.totalPrice = totalPrice;
+
+        checkingOut = true;
+
+        window.location.replace("/New/checkout");
+    });
 }
 
 const switchSlide = (direction = 1) => {
@@ -77,3 +161,10 @@ const switchSlide = (direction = 1) => {
     newSlideshowImg.classList.add("active-slideshow-img");
     newSlideshowDot.classList.add("active-slideshow-dot");
 }
+
+window.addEventListener("beforeunload", (e) => {
+    console.log(checkingOut, Object.values(orderList).length)
+    if (!checkingOut && Object.values(orderList).length > 0) {
+        e.returnValue = "You will lose your order if you leave this page!";
+    }
+});

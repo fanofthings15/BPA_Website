@@ -232,7 +232,8 @@ span, p, a {
 
     flex-grow: 1;
 
-    overflow-y: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .order-item-box {
@@ -246,7 +247,7 @@ span, p, a {
 .order-main-item-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
     flex-grow: 1;
 
