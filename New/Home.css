@@ -46,6 +46,7 @@
    .main-grid-inner > div > img { aspect-ratio: 4/3; height: 16em; object-fit: cover; display: flex; justify-content: center;}
 
    .main-grid-inner-text { text-align: center;}
+   .main-grid-inner-text ul {list-style-type: none; text-align: center;}
 
    .main-grid-inner-image { text-align: right;}
 

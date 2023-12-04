@@ -22,6 +22,8 @@
     src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
 
+html { scroll-behavior: smooth;}
+
 
 
 /*CUSTOM SCROLLBAR*/
@@ -90,16 +92,15 @@ body {
     color: #f1f3f5;
 } */
 
-.button:hover{
-    background-color: #f8f9fa;
-    color: #212529;
-}
 
 .button:hover{
     background-color:#ee8730;
     text-decoration: none;
 
     border: 0;
+
+    transform: scale(1.05) skewX(-20deg) translateX(-0.55em);
+    transition: 0.4s;
 }
 
 .Cards{
@@ -131,23 +132,28 @@ body {
     z-index: 5;
 }
 
+.card:hover { 
+    transform: scale(1.05);
+    transition: 0.4s;
+    
+}
+
 .card#C1:hover{
-    background-image: url(imgs/Ipad.jpeg);
+    /* background-image: url(imgs/Ipad.jpeg);
     background-position: 100% 65%;
-    color: black;
+    color: black; */
 }
 .card#C2:hover{
-    background-image: url(imgs/Burger.jpeg);
-    background-position: 25% 65%;
+    /* background-image: url(imgs/Burger.jpeg);
+    background-position: 25% 65%; */
 }
 .card#C3:hover{
-    background-image: url(imgs/Location.jpeg);
-    background-position: 25% 65%;
-    color:black;
+    /* background-image: url(imgs/Location.jpeg);
+    background-position: 25% 65%; */
 }
 .card#C4:hover{
-    background-image: url(imgs/People.jpeg);
-    background-position: 25% 65%;
+    /* background-image: url(imgs/People.jpeg);
+    background-position: 25% 65%; */
 }
 
 .centered { width: 80%; margin: auto; text-align: center;} 

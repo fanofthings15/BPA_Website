@@ -105,7 +105,7 @@ span, p, a {
 }
 
 .slideshow-arrow-container:hover {
-    background-color: #f03e3e;
+    background-color: var(--orange);
 }
 
 .slideshow-imgs {
@@ -178,6 +178,8 @@ span, p, a {
 
 .caption-category img {
     width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
 }
 
 .caption-category span {
