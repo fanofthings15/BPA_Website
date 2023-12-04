@@ -7,11 +7,11 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="style.css" rel="stylesheet">
-        <link href="order.css" rel="stylesheet">
-		<link href="order2.css" rel="stylesheet">
+        <!-- <link href="order.css" rel="stylesheet"> -->
+		<link href="order.css" rel="stylesheet">
         <!-- <link href="menu.css" rel="stylesheet"> -->
         <script src="script.js"></script>
-        <script src="slideshow2.js"></script>
+        <script src="order.js"></script>
 
         <title>Order - Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
@@ -54,50 +54,48 @@
                 <div class="ordering-menu">
                     <div class="slideshow">
                         <div class="slideshow-presentation">
-                            <div id="left-arrow" class="arrow-container center-container no-shrink">
-                                <span class="arrow">&lt;</span>
+                            <div id="order-slideshow-left-arrow" class="slideshow-arrow-container">
+                                <span class="symbol">&lt;</span>
                             </div>
-                            <div class="grow full-height center-container">
-                                <img class="active-slideshow-img slideshow-img" src="imgs/slideshow/burger.png">
-                                <img class="slideshow-img" src="imgs/slideshow/fish-and-chips.png">
-                                <img class="slideshow-img" src="imgs/slideshow/icecream.png">
+                            <div id="order-slideshow-imgs" class="slideshow-imgs">
+                                <img class="active-slideshow-img" src="imgs/slideshow/burger.png">
+                                <img src="imgs/slideshow/fish-and-chips.png">
+                                <img src="imgs/slideshow/icecream.png">
                             </div>
-                            <div id="right-arrow" class="arrow-container center-container">
-                                <span class="arrow">&gt;</span>
+                            <div id="order-slideshow-right-arrow" class="slideshow-arrow-container">
+                                <span class="symbol">&gt;</span>
                             </div>
                         </div>
-                        <div class="dots row full-width center-container">
-                            <div class="sm-gap center-container full-height">
-                                <div class="active-dot dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
+                        <div id="order-slideshow-dots" class="slideshow-dots">
+                            <div class="active-slideshow-dot dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
                     </div>
-                    <div id="order-menus" class="grow lg-gap row">
-                        <a class="order-category" href="#appetizers">
+                    <div class="caption-category-row">
+                        <a class="caption-category" href="#appetizers">
                             <img src="imgs/Burger.jpeg">
-                            <span class="md-text">Appetizers & Sides</span>
+                            <span>Appetizers & Sides</span>
                         </a>
-                        <a class="order-category" href="#burgers">
+                        <a class="caption-category" href="#burgers">
                             <img src="imgs/Burger.jpeg">
-                            <span class="md-text">Burgers</span>
+                            <span>Burgers</span>
                         </a>
-                        <a class="order-category" href="#wings">
+                        <a class="caption-category" href="#wings">
                             <img src="imgs/Burger.jpeg">
-                            <span class="md-text">Wings</span>
+                            <span>Wings</span>
                         </a>
-                        <a class="order-category" href="#entrees">
+                        <a class="caption-category" href="#entrees">
                             <img src="imgs/Burger.jpeg">
-                            <span class="md-text">Entrees</span>
+                            <span>Entrees</span>
                         </a>
-                        <a class="order-category" href="#drinks">
+                        <a class="caption-category" href="#drinks">
                             <img src="imgs/Burger.jpeg">
-                            <span class="md-text">Drinks</span>
+                            <span>Drinks</span>
                         </a>
-                        <a class="order-category" href="#desserts">
+                        <a class="caption-category" href="#desserts">
                             <img src="imgs/Burger.jpeg">
-                            <span class="md-text">Desserts</span>
+                            <span>Desserts</span>
                         </a>
                     </div>
 
@@ -105,23 +103,41 @@
                 <div id = "appetizers">
                     <h1 class = "centered-title xl-text"><br>APPETIZERS</h1>
                     <div class="menu-grid">
-                      <div><span class = "menu-subtitle">ONION RINGS</span>
+                      <div><span class = "menu-subtitle">ONION RINGS - $6</span>
                         <p>A heaping plate of crispy, beer-battered onion rings. Comes with zesty sauce.</p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="onionRings">+</span>
+						</div>
                       </div>
-                      <div><span class ="menu-subtitle">WINGS</span>
-                        <p>6pc or 10pc bone-in chicken wings. <br> Served with your choice of sauce: BBQ, Honey BBQ, Buffalo, Garlic Parmesan, Lemon Pepper, Teriyaki, or Plain.</p>
+                      <div><span class ="menu-subtitle">WINGS - $6</span>
+                        <p>8pc bone-in chicken wings. <br> Served with your choice of sauce: BBQ, Honey BBQ, Buffalo, Garlic Parmesan, Lemon Pepper, Teriyaki, or Plain.</p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="wingsBonein">+</span>
+						</div>
                       </div>
-                      <div><span class ="menu-subtitle">NACHOS</span>
+                      <div><span class ="menu-subtitle">NACHOS - $7</span>
                         <p>Comes with melted nacho cheese, sour cream, tomatoes, and your choice of shredded chicken or ground beef. </p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="nachos">+</span>
+						</div>
                       </div>
-                      <div><span class ="menu-subtitle">CHEESE CURDS</span>
+                      <div><span class ="menu-subtitle">CHEESE CURDS - $5</span>
                         <p>Delightful, bite-sized nuggets of fresh Wisconsin cheddar cheese.</p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="cheeseCurds">+</span>
+						</div>
                       </div>
-                      <div><span class ="menu-subtitle">FRIED PICKLES</span>
+                      <div><span class ="menu-subtitle">FRIED PICKLES - $5</span>
                         <p> Dill pickle slices coated in a seasoned batter, then fried to a golden crisp.</p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="friedPickles">+</span>
+						</div>
                       </div>
-                      <div><span class ="menu-subtitle">SOFT PRETZEL BITES</span>
+                      <div><span class ="menu-subtitle">SOFT PRETZEL BITES - $6</span>
                         <p>10 piece soft pretzel bites. Comes with melted nacho cheese.</p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="softPretzelBites">+</span>
+						</div>
                       </div>
                     </div>
                   </div>
@@ -130,24 +146,42 @@
                   <div id = "burgers">
                     <h1 class = "centered-title xl-text"><br>BURGERS</h1>
                     <div class="menu-grid">
-                      <div><span class = "menu-subtitle">CLASSIC CHEESEBURGER</span>
+                      <div><span class = "menu-subtitle">CLASSIC CHEESEBURGER - $14</span>
                         <p>A 1/3 pound of fresh ground beef patty with American cheese, tomatoes, lettuce, onion, ketchup, mustard, and pickles, all on a toasted sesame seed bun.</p>
-                      </div>
-                      <div><span class ="menu-subtitle">MUSHROOM AND SWISS BURGER</span>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="classicCheeseburger">+</span>
+						</div>
+					</div>
+                      <div><span class ="menu-subtitle">MUSHROOM AND SWISS BURGER - $15</span>
                         <p>Fresh ground beef patty burger topped with swiss cheese and sauteed mushrooms.</p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="mushroomSwissBurger">+</span>
+						</div>
                        </div>
-                      <div><span class ="menu-subtitle">BBQ BURGER</span>
+                      <div><span class ="menu-subtitle">BBQ BURGER - $16</span>
                         <p>A grilled patty topped with bacon, cheddar, caramelized onions, and tangy barbecue sauce in a toasted bun.</p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="bbqBurger">+</span>
+						</div>
                       </div>
-                      <div><span class ="menu-subtitle">SLIDERS</span>
-                        <p>All the flavor of our classic burgers, at half the size. Comes in plain, classic cheeseburger, BBQ, veggie, or variety.</p>
+                      <div><span class ="menu-subtitle">SLIDERS - $12</span>
+                        <p>All the flavor of our classic burgers, at half the size. Comes in threes of plain, classic cheeseburger, BBQ, veggie, or variety.</p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="sliders">+</span>
+						</div>
                       </div>
-                      <div><span class ="menu-subtitle">CALIFORNIA BURGER</span>
+                      <div><span class ="menu-subtitle">CALIFORNIA BURGER - $16</span>
                         <p>Fresh ground beef patty with cheese, tomatoes, lettuce, and avocado with aoli on a toasted brioche bun.
                         </p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="californiaBurger">+</span>
+						</div>
                       </div>
-                      <div><span class ="menu-subtitle">VEGGIE BURGER</span>
+                      <div><span class ="menu-subtitle">VEGGIE BURGER - $15</span>
                         <p>A delicious, meat-free take on the classic burger. Made with a fresh vegetable blend with your choice of toppings. </p>
+						<div class="right-button-row">
+							<span class="symbol item-add" id="veggieBurger">+</span>
+						</div>
                       </div>
                     </div>
                   </div>
@@ -156,44 +190,71 @@
               <div id = "entrees">
                 <h1 class = "centered-title xl-text"><br>ENTREES</h1>
                 <div class="menu-grid">
-                  <div><span class = "menu-subtitle">KABOBS</span>
+                  <div><span class = "menu-subtitle">KABOBS - $11</span>
                     <p>Freshly grilled meat and vegetables on a skewer for your sports watching convenience. Comes in chicken, beef, or vegetarian variety. </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="kabobs">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">HOT DOGS</span>
-                    <p>Flame-grilled all beef hot dogs on a toasted bun. Add ketchup, mustard, relish, or onions.
+                  <div><span class ="menu-subtitle">HOT DOGS - $8</span>
+                    <p>2 flame-grilled all beef hot dogs on a toasted bun. Add ketchup, mustard, relish, or onions.
                     </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="hotDogs">+</span>
+					</div>
                    </div>
-                  <div><span class ="menu-subtitle">PORK CHOPS</span>
+                  <div><span class ="menu-subtitle">PORK CHOPS - $15</span>
                     <p>Two breaded pork chops with your choice of fries or mashed potatoes.</p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="porkChops">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">FRIED CHICKEN</span>
+                  <div><span class ="menu-subtitle">FRIED CHICKEN - $14</span>
                     <p>Crispy breaded dark and white meat chicken.</p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="friedChicken">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">TACOS</span>
+                  <div><span class ="menu-subtitle">TACOS - $12</span>
                     <p>
-                      Hard-shell tacos with spiced ground beef, lettuce, tomato, onion, shredded cheese, and cilantro. 
+                      3 hard-shell tacos with spiced ground beef, lettuce, tomato, onion, shredded cheese, and cilantro. 
                     </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="tacos">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">FISH AND CHIPS</span>
+                  <div><span class ="menu-subtitle">FISH AND CHIPS - $15</span>
                     <p>Crispy battered cod filets with seasoned fries. Comes with lemon, tartar sauce, and a dinner roll.  </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="fishAndChips">+</span>
+					</div>
                   </div>
                 </div>
                 </div>
 
                 <!-- wings -->
               <div id = "wings">
-                <h1 class = "centered-title xl-text"><br>wings</h1>
+                <h1 class = "centered-title xl-text"><br>wings - $6 per 8pc</h1>
                 <h1 class ="centered-subtitle">Sauce options: BBQ, Honey BBQ, Buffalo, Garlic Parmesan, Lemon Pepper, or Teriyaki</h1>
                 <div class="menu-grid">
                   <div><span class = "menu-subtitle">BONE-IN WINGS</span>
                     <p>These freshly grilled bone-in wings are a game day grill classic.</p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="wingsBonein">+</span>
+					</div>
                   </div>
                   <div><span class ="menu-subtitle">BONELESS WINGS</span>
                     <p>All of the flavor, none of the bones. 
                     </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="wingsBoneless">+</span>
+					</div>
                    </div>
                   <div><span class ="menu-subtitle">CRISPY WINGS</span>
                     <p>Breaded and fried chicken wings.</p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="crispyWings">+</span>
+					</div>
                   </div>
                 </div>
                 </div>
@@ -202,23 +263,38 @@
               <div id = "drinks">
                 <h1 class = "centered-title xl-text"><br>DRINKS</h1>
                 <div class="menu-grid">
-                  <div><span class = "menu-subtitle">ARNOLD PALMER</span>
+                  <div><span class = "menu-subtitle">ARNOLD PALMER - $2</span>
                     <p>A sweet blend of iced tea and lemonade.</p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="arnoldPalmer">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">SPARKLING FRUIT PUNCH</span>
+                  <div><span class ="menu-subtitle">SPARKLING FRUIT PUNCH - $4</span>
                     <p>This is not your average fruit punch. This fizzy drink is made with freshly squeezed juice from pineapples, grapes, pears, and cranberries. 
                     </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="sparklingFruitPunch">+</span>
+					</div>
                    </div>
-                  <div><span class ="menu-subtitle">CHERRY LIMEADE</span>
+                  <div><span class ="menu-subtitle">CHERRY LIMEADE - $4</span>
                     <p>Tart cherry juice, limeade, and a splash of soda water.</p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="cherryLimeade">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">SIGNATURE ROOT BEER</span>
+                  <div><span class ="menu-subtitle">SIGNATURE ROOT BEER - $3</span>
                     <p>Our signature root beer has a unique flavor you're sure to remember.</p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="rootBeer">+</span>
+					</div>
                   </div>
-                  <div class = "grid-wide"><span class ="menu-subtitle">COCA-COLA AND PEPSI PRODUCTS</span>
+                  <div class = "grid-wide"><span class ="menu-subtitle">COCA-COLA AND PEPSI PRODUCTS - $2</span>
                     <p>
                       Coca-cola, Diet Coca-Cola, Coke Zero, Fanta, Sprite, Pepsi, Diet Pepsi, Dr Pepper, 7UP, Starry, Mtn Dew. 
                     </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="Soda">+</span>
+					</div>
                   </div>
                 </div>
               </div>
@@ -226,55 +302,73 @@
               <div id = "desserts">
                 <h1 class = "centered-title xl-text"><br>DESSERTS</h1>
                 <div class="menu-grid">
-                  <div><span class = "menu-subtitle">ICE CREAM</span>
+                  <div><span class = "menu-subtitle">ICE CREAM - $5</span>
                     <p>Flavors: Vanilla, Chocolate, Strawberry, Cookie Dough, Cookies and Cream, Caramel, Mint Chocolate Chip, Coffee, 
                       Cake Batter, Blackberry, Coconut, Cherry, Butter Pecan, Rocky Road, Peanut Butter, and Pistachio
                     </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="iceCream">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">MILKSHAKES</span>
+                  <div><span class ="menu-subtitle">MILKSHAKES - $6</span>
                     <p>Choose one of our delicious ice cream flavors to blend into a shake! Topped with whipped cream and sprinkles. 
                     </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="milkshake">+</span>
+					</div>
                    </div>
-                  <div><span class ="menu-subtitle">Hot Fudge Brownie</span>
+                  <div><span class ="menu-subtitle">Hot Fudge Brownie - $4</span>
                     <p>A gooey chocolate brownie topped with vanilla ice cream.</p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="hotFudgeBrownie">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">CREAM PUFF</span>
+                  <div><span class ="menu-subtitle">CREAM PUFF - $5</span>
                     <p>Pastry shell filled with sweet whipped cream and topped with powdered sugar. </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="creamPuff">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">STRAWBERRY CHEESECAKE</span>
+                  <div><span class ="menu-subtitle">STRAWBERRY CHEESECAKE - $6</span>
                     <p>
                       A slice of cheesecake topped with fresh strawberries and strawberry syrup.
                     </p>
+					<div class="right-button-row">
+						<span class="symbol item-add" id="strawberryCheesecake">+</span>
+					</div>
                   </div>
-                  <div><span class ="menu-subtitle">BANANA SPLIT</span>
+                  <div><span class ="menu-subtitle">BANANA SPLIT - $8</span>
                     <p>3 scoops of any ice cream flavor, topped with chocolate drizzle, 
                       strawberry and pineapple syrup, whipped cream, chopped nuts, cherries, and the banana, of course.</p>
+					  <div class="right-button-row">
+						<span class="symbol item-add" id="bananaSplit">+</span>
+					</div>
                   </div>
                 </div>
                 </div>
               
                 </div>
                 <div class="order-sidebar">
-                    <div class="sidebar-title">
-                        <p class="sm">Order</p>
+                    <div class="sidebar-info-container bottom-border">
+                        <p class="md-text">Order</p>
                     </div>
                     <!-- <div id="sidebar-fluff">
                         <p style="color:#fff">Feel free to browse our menu before dining in with us or add an item to start a pickup order!</p>
                     </div> -->
-                    <div id="order-list" class="sm-padding column md-gap grow">
-                        <div class="sm-padding row md-gap ternary-bg sm-radius">
-                            <div class="column sm-gap grow">
+                    <div id="order-list" class="sidebar-list-items">
+                        <!-- <div class="order-item-box">
+                            <div class="order-main-item-info">
                                 <span class="md-text">Soft Pretzel Bites</span>
-                                <span class="sm-text secondary-text">+Cheese</span>
+                                <span class="sm-text">- Cheese</span>
                             </div>
-                            <div class="center-container md-gap">
-                                <span class="md-text">x5</span>
+                            <div class="order-secondary-item-info">
+                                NO QUANITITIES ATM <span class="md-text">x5</span>
                                 <span class="md-text">$6</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="center-container row sm-padding md-gap sidebar-footer">
-                        <span class="md-text grow">$5</span>
+                    <div class="sidebar-info-container top-border">
+                        <span class="md-text grow">$0</span>
                         <a href="" class="button md-text">Checkout</a>
                     </div>
                 </div>

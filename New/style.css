@@ -86,13 +86,18 @@ body {
     transition: .3s;
 }
 
-.button:visited{
-    color: #e6e6e6;
-}
+/* .button:visited{
+    color: #f1f3f5;
+} */
+
+.button:hover{
+    background-color: #f8f9fa;
+    color: #212529;
 
 .button:hover{
     background-color:#ee8730;
     text-decoration: none;
+
     border: 0;
 }
 
@@ -212,7 +217,7 @@ float: left;}
 
 header {
     width: 100%;
-    height: 5em;
+    height: 6em;
 
     box-sizing: border-box;
 
@@ -276,7 +281,7 @@ font-family: sports_title;
 #logoB{padding: 0; background: none;border: none;}
 
 main {
-    padding-top: 5em;
+    padding-top: 6em;
     font-family: bodytext;
 }
 

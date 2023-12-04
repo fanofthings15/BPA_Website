@@ -4,6 +4,18 @@ let orderSlideshowDots;
 let orderSlideshowImgs;
 let activeSlide = 0;
 
+const items = {
+    "onionRings": {"price": 6, "title": "Onion Rings", "additions": []},
+    "wingsBonein": {"price": 6, "title": "Bone-in wings", "additions": ["Plain"]},
+    "nachos": {"price": 7, "title": "Nachos", "secondary": ["Cheese"]},
+    "cheeseCurds": {"price": 6, "title": "Cheese Curds", "secondary": []},
+    "friedPickles": {"price": 5, "title": "Fried Pickles", "secondary": ["Queso Dip"]},
+    "softPretzelBites": {"price": 6, "title": "Soft Pretzel Bites", "secondary": ["Queso Dip"]},
+    "classicCheeseburger": {"price": 14, "title": "Classic Cheeseburger", "secondary": []},
+    "mushroomSwissBurger": {"price": 15, "title": "Mushroom Swiss Burger", "secondary": []},
+    "bbqBurger": {"price": 16, "title": "BBQ Burger", "secondary": []}
+}
+
 window.onload = () => {
     orderSlideshowDots = document.getElementById("order-slideshow-dots").children;
     orderSlideshowImgs = document.getElementById("order-slideshow-imgs").children;
@@ -34,6 +46,14 @@ window.onload = () => {
             lastChange = new Date().getTime();
         }
     }, 100);
+
+    const itemAddButtons = document.getElementsByClassName("item-add");
+
+    for (const itemAddButton of itemAddButtons) {
+        itemAddButton.addEventListener("click", (e) => {
+            console.log(e.target.id)
+        })
+    }
 }
 
 const switchSlide = (direction = 1) => {
