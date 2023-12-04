@@ -2,6 +2,57 @@
     font-family: sports_title;
     src: url(fonts/azn-unified.oblique.otf);
 }
+
+.main-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: .5em;
+  }
+  .main-grid > div {
+    background-color:#353535;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.75em;
+    grid-column: span 1;
+  }
+
+  .main-grid-inner {
+    display: grid;
+    grid-template-rows: repeat(1, 3fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+   }
+
+   .main-grid-inner > div { 
+    background-color: #353535;
+    /*353535*/
+    color: white;
+    font-size: 1.5em;
+    padding: 0em;
+    grid-column: span 1;
+    
+   }
+
+   .main-grid-inner > div > h1 { color: var(--red); font-family: sports_title; text-align: center; font-size: 3em; padding: 0; margin: 0}
+   .main-grid-inner > div > p { margin: 1em 0; }
+
+   .main-grid-inner > div > img { aspect-ratio: 4/3; height: 16em; object-fit: cover; display: flex; justify-content: center;}
+
+   .main-grid-inner-text { text-align: center;}
+
+   .main-grid-inner-image { text-align: right;}
+
+.main-grid-inner-image > img{ object-fit: cover;}
+
+
+/*
 .EventStyle1{
     border-radius: 1em;
     background-color: #2e2e2e;
@@ -132,4 +183,4 @@ text-align: center;
 }
 .Review p{
     margin: 3em 0 0 0;
-}
+} */

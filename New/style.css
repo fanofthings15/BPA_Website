@@ -1,6 +1,7 @@
 /*COLORS*/
 :root {
     --red: #c92a2a;
+    --orange: #ee8730;
   }
 
 
@@ -80,6 +81,7 @@ body {
     user-select: none;
     text-decoration: none;
     text-transform: uppercase;
+    white-space: nowrap;
 
     transition: .3s;
 }
@@ -88,10 +90,9 @@ body {
     color: #e6e6e6;
 }
 
-.button.sm:hover{
-    background-color: #ffffff;
+.button:hover{
+    background-color:#ee8730;
     text-decoration: none;
-    color: black;
     border: 0;
 }
 
@@ -244,6 +245,7 @@ header div {
     font-size: 3em;
     font-family: sports_title; 
     color: white;
+    white-space: nowrap;
 }
 
 /*Inline lists for footer links*/
@@ -278,43 +280,6 @@ main {
     font-family: bodytext;
 }
 
-.main-grid {
-    display: grid;
-    grid-template-rows: repeat(3, 3fr);
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
-  }
-  .main-grid > div {
-    background-color:#353535;
-    color: white;
-    font-size: 1.5em;
-    padding: 0.75em;
-    grid-column: span 1;
-  }
-
-  .main-grid-inner {
-    display: grid;
-    grid-template-rows: repeat(1, 3fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-   }
-
-   .main-grid-inner > div { 
-    background-color: #353535;
-    color: white;
-    font-size: 1.5em;
-    padding: 0.75em;
-    grid-column: span 1;
-   }
-
-   .main-grid-inner > div > h1 { color: var(--red); font-family: sports_title; text-align: center; font-size: 3em; padding: 0; margin: 0}
-   .main-grid-inner > div > p { margin: 1em 0; }
-
-   .main-grid-inner > div > img { aspect-ratio: 1/1; height: 15em; object-fit: cover;}
 
 .margin-top {
     margin-top: 1em;
@@ -340,8 +305,6 @@ p {
     overflow: hidden;
    
 }
-
-
 
 .presented-text {
     width: 30em;

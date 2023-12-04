@@ -74,7 +74,12 @@ header div {
 
 .header-text {
     padding: 0;
-    margin: 0;
+    margin: 0.25em;
+    font-size: 3em;
+    font-family: sports_title; 
+    color: white;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .grow {
@@ -85,8 +90,6 @@ header div {
     display: flex;
 
     gap: 1em;
-
-    transform: skewX(-20deg);
 }
 
 main {

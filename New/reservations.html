@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet">
+        <link href = "reservations.css" rel = "stylesheet">
+
+        <title>Menu - Game Day Grill: Burgers & More</title>
+        <meta name="title" content="Game Day Grill: Burgers & More" />
+        <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        
+<!-- logo icon -->
+        <link rel="icon" href="imgs/logos/game-day-grill.ico" type="image/x-icon"/>
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:url" content="https://metatags.io/" /> -->
+        <meta property="og:title" content="Game Day Grill: Burgers & More" />
+        <meta property="og:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
+        <meta property="twitter:title" content="Game Day Grill: Burgers & More" />
+        <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
+    </head>
+
+    <body>
+      <header>
+        <div class="grow">
+            <a id="logoB" href="index.html">
+                <img src = "imgs/logos/game-day-grill-logo-simple2.png" class = "logo">
+            </a>
+            <p class="header-text">Game Day Grill</h1>
+
+        </div>
+        <div class="spaced-row">
+            <a href="order.html" class="button sm" >Order Now</a>
+            <a href="menu.html" class="button sm">Menu</a>
+            <a href="locations.html" class="button sm">Locations</a>
+            <a href="events.html" class="button sm">Special Events</a>
+        </div>
+    </header>
+        <main>
+            <h1 class = "centered-title">RESERVATIONS</h1>
+
+
+            <div class = "reservation-container">
+                <form action="reservation-success.html">
+
+                    <div class="elem-group">
+                    <label for="location">Location:</label>
+                    <select id="locaiton" name="location" required>
+                        <option value="">Choose a location:</option>
+                        <option value="Berkley">Berkley</option>
+                        <option value="Troy">Troy</option>
+                        <option value="Bloomfield Hills">Bloomfield Hills</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                    </select>
+                    </div>
+                    <div class="elem-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                    </div>
+                    <div class="elem-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="123-456-7890" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                    </div>
+                    <hr>
+                    <div class="elem-group inlined">
+                    <label for="adult">Party Size:</label>
+                    <input type="number" id="size" name="total_adults" placeholder="Party Size" min="1" required>
+                    </div>
+                    <div class="elem-group inlined">
+                    <label for="checkin-date">Day of Reservation:</label>
+                    <input type="date" id="checkin-date" name="checkin" required>
+                    </div>
+                    <div class="elem-group">
+                    <label for="res-time">Time of Reservation:</label>
+                    <select id="res-time" name="res-time" required>
+                        <option value="">Choose a time:</option>
+                        <option value="12:00PM">12:00PM</option>
+                        <option value="1:00PM">1:00PM</option>
+                        <option value="2:00PM">2:00PM</option>
+                        <option value="3:00PM">3:00PM</option>
+                        <option value="4:00PM">4:00PM</option>
+                        <option value="5:00PM">5:00PM</option>
+                        <option value="6:00PM">6:00PM</option>
+                        <option value="7:00PM">7:00PM</option>
+                        <option value="8:00PM">8:00PM</option>
+                        <option value="9:00PM">9:00PM</option>
+                        <option value="10:00PM">10:00PM</option>
+                        <option value="11:00PM">11:00PM</option>
+                    </select>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="visitor_message" placeholder="Accomodations and other special circumstances:"></textarea>
+                    </div>
+                    <button onclick = "submit()">MAKE RESERVATION</button>
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class = "reservation-grid">
+                <div class = "reservation-grid-inner">
+                    
+                     <span>Create a Reservation</span>
+                <div class="Reservation">
+                    <div class="people">
+                        <p>How Many People:&ensp;</p>
+                        <select name=SelectPeople">
+                            <option value="20">20</option>
+                            <option value="19">19</option>
+                            <option value="18">18</option>
+                            <option value="17">17</option>
+                            <option value="16">16</option>
+                            <option value="15">15</option>
+                            <option value="14">13</option>
+                            <option value="13">13</option>
+                            <option value="12">12</option>
+                            <option value="11">11</option>
+                            <option value="10">10</option>
+                            <option value="9">9</option>
+                            <option value="8">8</option>
+                            <option value="7">7</option>
+                            <option value="6">6</option>
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+
+                <div class="Time">
+                    <p>What Time:&ensp;</p>
+
+                    <select name=Time">
+                        <option value="12:00 AM">12:00 AM</option>
+                        <option value="11:30 PM">11:30 PM</option>
+                        <option value="11:00 PM">11:00 PM</option>
+                        <option value="10:30 PM">10:30 PM</option>
+                        <option value="10:00 PM">10:00 PM</option>
+                        <option value="9:30 PM">9:30 PM</option>
+                        <option value="9:00 PM">9:00 PM</option>
+                        <option value="8:30 PM">8:30 PM</option>
+                        <option value="8:00 PM">8:00 PM</option>
+                        <option value="7:30 PM">7:30 PM</option>
+                        <option value="7:00 PM">7:00 PM</option>
+                        <option value="6:30 PM">6:30 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="5:30 PM">5:30 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                        <option value="4:30 PM">4:30 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="3:30 PM">3:30 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="2:30 PM">2:30 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="1:30 PM">1:30 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="12:30 PM">12:30 PM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                    </select>
+                </div>
+                    <input type="text" id="EmailIN" name="EmailIN" placeholder="Please Add Your Email">
+                    <button onclick="Reserve()">Lock In Reservation</button>
+                        <script>
+                            function Reserve() {
+                                document.getElementById("submit").innerHTML = "Thank you for Reserving your spot, extra information was sent to your email!";
+                            }
+                        </script> 
+                </div>
+                <p id="submit"></p>
+                </div>
+                </div> -->
+                </main>
+                
+
+        </main>
+
+        
+    </body>
+
+    <footer class = "footer-grid">
+        <!-- <img src = "imgs/game-day-grill-logo-simple2.png" class = "footer-logo"> -->
+        <div class = "centered-title">
+        <h1>GAME DAY GRILL</h1>
+
+                <ul class = "inline centered">
+                    <li><img src = "imgs/social-media-logos/facebook.png"></li>
+                    <li><img src = "imgs/social-media-logos/instagram.png"></li>
+                    <li><img src = "imgs/social-media-logos/twitter.png"></li>
+                    <li><img src = "imgs/social-media-logos/github.png"></li>
+                </ul>
+                <ul class = "inline centered">
+                <strong>
+                    <li><a href = "order.html">ORDER NOW</a></li>
+                    <li> | </li>
+                    <li><a href = "menu.html">MENU</a></li>
+                    <li> | </li>
+                    <li><a href="Locations.html">LOCATIONS</a></li>
+                    <li> | </li>
+                    <li><a href="reservations.html">RESERVATIONS</a></li>
+                    <li> | </li>
+                    <li><a href = "events.html">SPECIAL EVENTS</a></li>
+                    <li> | </li>
+                    <li><a href = "sports.html">SPORTS CALENDARS</a></li>
+                
+                </ul>
+            <a href = "tel:2485550127" class = "contact">(248)-555-0127</a>
+            <br>
+            <a href = "https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" 
+            target="_blank" class = "contact">5055 Delemere Ave, Royal Oak, MI 48073</a></strong>
+
+        </div>
+        <div class = "centered-title">
+            <h1 class = "contact">CHAPTER INFORMATION: </h1>
+            <p class = "contact">Team Members: Sarah Phillips, Isaac Hatfield, Owen Murray, Tatyana Anissimov <br>
+            (Theme) <br>
+            Oakland Schools Technical Campus South East, Royal Oak, Michigan, 2023</p>
+            <a  class = "contact" href = "https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
+        </div>
+        </footer>
+</html>

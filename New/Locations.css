@@ -1,11 +1,129 @@
-::-webkit-scrollbar {
+ /* ::-webkit-scrollbar {
     display: none;
-  }
+  } */
   @font-face {
     font-family: sports_title;
     src: url(fonts/azn-unified.oblique.otf);
 }
-.wrapper{
+
+.button { transform: skewX(-20deg) translateX(-0.55em);}
+
+.location-grid {
+    display: grid;
+    grid-template-rows: repeat(1, 3fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 20vh;
+   }
+
+   .location-grid > div { 
+
+    /*353535*/
+    color: white;
+    font-size: 1.5em;
+    padding: 0em;
+    grid-column: span 1;
+    text-align: center;
+    
+   }
+.directions-btn { 
+    text-align: center; 
+    background-color: #c92a2a; 
+    border-radius: 0.75em 0 0.75em 0;
+    padding: 2%;
+    margin: 5%;
+    user-select: none;
+    font-size: 100%;
+    white-space: nowrap;
+    
+}
+
+.directions-btn:hover{
+    background-color: #ee8730;
+    /*#e1642d;*/
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.location-text 
+{
+    background-color: #171717;
+    border-radius: .5em;
+}
+
+.location-grid .directions-btn { color: white; text-decoration: none; }
+
+
+
+input[type='checkbox'] { display: none; } 
+.wrap-collabsible { margin: 5% 0; }
+ .lbl-toggle { display: block; 
+    font-weight: bold; 
+    font-family: bodytext; font-size: 1.2rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    padding: 1rem; 
+    color: white; 
+    background: var(--red); 
+    cursor: pointer; 
+    border-radius: 7px; 
+    transition: all 0.4s ease-out; 
+    width: 80%; 
+    margin: auto;
+    user-select: none;} 
+    
+.lbl-toggle:hover { color: #FFF; background-color: var(--orange);} 
+.lbl-toggle::before { content: ' '; 
+    display: inline-block;
+        border-top: 5px solid transparent; 
+        border-bottom: 5px solid transparent; 
+        border-left: 5px solid currentColor; 
+        vertical-align: middle; 
+        margin-right: .7rem; 
+        transform: translateY(-2px); 
+        transition: transform .2s ease-out; } 
+.toggle:checked+.lbl-toggle::before { transform: rotate(90deg) translateX(-3px); } 
+.collapsible-content { max-height: 0px; overflow: hidden; transition: max-height .25s ease-in-out; } 
+.toggle:checked + .lbl-toggle + .collapsible-content { max-height: 350px; }
+.toggle:checked+.lbl-toggle { border-bottom-right-radius: 0; border-bottom-left-radius: 0; } 
+.collapsible-content .content-inner { background: #353535; 
+    /* border-bottom: 1px solid rgba(0, 105, 255, .45);  */
+    border-bottom-left-radius: 7px; 
+    border-bottom-right-radius: 7px; 
+    padding: .5rem 1rem; 
+    width: 80%; margin: auto;
+    font-size: .5em; text-align: left;} 
+.collapsible-content p { margin-bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .wrapper{
     width: 100%;
     height: 100%;
     padding: 0;
@@ -37,7 +155,7 @@
 }
 
 #OLC2, #OLC3, #OLC4{
-    /* margin-left: .5em; */
+     margin-left: .5em; 
     margin-bottom: .5em;
 }
 
@@ -46,8 +164,8 @@
     margin-left: 1em;
     margin-right: 1em;
     height: 43em;
-    margin-top: 3em;
-    /* user-select: none; */
+    margin-top: 3ifrem;
+
 }
 
 .tabContainer .buttonContainer{
@@ -62,11 +180,11 @@
     width: 25%;
     height: 120%;
     float: left;
-    border-radius: 7px 7px 0 0 ;
+    border-radius: .5em .5em 0 0 ;
     border: none;
     outline:none;
     cursor: pointer;
-    padding: 10px;
+    padding: 0;
     font-family: bodytext, serif;
     font-size: 28px;
     background-color:rgba(102, 102, 102, 0.164);
@@ -86,26 +204,30 @@ background-color:rgba(255, 255, 255, 0.274);
     background-position: 24em 2em;
     color: white;
     text-align: center;
-    padding-top: 105px; 
+    padding-top: 5vh; 
     box-sizing: border-box;
     font-family: bodytext, serif;
-    font-size: 22px;
+    font-size: 2em;
     display: none;
     border-radius: 0px 0px 7px 7px;
 }
 
 iframe{
     border: 0;
-    position: absolute;
+    /* position: absolute;
     top: 11em;
-    left: 3em;
+    left: 3em; */
     display: flex;
-    width:25em;
-    height:25em;
-    border-radius: 1em 1em 0 0;
+    height:60vh;
+    width: 40vw;
+    border-radius: 1em;
+    text-align: center;
+    margin:auto;
+
+    /* 1em 1em 0 0 */
 }
-.Phone{
-    width: 15em;
+.phone{
+    /* width: 15em;
     height: auto;
     display: flex;
     position: relative;
@@ -113,7 +235,8 @@ iframe{
     top: -2em;
     font-size: 3em;
     text-align: left;
-    text-shadow: 2px 1px 2px black;
+    text-shadow: 2px 1px 2px black; */
+    color:#c92a2a
 }
 .LBodyText{
     width: 21em;
@@ -129,10 +252,11 @@ iframe{
 .Directions{
     text-decoration: none;
     display: flex;
-    width: 500px;
+    /* width: 500px;
     position: relative;
     top: 15em;
-    left: 1.52em;
+    left: 1.52em; */
+    width: 75vh;
     padding: 0.75em;
     color: #ffffff;
     background-color: #c92a2a;
@@ -227,4 +351,4 @@ button:hover{
     position: absolute;
     top: 90%;
     left: 58%;
-}
+} 
