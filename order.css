@@ -21,8 +21,40 @@
     scrollbar-width: none;
 }
 
+span {
+    color: #f8f9fa;
+}
+
+.secondary-text {
+    color: #dee2e6;
+}
+
+.sm-text {
+    font-size: 1em;
+}
+
+.md-text {
+    font-size: 1.5em;
+}
+
+.lg-text {
+    font-size: 2.5em;
+}
+
+.xl-text {
+    font-size: 4em;
+}
+
 .sm-padding {
     padding: 1em;
+}
+
+.ternary-bg {
+    background-color: #495057;
+}
+
+.sm-radius {
+    border-radius: 1em;
 }
 
 .arrow {
@@ -39,6 +71,10 @@
 
 .arrow-container {
     cursor: pointer;
+
+    background-color: #e03131;
+
+    padding: 1em;
 }
 
 
@@ -208,6 +244,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sidebar-footer {
+    border-top: 1px solid #adb5bd;
 }
 
 #sidebar-fluff {
