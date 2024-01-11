@@ -1,0 +1,66 @@
+@font-face { 
+    font-family: sports;
+    src: url("fonts/azn-unified.oblique.otf")
+}
+@font-face {
+    font-family: body;
+    src: url(fonts/forgotten-futurist.rg-regular.otf)
+}
+
+.sports-font { 
+    font-family: sports;
+    font-size: 2em;
+    align-self: auto;
+    color:white;
+}
+
+body {background-color: #242424;}
+body { 
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+  }
+
+.body-font{ font-family: body;}
+
+.caps { text-transform: uppercase;}
+
+.hero {
+    background-image: url(img/hero-darkened.webp);
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+}
+
+.hero .sports-font { font-size: 5em; 
+    -webkit-text-stroke-width: 3px; 
+    -webkit-text-stroke-color: black; }
+
+    .grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .grid-title { 
+        grid-column: span 2; 
+      }
+      .box {
+        color: white;
+        background: gold;
+        text-align: center;
+      }
