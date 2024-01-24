@@ -26,6 +26,14 @@ span, p, a {
     background-color: #fff;
 }
 
+.order-add-row {
+    display: flex;
+}
+
+.order-add-fill {
+    flex-grow: 1;
+}
+
 .right-button-row {
     display: flex;
     justify-content: right;
@@ -71,7 +79,7 @@ span, p, a {
     padding: 4em 6em 8em 6em;
 
     overflow-y: scroll;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
 }
 
 .slideshow {
