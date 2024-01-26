@@ -26,12 +26,28 @@ span, p, a {
     background-color: #fff;
 }
 
-.order-add-row {
+.item-add-row {
     display: flex;
 }
 
-.order-add-fill {
+.item-add-fill {
     flex-grow: 1;
+}
+
+select {
+    font-family: bodytext;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+select * {
+    background-color: #000;
 }
 
 .right-button-row {

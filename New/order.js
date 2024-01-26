@@ -12,7 +12,7 @@ const itemData = {
     "nachos": {"price": 7, "title": "Nachos", "additions": ["Cheese"]},
     "cheeseCurds": {"price": 6, "title": "Cheese Curds", "additions": []},
     "friedPickles": {"price": 5, "title": "Fried Pickles", "additions": ["Queso Dip"]},
-    "softPretzelBites": {"price": 6, "title": "Soft Pretzel Bites", "additions": ["Queso Dip"]},
+    "softPretzelBites": {"price": 6, "title": "Soft Pretzel Bites", "additions": ["Melted Cheese Dip"]},
     "classicCheeseburger": {"price": 14, "title": "Classic Cheeseburger", "additions": []},
     "mushroomSwissBurger": {"price": 15, "title": "Mushroom Swiss Burger", "additions": []},
     "bbqBurger": {"price": 16, "title": "BBQ Burger", "additions": []},
