@@ -178,14 +178,17 @@ select * {
 }
 
 .caption-category-row .caption-category {
-    width: calc(100% / 3 - (4em / 3));
-
     flex-shrink: 0;
 }
 
 .caption-category {
     display: flex;
     flex-direction: column;
+
+    width: calc(100% / 3 - (4em / 3));
+    min-width: 12em;
+
+    flex-grow: 1;
 
     background-color: #c92a2a;
 
@@ -286,6 +289,56 @@ select * {
     gap: 1em;
 }
 
+.flex-menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1em;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+
+    background-color: #353535;
+
+    padding: 0.75em;
+    font-size: 1.5em;
+
+    width: calc(50% - 0.5em);
+    min-width: 12em;
+
+    flex-grow: 1;
+
+    box-sizing: border-box;
+}
+
+.menu-item-subtitle {
+  color:#e03131;
+  font-size: 1.5em;
+  font-family: sports_title;
+}
+
+.menu-category-title-row {
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 1em;
+}
+
+.menu-category-title {
+    font-family: sports_title;
+
+    max-width: 75%;
+
+    padding: 1.5em 0 0.5em 0;
+
+    font-size: 4em;
+}
+
 .menu-grid {
     display: grid;
     grid-template-rows: repeat(3, 3fr);
@@ -311,13 +364,28 @@ select * {
     align-items: end;
   }
 
-  .menu-subtitle
-  {
-    color:#e03131;
-    font-size: 1.5em;
-    font-family: sports_title;
-  }
-
 .menu-grid > .grid-wide { grid-column: span 2; text-align: center; height: 50%;}
 
 #wings > div > div { grid-column: span 2;}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .order-sidebar {
+        display: none;
+    }
+
+    .ordering-menu {
+        padding: 1em;
+    }
+
+    .slideshow-arrow-container {
+        display: none;
+    }
+
+    /* .slideshow-dots {
+        display: none;
+    } */
+
+    .menu-category-title {
+        font-size: 2.5em;
+    }
+}

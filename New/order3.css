@@ -387,7 +387,7 @@ option {
     grid-column: span 1;
   }
 
-  .menu-subtitle
+  .menu-item-subtitle
   {
     color:#e03131;
     font-size: 1.5em;
