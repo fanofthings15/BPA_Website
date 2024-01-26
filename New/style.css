@@ -11,18 +11,41 @@
     font-family: Sports;
     src: url(fonts/supers-sports.combined.otf);
 }
+.font-sports{
+    font-family: Sports;
+}
 
 @font-face {
     font-family: sports_title;
     src: url(fonts/azn-unified.oblique.otf);
+}
+.font-sports-title{
+    font-family: sports_title;
 }
 
 @font-face {
     font-family: bodytext;
     src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
+.font-body{
+    font-family: bodytext;
+}
 
 html { scroll-behavior: smooth;}
+
+.title{
+    font-size: 2em;
+    color:white;
+}
+
+.caps
+{
+    text-transform: uppercase;
+}
+
+nav{margin: 0; background-color: red;}
+
+
 
 
 
@@ -50,6 +73,8 @@ html { scroll-behavior: smooth;}
   }
 
 
+
+
 body {
     width: 100vw;
 
@@ -59,7 +84,6 @@ body {
     /* background-color: #f8f9fa; */
     background-color: #242424;
 
-    /* font-family: 'Oswald', sans-serif; */
     font-family: bodytext, sans-serif;
 
     scrollbar-width: none;
@@ -128,7 +152,6 @@ body {
 .Cards .card p{
     position: relative;
     top: 1em;
-    font-family: bodytext;
     font-size: 4em;
     opacity: 100%;
     z-index: 5;
@@ -140,23 +163,6 @@ body {
     
 }
 
-.card#C1:hover{
-    /* background-image: url(imgs/Ipad.jpeg);
-    background-position: 100% 65%;
-    color: black; */
-}
-.card#C2:hover{
-    /* background-image: url(imgs/Burger.jpeg);
-    background-position: 25% 65%; */
-}
-.card#C3:hover{
-    /* background-image: url(imgs/Location.jpeg);
-    background-position: 25% 65%; */
-}
-.card#C4:hover{
-    /* background-image: url(imgs/People.jpeg);
-    background-position: 25% 65%; */
-}
 
 .centered { width: 80%; margin: auto; text-align: center;} 
 
@@ -249,6 +255,7 @@ header div {
 
     display: flex;
     align-items:center;
+
 }
 
 
@@ -290,7 +297,6 @@ font-family: sports_title;
 #logoB{padding: 0; background: none;border: none;}
 
 main {
-    padding-top: 6em;
     font-family: bodytext;
 }
 
@@ -336,71 +342,6 @@ p {
 
     /* transform: skewX(-20deg); */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer {
-    background-color: #c92a2a;
-    color: white;
-    margin: 0;
-}
-footer ul { list-style-type: none;}
-footer li {margin: .5em;}
-footer .footer-list { font-size: 2em; text-align: center;}
-
-.footer-logo { width: 15em; align-content: center;}
-
-
-#footer-grid {
-    display: grid;
-    grid-template-rows: repeat(3, 3fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.75em;
-    text-align: center;
-    
-     
-    
-  }
-
-  #footer-grid div { grid-column: span 2;}
-  #footer-grid > div {
-    color: white;
-    font-size: 1vw;
-    padding: 0em;
-    text-decoration: none;
-    grid-row: span 2;
-    margin: 1.5em 1em;
-    background-color: green;
-    
-  }
-.inline li {display: inline;}
-.inline img {height: 3em; display: flex; justify-content: space-evenly; flex-direction: row;} */
 
 
 

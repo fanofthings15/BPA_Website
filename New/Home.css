@@ -52,136 +52,43 @@
 
 .main-grid-inner-image > img{ object-fit: cover;}
 
+.hero
+{
+    background-image: url(imgs/main/hero-darkened.webp);
+    /* background-image: url(imgs/main/bacon-burger.jpg); */
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
 
-/*
-.EventStyle1{
-    border-radius: 1em;
-    background-color: #2e2e2e;
-    margin:4em 2em 2em 4em;
-    padding: 1em 2em;
-    width: calc(100% -4em);
-    height: 30em;
-    display: flex;
-    box-sizing: border-box;
-    gap: 2em;
-}
-.EventStyle1 img{
-    border-radius: 1em;
-    margin: 0;
-    width:auto;
-}
-.EventStyle1 .EventTextStyle1 p{
-    margin: 0;
-    font-size: 2.5em;
-    color: white;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-}
-.EventStyle1 .EventTextStyle1 p span{
-    color: #c92a2a;
-    font-size: 3em;
-    font-family: sports_title, bodytext, serif;
-}
-.EventStyle2{
-    border-radius: 1em;
-    background-color: #2e2e2e;
-    margin:4em 2em 2em 4em;
-    padding: 1em 3em;
-    width: calc(100% -4em);
-    height: 30em;
-    display: flex;
-    box-sizing: border-box;
-    gap: 2em;
-}
-.EventStyle2 img{
-    border-radius: 1em;
-    margin: 0 0  0 0;
-    width:auto;
-}
-.EventStyle2 .EventTextStyle2 p{
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    font-size: 2.5em;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.EventStyle2 .EventTextStyle2 p span{
-    color: #c92a2a;
-    font-size: 3em;
-    font-family: sports_title, bodytext, serif;
-}
-#Wings img{
-    transform: rotate(90deg);
-    border-radius: 1em;
-    margin: 0;
-    width:auto;
-    height: 27em;
-}
-#Mic img{
-    border-radius: 1em;
-    margin: 0;
-    width:auto;
-    height: 28em;
-}
-#Calbutton{
-    position: absolute;
-    left:25%;
-    top: 161%;
-    padding: 1em;
-    height: auto;
-    width: auto;
-    padding: 0.75em;
-    color: #f8f9fa;
-    background-color: #c92a2a;
-    border-radius: 0.75em 0 0.75em 0;
-    font-size: 2em;
-    transform: skewX(-20deg);
-    text-decoration: none;
 }
 
-.EButton{
-    width: 40%;
-    height: 5em;
-    background-color: #c92a2a;
-    margin:2em 30% 0 30%;
-    text-align: center;
-    height: auto;
-    width: auto;
-    padding: 0.75em;
-    background-color: #c92a2a;
-    border-radius: 0.75em 0 0.75em 0;
-    font-size: 2em;
-    transform: skewX(-20deg);
-    text-decoration: none;
-    
+.grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vw;
+  background-color: green;
+  margin: auto;
+  
 }
-.EButton a{
-    font-size: 1.75em;
-    text-align: center;
-    text-decoration: none;
-    color: white;   
+.grid-title { 
+  grid-column: span 2; 
 }
-.ReviewCon{
-    border-radius: 1em;
-    background-color: #2e2e2e;
-    margin:4em 2em 2em 4em;
-    padding: 1em 2em;
-    width: calc(100% -4em);
-    height: 20em;
-    display: flex;
-    box-sizing: border-box;
-    gap: 2em;
-    justify-content: space-evenly;
+.box {
+  color: white;
+  background: gold;
+  text-align: center;
+  margin:auto;
+  padding: 5px;
+  text-align: center;
+
 }
-.Review{
-width: 25%;
-height: auto;
-color: white;
-font-size: 1.5em;
-text-align: center;
-}
-.Review p{
-    margin: 3em 0 0 0;
-} */
+
+main{ padding: 0;}
