@@ -87,6 +87,13 @@ window.onload = () => {
 
             let additionsHTML = "";
 
+            const selector = document.getElementById(e.target.id + "Selector");
+            if (selector) {
+                const selected = selector.selectedOptions[0];
+
+                additionsHTML += `<span class="sm-text">- ${selected.innerText}</span>`;
+            }
+
             for (const addition of item.additions) {
                 additionsHTML += `<span class="sm-text">- ${addition}</span>`;
             }
