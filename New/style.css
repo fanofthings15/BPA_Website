@@ -31,7 +31,7 @@
     font-family: bodytext;
 }
 
-html { scroll-behavior: smooth;}
+html { scroll-behavior: smooth; background-color: #242424;}
 
 .title{
     font-size: 2em;
@@ -61,6 +61,14 @@ nav{margin: 0; background-color: red;}
     transition: background-color .2s;
 }
 
+.dropdown-item
+{
+    color: black;
+}
+.dropdown-item{
+    transition: background-color 2s; 
+}
+
 
 
 
@@ -72,6 +80,7 @@ nav{margin: 0; background-color: red;}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    
   }
   
   /* Track */
@@ -214,7 +223,7 @@ body {
     margin: auto;
     width: 100vw;
     font-size: .35em;
-    height: 40vh;
+    height: 50vh;
     
 }
 
