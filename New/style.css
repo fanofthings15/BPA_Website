@@ -45,6 +45,24 @@ html { scroll-behavior: smooth;}
 
 nav{margin: 0; background-color: red;}
 
+.nav-item {
+    font-size: 120%;
+    margin: 5px;
+    border-radius: 10px 0 10px 0;
+    background-color: #c92a2a;
+    transition: background-color .2s;
+    transform: skewX(-20deg) translateX(-0.55em);
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover{
+    background-color: #ee8730;
+    transition: background-color .2s;
+}
+
+
+
 
 
 
@@ -82,7 +100,6 @@ body {
     padding: 0;
 
     /* background-color: #f8f9fa; */
-    background-color: #242424;
 
     font-family: bodytext, sans-serif;
 
@@ -267,6 +284,7 @@ header div {
     font-family: sports_title; 
     color: white;
     white-space: nowrap;
+    
 }
 
 /*Inline lists for footer links*/
@@ -298,6 +316,7 @@ font-family: sports_title;
 
 main {
     font-family: bodytext;
+    background-color: #242424;
 }
 
 
