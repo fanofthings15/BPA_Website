@@ -326,15 +326,13 @@ select * {
 
     align-items: center;
 
-    padding: 0 1em;
+    padding: 6em 0 2em 0;
 }
 
 .menu-category-title {
     font-family: sports_title;
 
     max-width: 75%;
-
-    padding: 1.5em 0 0.5em 0;
 
     font-size: 4em;
 }
@@ -367,6 +365,12 @@ select * {
 .menu-grid > .grid-wide { grid-column: span 2; text-align: center; height: 50%;}
 
 #wings > div > div { grid-column: span 2;}
+
+.back-to-top {
+    height: 4em;
+
+    cursor: pointer;
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .order-sidebar {
