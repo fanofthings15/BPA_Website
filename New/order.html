@@ -35,21 +35,26 @@
     </head>
 
     <body>
-      <header>
-        <div class="grow">
-            <a id="logoB" href="index.html">
-                <img src = "imgs\logos\game-day-grill.ico" alt = "Game Day Grill Logo" class = "logo">
-            </a>
-            <p class="header-text">Game Day Grill</h1>
-        </div>
-        <div class="navbar-buttons spaced-row">
-            <a href="order.html" class="button sm" >Order Now</a>
-            <a href="menu.html" class="button sm">Menu</a>
-            <a href="locations.html" class="button sm">Locations</a>
-            <a href="events.html" class="button sm">Special Events</a>
-        </div>
-		<img class="hamburger-menu" src="imgs/hamburger.webp">
-    </header>
+		<div class="modal-container">
+			<div class="login-modal">
+
+			</div>
+		</div>
+      	<header>
+			<div class="grow">
+				<a id="logoB" href="index.html">
+					<img src = "imgs\logos\game-day-grill.ico" alt = "Game Day Grill Logo" class = "logo">
+				</a>
+				<p class="header-text">Game Day Grill</h1>
+			</div>
+			<div class="navbar-buttons spaced-row">
+				<a href="order.html" class="button sm" >Order Now</a>
+				<a href="menu.html" class="button sm">Menu</a>
+				<a href="locations.html" class="button sm">Locations</a>
+				<a href="events.html" class="button sm">Special Events</a>
+			</div>
+			<img class="hamburger-menu" src="imgs/hamburger.webp">
+    	</header>
         <main>
             <div class="ordering-container">
                 <div class="ordering-menu">
@@ -181,7 +186,11 @@
 	
 					<!-- burgers -->
 					<div id = "burgers">
-						<h1 class = "centered-title xl-text"><br>BURGERS</h1>
+						<div class="menu-category-title-row spaced-row">
+							<span class="menu-category-title xl-text">BURGERS</span>
+							<div class="grow"></div>
+							<img class="back-to-top" src="imgs/backtotop.webp">
+						</div>
 						<div class="flex-menu-grid">
 							<div class="menu-item">
 								<span class = "menu-item-subtitle">CLASSIC CHEESEBURGER - 14</span>
@@ -250,7 +259,11 @@
 
 						<!-- entrees -->
 					<div id = "entrees">
-						<h1 class = "centered-title xl-text"><br>ENTREES</h1>
+						<div class="menu-category-title-row spaced-row">
+							<span class="menu-category-title xl-text">ENTREES</span>
+							<div class="grow"></div>
+							<img class="back-to-top" src="imgs/backtotop.webp">
+						</div>
 						<div class="flex-menu-grid">
 							<div class="menu-item">
 								<span class = "menu-item-subtitle">KABOBS - 11</span>
@@ -289,9 +302,15 @@
 							</div>
 							<div class="menu-item">
 								<span class ="menu-item-subtitle">FRIED CHICKEN - 14</span>
-								<p>Crispy breaded dark and white meat chicken.</p>
+								<p>Crispy breaded dark and white meat chicken, served with one of our signature sauces.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
+									<select id="friedChickenSelector">
+										<option selected>Ranch</option>
+										<option>BBQ Sauce</option>
+										<option>Buffalo Sauce</option>
+										<option>Soy Sauce</option>
+									</select>
 									<div class="item-add-fill"></div>
 									<span class="symbol item-add" id="friedChicken">+</span>
 								</div>
@@ -321,11 +340,15 @@
 
 						<!-- wings -->
 					<div id = "wings">
-						<h1 class = "centered-title xl-text"><br>wings - 6 per 8pc</h1>
-						<h1 class ="centered-subtitle">Sauce options: BBQ, Honey BBQ, Buffalo, Garlic Parmesan, Lemon Pepper, or Teriyaki</h1>
+						<div class="menu-category-title-row spaced-row">
+							<span class="menu-category-title xl-text">WINGS</span>
+							<div class="grow"></div>
+							<img class="back-to-top" src="imgs/backtotop.webp">
+						</div>
+						
 						<div class="flex-menu-grid">
 							<div class="menu-item">
-								<span class = "menu-item-subtitle">BONE-IN WINGS</span>
+								<span class = "menu-item-subtitle">8PC BONE-IN WINGS - 6</span>
 								<p>These freshly grilled bone-in wings are a Game Day Grill classic.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
@@ -343,7 +366,7 @@
 								</div>
 							</div>
 							<div class="menu-item">
-								<span class ="menu-item-subtitle">BONELESS WINGS</span>
+								<span class ="menu-item-subtitle">8PC BONELESS WINGS - 6</span>
 								<p>All of the flavor, none of the bones. 
 								</p>
 								<div class="grow"></div>
@@ -362,7 +385,7 @@
 								</div>
 							</div>
 							<div class="menu-item">
-								<span class ="menu-item-subtitle">CRISPY WINGS</span>
+								<span class ="menu-item-subtitle">8PC CRISPY WINGS - 6</span>
 								<p>Breaded and fried chicken wings.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
@@ -384,7 +407,11 @@
 
 						<!-- drinks -->
 					<div id = "drinks">
-						<h1 class = "centered-title xl-text"><br>DRINKS</h1>
+						<div class="menu-category-title-row spaced-row">
+							<span class="menu-category-title xl-text">DRINKS</span>
+							<div class="grow"></div>
+							<img class="back-to-top" src="imgs/backtotop.webp">
+						</div>
 						<div class="flex-menu-grid">
 							<div class="menu-item">
 								<span class = "menu-item-subtitle">ARNOLD PALMER - 2</span>
@@ -449,7 +476,11 @@
 					</div>
 
 					<div id = "desserts">
-						<h1 class = "centered-title xl-text"><br>DESSERTS</h1>
+						<div class="menu-category-title-row spaced-row">
+							<span class="menu-category-title xl-text">DESSERTS</span>
+							<div class="grow"></div>
+							<img class="back-to-top" src="imgs/backtotop.webp">
+						</div>
 						<div class="flex-menu-grid">
 							<div class="menu-item">
 								<span class = "menu-item-subtitle">ICE CREAM - 5</span>
