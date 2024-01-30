@@ -400,7 +400,7 @@ select * {
     padding: 1em;
 }
 
-.sidebar-opener {
+#sidebar-opener {
     width: 100%;
     
     padding: 1em;
@@ -431,6 +431,8 @@ select * {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .order-sidebar {
         display: none;
+
+        width: 100%;
     }
 
     .ordering-menu {
@@ -449,7 +451,7 @@ select * {
         font-size: 2.5em;
     }
 
-    .sidebar-opener {
+    #sidebar-opener {
         display: flex;
     }
 }

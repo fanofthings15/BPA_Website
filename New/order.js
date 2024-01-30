@@ -52,6 +52,10 @@ document.addEventListener("click", (e) => {
     //     orderingMenu.scrollTop = 0;
     // }
 
+    if (e.target.classList.contains("sidebar-opener")) {
+
+    }
+
     // item remove code
     if (!e.target.classList.contains("item-remove")) {
         return;
@@ -73,9 +77,31 @@ document.addEventListener("click", (e) => {
 window.onload = () => {
     const totalPriceElement = document.getElementById("total-price");
     const orderListElement = document.getElementById("order-list");
+    
+    const orderingMenu = document.getElementsByClassName(
+        "ordering-menu"
+    )[0];
 
-    orderSlideshowDots = document.getElementById("order-slideshow-dots").children;
-    orderSlideshowImgs = document.getElementById("order-slideshow-imgs").children;
+    const orderSidebar = document.getElementsByClassName(
+        "order-sidebar"
+    )[0];
+
+    const sidebarOpener = document.getElementById("sidebar-opener");
+
+    sidebarOpener.addEventListener("click", (e) => {
+        sidebarOpener.style.display = "none";
+
+        orderingMenu.style.display = "none";
+        orderSidebar.style.display = "flex";
+    });
+
+    orderSlideshowDots = document
+        .getElementById("order-slideshow-dots")
+        .children;
+
+    orderSlideshowImgs = document
+        .getElementById("order-slideshow-imgs")
+        .children;
 
     const leftArrow = document.getElementById("order-slideshow-left-arrow");
     const rightArrow = document.getElementById("order-slideshow-right-arrow");
