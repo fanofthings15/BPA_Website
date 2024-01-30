@@ -131,7 +131,7 @@ main{ padding: 0;}
 
 /* nb = non bootstrap */
 /* bc bootstrap has row and column classes */
-.nb-row { 
+.review-row { 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -139,9 +139,12 @@ main{ padding: 0;}
   width: 100%;
   margin: auto;
   color: white;
+
+  gap: 1em;
+  padding-bottom: 1em;
 }
 
-.nb-column {
+.review-column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -149,8 +152,6 @@ main{ padding: 0;}
   background-color: #353535;
   text-align: center;
   justify-content: center;
-  gap: 3px;
-  margin: 2px;
 }
 
 .stars 
