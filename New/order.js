@@ -43,6 +43,33 @@ const itemData = {
 
 const orderList = {};
 
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("back-to-top")) {
+        const orderingMenu = document.getElementsByClassName(
+            "ordering-menu"
+        )[0];
+
+        orderingMenu.scrollTop = 0;
+    }
+
+    // item remove code
+    if (!e.target.classList.contains("item-remove")) {
+        return;
+    }
+
+    const itemId = e.target.id;
+
+    document.getElementById(`item-${itemId}`).remove();
+
+    const price = itemData[orderList[itemId]].price;
+
+    totalPrice -= price;
+
+    totalPriceElement.innerText = `$${totalPrice}`;
+
+    delete orderList[itemId];
+});
+
 window.onload = () => {
     const totalPriceElement = document.getElementById("total-price");
     const orderListElement = document.getElementById("order-list");
@@ -121,33 +148,6 @@ window.onload = () => {
             orderList[itemId] = Object.keys(itemData)[Object.values(itemData).indexOf(item)];
         });
     }
-
-    document.addEventListener("click", (e) => {
-        if (e.target.classList.contains("back-to-top")) {
-            const orderingMenu = document.getElementsByClassName(
-                "ordering-menu"
-            )[0];
-
-            orderingMenu.scrollTop = 0;
-        }
-
-        // item remove code
-        if (!e.target.classList.contains("item-remove")) {
-            return;
-        }
-
-        const itemId = e.target.id;
-
-        document.getElementById(`item-${itemId}`).remove();
-
-        const price = itemData[orderList[itemId]].price;
-
-        totalPrice -= price;
-
-        totalPriceElement.innerText = `$${totalPrice}`;
-
-        delete orderList[itemId];
-    });
 
     document.getElementById("checkout-button").addEventListener("click", (e) => {
         localStorage.orderList = orderList;
