@@ -44,13 +44,13 @@ const itemData = {
 const orderList = {};
 
 document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("back-to-top")) {
-        const orderingMenu = document.getElementsByClassName(
-            "ordering-menu"
-        )[0];
+    // if (e.target.classList.contains("back-to-top")) {
+    //     const orderingMenu = document.getElementsByClassName(
+    //         "ordering-menu"
+    //     )[0];
 
-        orderingMenu.scrollTop = 0;
-    }
+    //     orderingMenu.scrollTop = 0;
+    // }
 
     // item remove code
     if (!e.target.classList.contains("item-remove")) {
