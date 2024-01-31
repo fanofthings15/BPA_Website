@@ -4,7 +4,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
-
+    
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="locations.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
@@ -16,12 +16,12 @@
       
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
-
-
+    
+    
         <title>Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
         <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
-
+    
          <!-- logo icon -->
          <link rel="icon" href="imgs/logos/game-day-grill.ico" type="image/x-icon"/>
         
@@ -39,273 +39,117 @@
         <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
         <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
     </head>
-    
     <body>
-        <header>
-            <!-- <div class="grow">
-                <a id="logoB" href="index.html">
-                    <img src = "imgs/logos/game-day-grill-logo-simple2.png" class = "logo">
+        <nav class="navbar navbar-expand-lg navbar-dark" style = "background-color: #242424;">
+            <div class="container-fluid">
+      
+              <a class="navbar-brand" href="index.html">
+                  <img src="imgs/logos/game-day-grill-logo-simple2.png" width="80" height="80" class="d-inline-block" alt="game day grill logo">
                 </a>
-                <p class="header-text">Game Day Grill</h1>
-            </div>
-            <div class="spaced-row">
-                <a href="order.html" class="button sm" >Order Now</a>
-                <a href="menu.html" class="button sm">Menu</a>
-                <a href="locations.html" class="button sm">Locations</a>
-                <a href="events.html" class="button sm">Special Events</a>
-            </div> -->
-
-
-            <nav class="navbar navbar-expand-lg navbar-dark" style = "background-color: #242424;">
-                <div class="container-fluid">
-          
-                  <a class="navbar-brand" href="#">
-                      <img src="imgs/logos/game-day-grill-logo-simple2.png" width="80" height="80" class="d-inline-block" alt="game day grill logo">
+                <span class = "font-sports-title title">Game Day Grill</span>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-body caps">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">ORDER NOW</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">MENU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="locations.html">LOCATIONS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">EVENTS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      LOCATIONS
                     </a>
-                    <span class = "font-sports-title title">Game Day Grill</span>
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-body caps">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">ORDER NOW</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">MENU</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="locations.html">LOCATIONS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">EVENTS</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          LOCATIONS
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">ROYAL OAK</a></li>
-                          <li><a class="dropdown-item" href="#">BERKLEY</a></li>
-                          <li><a class="dropdown-item" href="#">TROY</a></li>
-                          <li><a class="dropdown-item" href="#">BLOOMFIELD HILLS</a></li>
-                          <li><hr class="dropdown-divider" /></li>
-                          <li>
-                            <a class="dropdown-item" href="#">SEE ALL LOCATIONS</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">ROYAL OAK</a></li>
+                      <li><a class="dropdown-item" href="#">BERKLEY</a></li>
+                      <li><a class="dropdown-item" href="#">TROY</a></li>
+                      <li><a class="dropdown-item" href="#">BLOOMFIELD HILLS</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">SEE ALL LOCATIONS</a>
                       </li>
                     </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
-    <!--<main>
-        <div class="tabContainer">
-            <div class="buttonContainer">
-                <button onclick="showPanel(0,'#c92a2a')">Berkley</button>
-                <button onclick="showPanel(1,'#c92a2a')">Troy</button>
-                <button onclick="showPanel(2,'#c92a2a')">Bloomfield Hills</button>
-                <button onclick="showPanel(3,'#c92a2a')">Royal Oak</button>
-            </div>
-
-            <div class = "tabPanel" id = "berkley">
-                <div class = "location-grid">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2941.8129490401793!2d-83.18296642345565!3d42.49552912653156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c8a4ad8ff7ed%3A0xa50c773ebf6a1d39!2s2325%20Catalpa%20Dr%2C%20Berkley%2C%20MI%2048072!5e0!3m2!1sen!2sus!4v1701651560378!5m2!1sen!2sus">
-                            
-                        </iframe>
-                        
-                        <a class = "directions-btn" href = "https://www.google.com/maps/dir//Berkley+High+School,+Catalpa+Drive,+Berkley,+MI/@42.4955477,-83.1806714,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8824c8a4af0d7fe3:0x217632d62108336!2m2!1d-83.1806765!2d42.49567?entry=ttu" target="_blank">
-                            DIRECTIONS
-                        </a>
-                    </div>
-                    <div class = "location-text">
-                        <p><a href = "tel:2485550127" class = "phone">(248)-555-0127</a></p>
-                        <p>2325 Catalpa Dr, Berkley, MI 48072</p>
-                        
-                        <a href = "reservations.html" class = "directions-btn button">MAKE A RESERVATION</a>
-
-                        <div class="wrap-collabsible"> 
-                            <input id="collapsible" class="toggle" type="checkbox"> 
-                            <label for="collapsible" class="lbl-toggle">Accessibility Information</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul>
-                                        <li>Wheelchair accessible</li>
-                                        <li>Braille and audio menus available</li>
-                                        <li>Service animals are welcome</li>
-                                        <li>Booster seats available</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "tabPanel" id = "troy">
-                <div class = "location-grid">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.760527145242!2d-83.11351952348829!3d42.58160512107561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c3632d726293%3A0x65d3677a1eecaaee!2s4333%20John%20R%20Rd%2C%20Troy%2C%20MI%2048085!5e0!3m2!1sen!2sus!4v1700492383885!5m2!1sen!2sus">
-                           
-                        </iframe>
-                        
-                        <a class = "directions-btn" href = "https://maps.google.com/maps/dir//4333+John+R+Rd+Troy,+MI+48085/@42.5816012,-83.1109446,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c3632d726293:0x65d3677a1eecaaee" target="_blank">
-                            DIRECTIONS
-                        </a>
-                    </div>
-                    <div class = "location-text">
-                        <p><a href = "tel:2485550127" class = "phone">(248)-555-0127</a></p>
-                        <p>4333 John R Rd, Troy, MI 48085</p>
-                        
-                        <a href = "reservations.html" class = "directions-btn button">MAKE A RESERVATION</a>
-
-                        <div class="wrap-collabsible"> 
-                            <input id="collapsible" class="toggle" type="checkbox"> 
-                            <label for="collapsible" class="lbl-toggle">Accessibility Information</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul>
-                                        <li>Wheelchair accessible</li>
-                                        <li>Braille and audio menus available</li>
-                                        <li>Service animals are welcome</li>
-                                        <li>Booster seats available</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "tabPanel" id = "bloomfield hills">
-                <div class = "location-grid">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.8892928908776!2d-83.28809872348842!3d42.578872221249014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824bf4ab369c9a9%3A0x5f250e0b95b8ed19!2s4200%20Andover%20Rd%2C%20Bloomfield%20Hills%2C%20MI%2048302!5e0!3m2!1sen!2sus!4v1700492490991!5m2!1sen!2sus">
-                           
-                        </iframe>
-                    
-                        <a class = "directions-btn" href = "https://maps.google.com/maps/dir//4200+Andover+Rd+Bloomfield+Hills,+MI+48302/@42.5788683,-83.2855238,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824bf4ab369c9a9:0x5f250e0b95b8ed19" target="_blank">
-                            DIRECTIONS
-                        </a>
-                    </div>
-                    <div class = "location-text">
-                        <p><a href = "tel:2485550127" class = "phone">(248)-555-0127</a></p>
-                        <p>4200 Andover Rd, Bloomfield Hills, MI 48302</p>
-                        
-                        <a href = "reservations.html" class = "directions-btn button">MAKE A RESERVATION</a>
-
-                        <div class="wrap-collabsible"> 
-                        <input id="collapsible" class="toggle" type="checkbox"> 
-                        <label for="collapsible" class="lbl-toggle">Accessibility Information</label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <ul>
-                                    <li>Wheelchair accessible</li>
-                                    <li>Braille and audio menus available</li>
-                                    <li>Service animals are welcome</li>
-                                    <li>Booster seats available</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>-->
-
-
-
-
-            <!--ROYAL OAK
-            <div class = "tabPanel" id = "royal oak">
-                <div class = "location-grid">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.8673172635117!2d-83.18304038857188!3d42.536873160507355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c66430e197a7%3A0xdcb1d3339efff00c!2s5055%20Delemere%20Ave%2C%20Royal%20Oak%2C%20MI%2048073!5e0!3m2!1sen!2sus!4v1700234221856!5m2!1sen!2sus">
-                        </iframe>
-
-                        <a class = "directions-btn" href = "https://www.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">
-                            DIRECTIONS
-                        </a>
-                    </div>
-                    <div class = "location-text">
-                        <p><a href = "tel:2485550127" class = "phone">(248)-555-0127</a></p>
-                        <p>5055 Delemere Ave, Royal Oak, MI 48073</p>
-                        
-                        <a href = "reservations.html" class = "directions-btn button">MAKE A RESERVATION</a>
-
-                        <div class="wrap-collabsible"> 
-                        <input id="collapsible" class="toggle" type="checkbox"> 
-                        <label for="collapsible" class="lbl-toggle">Accessibility Information</label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <ul>
-                                    <li>Wheelchair accessible</li>
-                                    <li>Braille and audio menus available</li>
-                                    <li>Service animals are welcome</li>
-                                    <li>Booster seats available</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-    </main>-->
-    <footer class = "footer-grid">
-        <div class = "centered-title">
-        <h1>GAME DAY GRILL</h1>
-
-                <ul class = "inline centered">
-                    <li><img src = "imgs/social-media-logos/facebook.png"></li>
-                    <li><img src = "imgs/social-media-logos/instagram.png"></li>
-                    <li><img src = "imgs/social-media-logos/twitter.png"></li>
-                    <li><img src = "imgs/social-media-logos/github.png"></li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
                 </ul>
-                <ul class = "inline centered">
-                <strong>
-                    <li><a href = "order.html">ORDER NOW</a></li>
-                    <li> | </li>
-                    <li><a href = "menu.html">MENU</a></li>
-                    <li> | </li>
-                    <li><a href="Locations.html">LOCATIONS</a></li>
-                    <li> | </li>
-                    <li><a href="reservations.html">RESERVATIONS</a></li>
-                    <li> | </li>
-                    <li><a href = "events.html">SPECIAL EVENTS</a></li>
-                    <li> | </li>
-                    <li><a href = "sports.html">SPORTS CALENDARS</a></li>
+              </div>
+            </div>
+          </nav>
+
+          <main>
+            <div class = "loc-row">
+              <div class = "loc-column">
+                <div class = "location">
+
+                <h1>BERKLEY</h1>
                 
-                </ul>
-            <a href = "tel:2485550127" class = "contact">(248)-555-0127</a>
-            <br>
-            <a href = "https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" 
-            target="_blank" class = "contact">5055 Delemere Ave, Royal Oak, MI 48073</a></strong>
+                  <p>2325 Catalpa Dr, Berkley, MI 48072 | <a href = "tel:2485550127" class = "phone">(248)-555-0127</a> </p>
+                  
+                  <a class = "button" href = "https://www.google.com/maps/dir//Berkley+High+School,+Catalpa+Drive,+Berkley,+MI/@42.4955477,-83.1806714,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8824c8a4af0d7fe3:0x217632d62108336!2m2!1d-83.1806765!2d42.49567?entry=ttu" target="_blank">
+                    DIRECTIONS
+                  </a>
+                </div>
 
-        </div>
-        <div class = "centered-title">
-            <h1 class = "contact">CHAPTER INFORMATION: </h1>
-            <p class = "contact">Team Members: Sarah Phillips, Isaac Hatfield, Owen Murray, Tatyana Anissimov <br>
-            Theme: Sieze the Opportunity<br>
-            Oakland Schools Technical Campus South East, Royal Oak, Michigan, 2023</p>
-            <a  class = "contact" href = "https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
-        </div>
-        </footer>
-    <script src="Tabs.js"></script>
-</body>
+                <div class = "location">
+                  <h1>TROY</h1>
+                  
+                  <p>4333 John R Rd, Troy, MI 48085 | <a href = "tel:2485550128" class = "phone">(248)-555-0128</a> </p>
+                  <a  class = "button" href = "https://maps.google.com/maps/dir//4333+John+R+Rd+Troy,+MI+48085/@42.5816012,-83.1109446,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c3632d726293:0x65d3677a1eecaaee" target="_blank">
+                    DIRECTIONS</a>
+              </div>
+
+                <div class = "location">
+                  <h1>ROYAL OAK</h1>
+                  
+                  <p>5055 Delemere Ave, Royal Oak, MI 48073 | <a href = "tel:2485550129" class = "phone">(248)-555-0129</a> </p>
+                  <a class = "button" href = "https://www.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">
+                    DIRECTIONS
+                </a></div>
+
+                <div class = "location">
+                  <h1>BLOOMFIELD HILLS</h1>
+                  
+                  <p>4200 Andover Rd, Bloomfield Hills, MI 48302 | <a href = "tel:2485550130" class = "phone">(248)-555-0130</a> </p>
+                  <a class = "button" href = "https://maps.google.com/maps/dir//4200+Andover+Rd+Bloomfield+Hills,+MI+48302/@42.5788683,-83.2855238,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824bf4ab369c9a9:0x5f250e0b95b8ed19" target="_blank">
+                    DIRECTIONS
+                  </a>
+                </div>
+              </div>
+
+
+                <div class = "loc-column">
+                  <iframe class = "map" src="https://www.google.com/maps/d/u/2/embed?mid=1hdkZUUo-848_BuB1tFlsMcbVCaV9d1w&ehbc=2E312F&noprof=1"></iframe>
+                 </div>
+                
+              </div>
+              
+            </div>
+          </main>
+
+    </body>
 </html>

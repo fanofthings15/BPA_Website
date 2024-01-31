@@ -54,6 +54,7 @@ nav{margin: 0; background-color: red;}
     transform: skewX(-20deg) translateX(-0.55em);
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 
 .nav-item:hover{
@@ -61,13 +62,26 @@ nav{margin: 0; background-color: red;}
     transition: background-color .2s;
 }
 
+.dropdown-menu
+{
+    transform: skew(20deg) translateX(.75em);
+}
+
 .dropdown-item
 {
-    color: black;
+    color: black; 
 }
-.dropdown-item{
-    transition: background-color 2s; 
+.dropdown-item:hover{
+    transition: background-color 2s;
+    background-color: #ee8730; 
+    color:blue;
 }
+
+@media screen and (max-width: 430px) {
+  .title{
+    display:none;
+  }
+  }
 
 
 
@@ -121,7 +135,7 @@ body {
 .button {
     padding: 0.75em;
 
-    color: #f8f9fa;
+    color: white;
     background-color: #c92a2a;
 
     border-radius: 0.75em 0 0.75em 0;
@@ -151,8 +165,8 @@ body {
 
     border: 0;
 
-    transform: scale(1.05) skewX(-20deg) translateX(-0.55em);
-    transition: 0.4s;
+    
+    transition: background-color 0.4s;
 }
 
 .centered { width: 80%; margin: auto; text-align: center;} 
