@@ -13,12 +13,12 @@
 }
 
 @font-face {
-    font-family: sports_title;
+    font-family: font_sports_title;
     src: url(fonts/azn-unified.oblique.otf);
 }
 
 @font-face {
-    font-family: bodytext;
+    font-family: font_body;
     src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
 
@@ -60,8 +60,7 @@ body {
     /* background-color: #f8f9fa; */
     background-color: #242424;
 
-    /* font-family: 'Oswald', sans-serif; */
-    font-family: bodytext, sans-serif;
+    font-family: font_body, sans-serif;
 
     scrollbar-width: none;
     overflow-x: hidden;
@@ -162,7 +161,7 @@ body {
 .centered { width: 80%; margin: auto; text-align: center;} 
 
 .centered-title {
-    font-family: sports_title; 
+    font-family: font_sports_title; 
     color: white;
     margin: auto;
     width: 80%;
@@ -258,7 +257,7 @@ header div {
     padding: 0;
     margin: 0.25em;
     font-size: 3em;
-    font-family: sports_title; 
+    font-family: font_sports_title; 
     color: white;
     white-space: nowrap;
 }
@@ -271,7 +270,7 @@ header div {
 
 .lg {
     font-size: 4em;
-font-family: sports_title;
+font-family: font_sports_title;
 }
 
 
@@ -292,7 +291,7 @@ font-family: sports_title;
 
 main {
     padding-top: 6em;
-    font-family: bodytext;
+    font-family: font_body;
 }
 
 
@@ -337,6 +336,8 @@ p {
 
     /* transform: skewX(-20deg); */
 }
+
+nav { margin: 0;}
 
 
 
