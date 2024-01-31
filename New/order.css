@@ -5,6 +5,14 @@ span, p, a {
     margin: 0; */
 }
 
+hr {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
 .symbol {
     font-size: 2em;
 
@@ -323,6 +331,14 @@ select * {
     box-sizing: border-box;
 }
 
+.item-add {
+    cursor: pointer;
+
+    flex-shrink: 0;
+
+    align-self: center;
+}
+
 .menu-item-subtitle {
   color:#e03131;
   font-size: 1.5em;
@@ -380,7 +396,7 @@ select * {
     cursor: pointer;
 }
 
-.modal-container {
+#modal-container {
     display: none;
 
     width: 100%;
@@ -393,11 +409,82 @@ select * {
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.order-modal {
+#order-modal {
+    display: none;
+
+    width: 20em;
+
     padding: 1em;
+
+    background-color: #f8f9fa;
+
+    border-radius: 1em;
+
+    flex-direction: column;
+    gap: 1em;
+}
+
+#order-modal * {
+    color: #212529;
+}
+
+.order-modal-header {
+    display: flex;
+
+    gap: 1em;
+}
+
+#receipt-item-area {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
+
+.receipt-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+}
+
+.switcher-row {
+    display: flex;
+
+    width: 100%;
+
+    background-color: #ced4da;
+
+    border-radius: 9999px;
+
+    user-select: none;
+}
+
+.switcher-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em;
+
+    flex-grow: 1;
+
+    border-radius: 9999px;
+}
+
+.selected-switcher-option {
+    background-color: #c92a2a;
+}
+
+.selected-switcher-option * {
+    color: #f8f9fa !important;
+}
+
+.switcher-option * {
+    display: flex;
 }
 
 #sidebar-opener {
@@ -425,6 +512,8 @@ select * {
 
 .md-symbol {
     width: 2em;
+
+    align-self: center;
 }
 
 .lg-symbol {

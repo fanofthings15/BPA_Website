@@ -35,9 +35,29 @@
     </head>
 
     <body>
-		<div class="modal-container">
-			<div class="login-modal">
-
+		<div id="modal-container">
+			<div id="order-modal">
+				<div class="order-modal-header">
+					<span class="lg-text">Checkout</span>
+					<div class="grow"></div>
+					<img src="imgs/x-black.webp" class="lg-symbol">
+				</div>
+				<hr>
+				<div id="receipt-item-area"></div>
+				<hr>
+				<div class="switcher-row">
+					<div class="switcher-option selected-switcher-option">
+						<span class="md-text">Pickup</span>
+					</div>
+					<div class="switcher-option">
+						<span class="md-text">Delivery</span>
+					</div>
+				</div>
+				<div class="spaced-row">
+					<div class="grow"></div>
+					<span class="sm-text" id="checkout-subtotal">Subtotal: $0.00</span>
+					<span class="sm-text" id="checkout-tax"></span>
+				</div>
 			</div>
 		</div>
       	<header>
@@ -139,7 +159,7 @@
 										<option>Teriyaki</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="wingsBonein">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="wingsBonein">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -153,7 +173,7 @@
 										<option>Ground Beef</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="nachos">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="nachos">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -162,7 +182,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="cheeseCurds">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="cheeseCurds">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -171,7 +191,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="friedPickles">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="friedPickles">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -180,7 +200,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="softPretzelBites">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="softPretzelBites">
 								</div>
 							</div>
 						</div>
@@ -202,7 +222,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="classicCheeseburger">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="classicCheeseburger">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -211,7 +231,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="mushroomSwissBurger">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="mushroomSwissBurger">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -220,7 +240,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="bbqBurger">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="bbqBurger">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -237,7 +257,7 @@
 										<option>Variety</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="sliders">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="sliders">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -246,7 +266,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="californiaBurger">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="californiaBurger">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -255,7 +275,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="veggieBurger">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="veggieBurger">
 								</div>
 							</div>
 						</div>
@@ -278,7 +298,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="kabobs">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="kabobs">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -293,7 +313,7 @@
 										<option>Coney Dog</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="hotDogs">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="hotDogs">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -303,7 +323,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="porkChops">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="porkChops">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -318,7 +338,7 @@
 										<option>Soy Sauce</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="friedChicken">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="friedChicken">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -329,7 +349,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="tacos">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="tacos">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -338,7 +358,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="fishAndChips">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="fishAndChips">
 								</div>
 							</div>
 						</div>
@@ -370,7 +390,7 @@
 										<option>Teriyaki</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="wingsBonein">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="wingsBonein">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -389,7 +409,7 @@
 										<option>Teriyaki</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="wingsBoneless">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="wingsBoneless">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -407,7 +427,7 @@
 										<option>Teriyaki</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="wingsCrispy">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="wingsCrispy">
 								</div>
 							</div>
 						</div>
@@ -429,7 +449,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="arnoldPalmer">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="arnoldPalmer">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -439,7 +459,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="sparklingFruitPunch">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="sparklingFruitPunch">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -448,7 +468,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="cherryLimeade">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="cherryLimeade">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -457,7 +477,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="signatureRootBeer">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="signatureRootBeer">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -479,7 +499,7 @@
 										<option>Mtn Dew</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="soda">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="soda">
 								</div>
 							</div>
 						</div>
@@ -520,7 +540,7 @@
 										<option>Pistachio</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="iceCream">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="iceCream">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -547,7 +567,7 @@
 										<option>Pistachio</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="milkshakes">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="milkshakes">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -556,7 +576,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="hotFudgeBrownie">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="hotFudgeBrownie">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -565,7 +585,7 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="creamPuff">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="creamPuff">
 								</div>
 							</div>
 							<div class="menu-item">
@@ -576,14 +596,13 @@
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="strawberryCheesecake">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="strawberryCheesecake">
 								</div>
 							</div>
 							<div class="menu-item">
 								<span class ="menu-item-subtitle">BANANA SPLIT - 8</span>
 								<p>3 scoops of any ice cream flavor, topped with chocolate drizzle, 
 								strawberry and pineapple syrup, whipped cream, chopped nuts, cherries, and the banana, of course.</p>
-								<p>Select your flavors in-store when ordering pickup.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<select id="bananaSplitSelector">
@@ -605,7 +624,7 @@
 										<option>Pistachio</option>
 									</select>
 									<div class="item-add-fill"></div>
-									<span class="symbol item-add" id="bananaSplit">+</span>
+									<img src="imgs/plus.webp" class="md-symbol item-add" id="bananaSplit">
 								</div>
 							</div>
 						</div>

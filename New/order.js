@@ -43,38 +43,6 @@ const itemData = {
 
 const orderList = {};
 
-document.addEventListener("click", (e) => {
-    // if (e.target.classList.contains("back-to-top")) {
-    //     const orderingMenu = document.getElementsByClassName(
-    //         "ordering-menu"
-    //     )[0];
-
-    //     orderingMenu.scrollTop = 0;
-    // }
-
-    if (e.target.classList.contains("sidebar-opener")) {
-
-    }
-
-    // item remove code
-    if (!e.target.classList.contains("item-remove")) {
-        return;
-    }
-
-    const itemId = e.target.id;
-
-    document.getElementById(`item-${itemId}`).remove();
-
-    const price = itemData[orderList[itemId]].price;
-
-    totalPrice -= price;
-
-    totalPriceElement.innerText = `$${totalPrice}`;
-    mobileTotalElement.innerHTML = `$${totalPrice}`;
-
-    delete orderList[itemId];
-});
-
 window.onload = () => {
     const totalPriceElement = document.getElementById("total-price");
     const mobileTotalElement = document.getElementById("mobile-total");
@@ -149,6 +117,8 @@ window.onload = () => {
 
             const itemId = String(Math.floor(Math.random() * 999999));
 
+            let additions = JSON.parse(JSON.stringify(item.additions));
+
             let additionsHTML = "";
 
             const selector = document.getElementById(e.target.id+"Selector");
@@ -156,12 +126,14 @@ window.onload = () => {
                 const selectedElement =
                     selector.children[selector.selectedIndex];
 
-                const selText = selectedElement.innerText;
+                // const selText = selectedElement.innerText;
 
-                additionsHTML += `<span class="sm-text">- ${selText}</span>`;
+                additions.push(selectedElement.innerText);
+
+                // additionsHTML += `<span class="sm-text">- ${selText}</span>`;
             }
 
-            for (const addition of item.additions) {
+            for (const addition of additions) {
                 additionsHTML += `<span class="sm-text">- ${addition}</span>`;
             }
 
@@ -183,17 +155,76 @@ window.onload = () => {
             totalPriceElement.innerText = `$${totalPrice}`;
             mobileTotalElement.innerHTML = `$${totalPrice}`;
 
-            orderList[itemId] = Object.keys(itemData)[Object.values(itemData).indexOf(item)];
+            orderList[itemId] = {"title": item.title,
+                                 "price": item.price,
+                                 "additions": additions};
         });
     }
 
-    document.getElementById("checkout-button").addEventListener("click", (e) => {
+    document.getElementById("checkout-button").addEventListener("click",
+                                                                (e) => {
+
+        if (totalPrice <= 0) return;
+
+        let receiptHTML = "";
+
+        for (const item of Object.values(orderList)) {
+            let itemHTML = `<div class="receipt-item">
+                <span class="md-text">${item.title}</span>`;
+
+            for (const addition of item.additions) {
+                itemHTML += `<span class="sm-text">- ${addition}</span>`;
+            }
+
+            itemHTML += "</div>";
+
+            receiptHTML += itemHTML;
+        }
+
+        document.getElementById("receipt-item-area").innerHTML = receiptHTML;
+
+        document.getElementById("checkout-subtotal").innerText =
+            `Subtotal: $${totalPrice}`;
+
+        document.getElementById("modal-container").style.display = "flex";
+        document.getElementById("order-modal").style.display = "flex";
+
+        return;
+
         localStorage.orderList = orderList;
         localStorage.totalPrice = totalPrice;
 
         checkingOut = true;
 
         window.location.replace("/New/checkout.html");
+    });
+
+    document.addEventListener("click", (e) => {
+        // if (e.target.classList.contains("back-to-top")) {
+        //     const orderingMenu = document.getElementsByClassName(
+        //         "ordering-menu"
+        //     )[0];
+    
+        //     orderingMenu.scrollTop = 0;
+        // }
+    
+        // item remove code
+        if (!e.target.classList.contains("item-remove")) {
+            return;
+        }
+    
+        const itemId = e.target.id;
+    
+        document.getElementById(`item-${itemId}`).remove();
+    
+        const price = orderList[itemId].price;
+    
+        totalPrice -= price;
+    
+        totalPriceElement.innerText = `$${totalPrice}`;
+        mobileTotalElement.innerHTML = `$${totalPrice}`;
+    
+        delete orderList[itemId];
     });
 }
 
