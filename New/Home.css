@@ -1,5 +1,5 @@
 @font-face {
-    font-family: sports_title;
+    font-family: font_sports_title;
     src: url(fonts/azn-unified.oblique.otf);
 }
 
@@ -40,7 +40,7 @@
     
    }
 
-   .main-grid-inner > div > h1 { color: var(--red); font-family: sports_title; text-align: center; font-size: 3em; padding: 0; margin: 0}
+   .main-grid-inner > div > h1 { color: var(--red); font-family: font_sports_title; text-align: center; font-size: 3em; padding: 0; margin: 0}
    .main-grid-inner > div > p { margin: 1em 0; }
 
    .main-grid-inner > div > img { aspect-ratio: 4/3; height: 16em; object-fit: cover; display: flex; justify-content: center;}
@@ -81,7 +81,7 @@
 .EventStyle1 .EventTextStyle1 p span{
     color: #c92a2a;
     font-size: 3em;
-    font-family: sports_title, bodytext, serif;
+    font-family: font_sports_title, font_body, serif;
 }
 .EventStyle2{
     border-radius: 1em;
@@ -110,7 +110,7 @@
 .EventStyle2 .EventTextStyle2 p span{
     color: #c92a2a;
     font-size: 3em;
-    font-family: sports_title, bodytext, serif;
+    font-family: font_sports_title, font_body, serif;
 }
 #Wings img{
     transform: rotate(90deg);

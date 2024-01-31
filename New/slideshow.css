@@ -11,12 +11,12 @@ img {vertical-align: middle;
 }
 
 @font-face {
-  font-family: sports_title;
+  font-family: font_sports_title;
   src: url(../fonts/azn-unified.oblique.otf);
 }
 
 @font-face {
-  font-family: bodytext;
+  font-family: font_body;
   src: url(../fonts/forgotten-futurist.rg-regular.otf);
 }
 
@@ -73,7 +73,7 @@ img {vertical-align: middle;
   width: 150%;
   /* height: 100px; */
   text-align: center;
-  font-family: sports_title;
+  font-family: font_sports_title;
 }
 
 .slidestitle { 
@@ -84,14 +84,14 @@ img {vertical-align: middle;
   width: 150%;
   /* height: 100px; */
   text-align: center;
-  font-family: sports_title;
+  font-family: font_sports_title;
   color: white;
   
 }
 
 
 .smalltext {
-  font-family: bodytext;
+  font-family: font_body;
   max-width: 30%;
   font-size: 1.5em;
   padding: 8px 12px;

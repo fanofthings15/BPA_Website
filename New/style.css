@@ -128,7 +128,7 @@ body {
 .Cards .card p{
     position: relative;
     top: 1em;
-    font-family: bodytext;
+    font-family: font_body;
     font-size: 4em;
     opacity: 100%;
     z-index: 5;
@@ -172,7 +172,7 @@ body {
  }
 
  .centered-subtitle {
-    font-family: bodytext;
+    font-family: font_body;
     color: #ffffff;
     margin: auto;
     margin-top: 0;
@@ -183,7 +183,7 @@ body {
     
  }
 
- .contact {  color: white; font-family: bodytext;}
+ .contact {  color: white; font-family: font_body;}
 
  footer {
     background-color: #c92a2a;
@@ -264,7 +264,7 @@ header div {
 
 /*Inline lists for footer links*/
 .inline { margin-top: .5em; margin-bottom: .5em;}
-.inline li {display: inline-block; font-family: bodytext; text-decoration: none;}
+.inline li {display: inline-block; font-family: font_body; text-decoration: none;}
 .inline a { color: white;}
 .inline img {height: 1.5em; margin: .25em;} 
 

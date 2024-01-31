@@ -356,7 +356,7 @@ select {
 
     font-size: 1em;
 
-    font-family: bodytext, "Serif";
+    font-family: font_body, "Serif";
 }
 
 option {
@@ -391,7 +391,7 @@ option {
   {
     color:#e03131;
     font-size: 1.5em;
-    font-family: sports_title;
+    font-family: font_sports_title;
   }
 
 .menu-grid > .grid-wide { grid-column: span 2; text-align: center; height: 50%;}

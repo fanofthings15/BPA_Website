@@ -35,7 +35,7 @@ span, p, a {
 }
 
 select {
-    font-family: bodytext;
+    font-family: font_body;
 
     background-color: rgba(0, 0, 0, 0);
     color: #fff;
@@ -326,7 +326,7 @@ select * {
 .menu-item-subtitle {
   color:#e03131;
   font-size: 1.5em;
-  font-family: sports_title;
+  font-family: font_sports_title;
 }
 
 .menu-category-title-row {
@@ -338,7 +338,7 @@ select * {
 }
 
 .menu-category-title {
-    font-family: sports_title;
+    font-family: font_sports_title;
 
     max-width: 75%;
 
@@ -424,6 +424,10 @@ select * {
 }
 
 .md-symbol {
+    width: 2em;
+}
+
+.lg-symbol {
     width: 3em;
 }
 

@@ -70,12 +70,14 @@ document.addEventListener("click", (e) => {
     totalPrice -= price;
 
     totalPriceElement.innerText = `$${totalPrice}`;
+    mobileTotalElement.innerHTML = `$${totalPrice}`;
 
     delete orderList[itemId];
 });
 
 window.onload = () => {
     const totalPriceElement = document.getElementById("total-price");
+    const mobileTotalElement = document.getElementById("mobile-total");
     const orderListElement = document.getElementById("order-list");
     
     const orderingMenu = document.getElementsByClassName(
@@ -179,6 +181,7 @@ window.onload = () => {
             totalPrice += item.price;
 
             totalPriceElement.innerText = `$${totalPrice}`;
+            mobileTotalElement.innerHTML = `$${totalPrice}`;
 
             orderList[itemId] = Object.keys(itemData)[Object.values(itemData).indexOf(item)];
         });

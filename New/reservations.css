@@ -4,12 +4,12 @@
 }
 
 @font-face {
-    font-family: sports_title;
+    font-family: font_sports_title;
     src: url(fonts/azn-unified.oblique.otf);
 }
 
 @font-face {
-    font-family: bodytext;
+    font-family: font_body;
     src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
 
@@ -32,7 +32,7 @@
   
   label {
     display: block;
-    font-family: bodytext;
+    font-family: font_body;
     padding-bottom: 10px;
     font-size: 1.25em;
     color:white;
@@ -43,7 +43,7 @@
     border: 2px solid #777;
     box-sizing: border-box;
     font-size: 1.25em;
-    font-family: bodytext;
+    font-family: font_body;
     width: 100%;
     padding: .75em;
   }
@@ -68,7 +68,7 @@
     border: none;
     color: white;
     font-size: 3em;
-    font-family: bodytext;
+    font-family: font_body;
     cursor: pointer;
     transition: 0.4s;
   }
@@ -83,7 +83,7 @@
 
 /*For Reservation Success Page*/
 
-h2 { color: white; font-family: bodytext; text-align: center;}
+h2 { color: white; font-family: font_body; text-align: center;}
 
 .success { margin-bottom: 3em;}
 

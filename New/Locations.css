@@ -2,7 +2,7 @@
     display: none;
   } */
   @font-face {
-    font-family: sports_title;
+    font-family: font_sports_title;
     src: url(fonts/azn-unified.oblique.otf);
 }
 
@@ -62,7 +62,7 @@ input[type='checkbox'] { display: none; }
 .wrap-collabsible { margin: 5% 0; }
  .lbl-toggle { display: block; 
     font-weight: bold; 
-    font-family: bodytext; font-size: 1.2rem; 
+    font-family: font_body; font-size: 1.2rem; 
     text-transform: uppercase; 
     text-align: center; 
     padding: 1rem; 
@@ -185,7 +185,7 @@ input[type='checkbox'] { display: none; }
     outline:none;
     cursor: pointer;
     padding: 0;
-    font-family: bodytext, serif;
+    font-family: font_body, serif;
     font-size: 28px;
     background-color:rgba(102, 102, 102, 0.164);
     color: white;
@@ -206,7 +206,7 @@ background-color:rgba(255, 255, 255, 0.274);
     text-align: center;
     padding-top: 5vh; 
     box-sizing: border-box;
-    font-family: bodytext, serif;
+    font-family: font_body, serif;
     font-size: 2em;
     display: none;
     border-radius: 0px 0px 7px 7px;
@@ -286,7 +286,7 @@ span{
     left: 65%;
     top: 80%;
     font-size: 2em;
-    font-family: sports_title;
+    font-family: font_sports_title;
 }
 .Reservation{
     position: absolute;
