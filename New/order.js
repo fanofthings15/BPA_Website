@@ -161,7 +161,7 @@ window.onload = () => {
                 </div>
                 <div class="order-secondary-item-info">
                     <span class="md-text">$${item.price}</span>
-                    <span class="symbol item-remove" id="${itemId}">X</span>
+                    <img src="imgs/x.webp" class="symbol item-remove sm-symbol" id="${itemId}">
                 </div>
             </div>`;
 

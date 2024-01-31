@@ -419,6 +419,10 @@ select * {
     border-top: 1px solid #adb5bd;
 }
 
+.sm-symbol {
+    width: 1em;
+}
+
 .md-symbol {
     width: 3em;
 }
