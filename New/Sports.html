@@ -10,29 +10,74 @@
         <link href="Sports.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <script src="/static/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
 
 
         <!-- logo icon -->
-        <link rel="icon" href="New\imgs\logos\game-day-grill.ico" type="image/x-icon"/>
+        <link rel="icon" href="imgs/logos/game-day-grill.ico" type="image/x-icon"/>
         <title>Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
         <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
     </head>
     <body>
-        <header>
-            <div class="grow">
-                <a id="logoB" href="index.html">
-                    <img src = "imgs/logos/game-day-grill-logo-simple2.png" class = "logo">
+        <nav class="navbar navbar-expand-lg navbar-dark" style = "background-color: #242424;">
+            <div class="container-fluid">
+      
+              <a class="navbar-brand" href="#">
+                  <img src="imgs/logos/game-day-grill-logo-simple2.png" width="80" height="80" class="d-inline-block" alt="game day grill logo">
                 </a>
-                <p class="header-text">Game Day Grill</h1>
+                <span class = "font-sports-title title">Game Day Grill</span>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-body caps">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">ORDER NOW</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">MENU</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      LOCATIONS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">ROYAL OAK</a></li>
+                      <li><a class="dropdown-item" href="#">BERKLEY</a></li>
+                      <li><a class="dropdown-item" href="#">TROY</a></li>
+                      <li><a class="dropdown-item" href="#">BLOOMFIELD HILLS</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">SEE ALL LOCATIONS</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">EVENTS</a>
+                  </li>
+                  
+                </ul>
+              </div>
             </div>
-            <div class="spaced-row">
-                <a href="order.html" class="button sm" >Order Now</a>
-                <a href="menu.html" class="button sm">Menu</a>
-                <a href="locations.html" class="button sm">Locations</a>
-                <a href="events.html" class="button sm">Special Events</a>
-            </div>
-        </header>
+          </nav>
        <main>
         <h1 class = "header-text">SPORTS CALENDARS</h1>
         <div class="container">
