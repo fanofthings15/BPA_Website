@@ -1,10 +1,12 @@
-.row{
+.loc-row{
     display: flex;
     flex-flow: row;
     background-color: red;
     color: white;
 }
-.column { 
+.loc-column { 
     display: flex;
     flex-flow: column;
+    width: 50vw;
+    height: 100vh;
 }

@@ -17,6 +17,7 @@
     font-size: 1.5em;
     padding: 0.75em;
     grid-column: span 1;
+    width: 100%;
   }
 
 
@@ -118,7 +119,6 @@ a:visited{text-decoration: none;}
     background-color:red;
     font-size: 1.5em; 
   }
-  .row { flex-direction: column;}
 
   .main-grid-inner { flex-direction: row;}
 
@@ -132,25 +132,39 @@ a:visited{text-decoration: none;}
 
 main{ padding: 0;}
 
-.row { 
+.review-row { 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   color: white;
+  
 }
 
-.column {
+.review-column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 0 32%;
-  background-color: #353535;
+  flex: 1;
+  background-color: #c92a2a;
+  font-size: 1.25em;
   text-align: center;
   justify-content: center;
+  min-width: 25em;
+
+  margin: .25em;
 }
-/* .column + .column { margin-right: 5px;} */
+
+.review-column + .review-column
+{
+  margin-right: .25em;
+}
+
+
+
+
+
 
 .stars 
 {
