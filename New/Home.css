@@ -3,49 +3,12 @@
     src: url(fonts/azn-unified.oblique.otf);
 }
 
-.Cards{
-  /* margin-top: 1em;
-  margin-bottom: 1em; */
-  display: flex;
-  justify-content: space-around;
-  gap: 1em;
-  margin-bottom: 1em;
-}
-
-.Cards .card{
-  height: 15em;
-  width: 29em;
-  border-radius: 1em;
-  background-image: url(imgs/wood.jpg);
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  background-size: cover;
-  transition: 0.6s;
-}
-.Cards .card p{
-  position: relative;
-  top: 1em;
-  font-size: 4em;
-  opacity: 100%;
-  z-index: 5;
-}
-
-.card:hover { 
-  transform: scale(1.05);
-  transition: 0.4s;
-  
-}
-
-
 .main-grid {
-
     display:flex;
     flex-flow: column;
-
     text-align: center;
     margin: auto;
-    margin: 0;
+    margin-bottom: 1em;
     border-radius: .5em;
   }
   .main-grid > div {
@@ -54,32 +17,30 @@
     font-size: 1.5em;
     padding: 0.75em;
     grid-column: span 1;
-    min-width: 20em;
   }
 
 
   .main-grid-inner {
-
     display:flex;
     flex-flow: row;
-
     margin-left: 1em;
     margin-right: 1em;
    }
 
    .main-grid-inner > div { 
     background-color: #353535;
+    /*353535*/
     color: white;
     font-size: 1.5em;
     padding: 0em;
     grid-column: span 1;
     
    }
-   .main-grid-inner + .main-grid-inner{ margin-top: 1em;}
+
    .main-grid-inner > div > h1 { color: var(--red); font-family: sports_title; text-align: center; font-size: 3em; padding: 0; margin: 0}
    .main-grid-inner > div > p { margin: 1em 0; }
 
-   .main-grid-inner > div > img { aspect-ratio: 4/3; height: 14em; object-fit: cover; display: flex; justify-content: center;}
+   .main-grid-inner > div > img { aspect-ratio: 4/3; height: 16em; object-fit: cover; display: flex; justify-content: center;}
 
    .main-grid-inner-text { text-align: center;}
    .main-grid-inner-text ul {list-style-type: none; text-align: center;}
@@ -110,7 +71,7 @@
   display: flex; 
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 75vw;
   font-size: 2em;
   align-items: center;
  
@@ -118,7 +79,7 @@
 
 .hero-item {
   width: 48%;
-  height: 10vh;
+  height: 15vh;
   margin-bottom: 2%;
   text-align: center; 
   align-items: center;
@@ -146,9 +107,9 @@ a:visited{text-decoration: none;}
 
 .hero-title
 {
-  font-size: 3em;
-  /* -webkit-text-stroke-width: 3px; 
-  -webkit-text-stroke-color: black; */
+  font-size: 2.5em;
+  -webkit-text-stroke-width: 3px; 
+  -webkit-text-stroke-color: black;
   color:white;
 }
 
@@ -171,22 +132,16 @@ a:visited{text-decoration: none;}
 
 main{ padding: 0;}
 
-/* nb = non bootstrap */
-/* bc bootstrap has row and column classes */
-.review-row { 
+.row { 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   color: white;
-  
-
-  gap: 1em;
-  padding-bottom: 1em;
 }
 
-.review-column {
+.column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -194,13 +149,6 @@ main{ padding: 0;}
   background-color: #353535;
   text-align: center;
   justify-content: center;
-  min-width: 20em;
-  padding-top: 2em;
-  padding-bottom:2em;
-}
-
-.review-column > p{
-  font-size: 1.5em;
 }
 /* .column + .column { margin-right: 5px;} */
 
@@ -208,8 +156,4 @@ main{ padding: 0;}
 {
   font-size: 2em;
   color: white;
-}
-
-.home-container {
-  padding: 1em;
 }
