@@ -432,6 +432,10 @@ select * {
     align-items: center;
 }
 
+#sidebar-close {
+    display: none;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .order-sidebar {
         display: none;
@@ -457,6 +461,14 @@ select * {
 
     #sidebar-opener {
         display: flex;
+    }
+
+    #sidebar-close {
+        display: block;
+    }
+
+    #placeholder-close {
+        display: none;
     }
 }
 

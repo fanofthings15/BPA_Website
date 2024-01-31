@@ -88,11 +88,20 @@ window.onload = () => {
 
     const sidebarOpener = document.getElementById("sidebar-opener");
 
+    const sidebarClose = document.getElementById("sidebar-close");
+
     sidebarOpener.addEventListener("click", (e) => {
         sidebarOpener.style.display = "none";
 
         orderingMenu.style.display = "none";
         orderSidebar.style.display = "flex";
+    });
+
+    sidebarClose.addEventListener("click", (e) => {
+        sidebarOpener.style.display = "flex";
+
+        orderingMenu.style.display = "block";
+        orderSidebar.style.display = "none";
     });
 
     orderSlideshowDots = document
