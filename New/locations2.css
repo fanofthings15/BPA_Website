@@ -8,5 +8,14 @@
     display: flex;
     flex-flow: column;
     width: 50vw;
-    height: 100vh;
+    height: 85vh;
+}
+
+.location{
+    text-align: center;
+}
+
+.map
+{
+    height: 85vh;
 }
