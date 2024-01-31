@@ -12,46 +12,31 @@
     font-family: bodytext;
     src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
-@media (max-width:480px) {
-    .picturefour{
-        flex-basis: calc(50% - 20px);
-        margin-left: 2em;
+@media (max-width: 767px) {
+    .picturefour {
+        width: calc(50% - 10px);
     }
-    .picturethree{
-        flex-basis: calc(50% - 20px);
-        margin-left: 2em;
-
+    .picturethree {
+        width: calc(50% - 10px);
     }
-    .picturefive{
-        flex-basis: calc(50% - 20px);
-        margin-left: 2em;
-
+    .picturefive {
+        width: calc(50% - 10px);
     }
-    .picturesix{
-        flex-basis: calc(50% - 20px);
-        margin-left: 2em;
-
+    .picturesix {
+        width: calc(50% - 10px);
     }
     .picture {
-        flex-basis: calc(50% - 20px);
-        margin-left: 2em;
-
+        width: calc(50% - 10px);
     }
-    .picturewo {
-        flex-basis: calc(50% - 20px);
-        margin-left: 2em;
-
+    .picturetwo {
+        width: calc(50% - 10px);
     }
     .pictureseven {
-        flex-basis: calc(50% - 20px);
-        margin-left: 2em;
-
+        width: calc(50% - 10px);
     }
     .pictureeight {
-        flex-basis: calc(50% - 20px);
-        margin-left: 2em;
+        width: calc(50% - 10px);
     }
-
 }
 body {
     width: 100vw;
@@ -188,7 +173,7 @@ main {
 }
 .michigan-state { /* michigan state picture */
     border-style: solid;
-    border-color: green;
+   border-color:  #BEC0C2;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -227,7 +212,7 @@ main {
 .michigan { /*michigan picture */
     align-items: center;
     border-style: solid;
-    border-color: #00274C;
+    border-color: #BEC0C2;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -248,16 +233,16 @@ main {
 .picturethree:hover .red-wings {
     background-color:#A9A9A9;
 }
-.red-wings {
+.red-wings { /* red wings picture */
     border-style: solid;
-    border-color: red;
+    border-color:  #BEC0C2;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
     object-fit: cover;
     transition: background-color 0.5s ease;
 }
-.picturefour {
+.picturefour { /* lions */
     display: inline-block;
     /* padding: 50px 0px 50px 50px;  */
     margin-left: 5em;
@@ -272,9 +257,9 @@ main {
 .picturefour:hover .lions {
     background-color:#A9A9A9;
 }
-.lions {
+.lions { /* lions picture */
     border-style: solid;
-    border-color: #0076B6;
+    border-color: #BEC0C2;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -314,7 +299,6 @@ main {
     transition: transform 0.5s ease;
     width:250;
     height:400;
-    margin-left: 5em;
     margin-bottom: 5em;
 }
 .picturesix:hover {
@@ -325,9 +309,9 @@ main {
 .picturesix:hover .detroit-tigers {
     background-color:#A9A9A9;
 }
-.detroit-tigers {
+.detroit-tigers { /* tigers picture */
     border-style: solid;
-    border-color: #FA4616;
+    border-color:  #BEC0C2;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -352,9 +336,9 @@ main {
 .pictureseven:hover .eastern {
     background-color:#A9A9A9;
 }
-.eastern {
+.eastern { /* eastern picture */
     border-style: solid;
-    border-color: #046A38;
+    border-color: #BEC0C2;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -379,9 +363,9 @@ main {
 .pictureeight:hover .western {
     background-color:#A9A9A9;
 }
-.western {
+.western { /*western picture */
     border-style: solid;
-    border-color: #532E1F;
+    border-color: #BEC0C2;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
