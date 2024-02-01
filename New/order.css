@@ -84,8 +84,6 @@ select * {
     position: fixed;
 
     z-index: 2;
-
-    margin-top: 1em;
 }
 
 .ordering-menu {
@@ -247,7 +245,7 @@ select * {
 .sidebar-info-container {
     width: 100%;
 
-    padding: 1em 1.5em;
+    padding: 1em;
 
     box-sizing: border-box;
 
