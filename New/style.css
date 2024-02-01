@@ -72,13 +72,13 @@ body {
     padding: 0.75em;
 
     color: #f8f9fa;
-    background-color: #c92a2a;
+    background-color: #e03131;
 
     border-radius: 0.75em 0 0.75em 0;
 
     /* 2.5em per 90 degrees of skew, so for 20, its (20/90, 0.222)% of 2.5 */
 
-    transform: skewX(-20deg) translateX(-0.55em);
+    transform: skewX(-20deg);
 
     user-select: none;
     text-decoration: none;
@@ -101,7 +101,7 @@ body {
 
     border: 0;
 
-    transform: scale(1.05) skewX(-20deg) translateX(-0.55em);
+    transform: scale(1.05) skewX(-20deg);
     transition: 0.4s;
 }
 

@@ -37,15 +37,22 @@
     <body>
 		<div id="modal-container">
 			<div id="order-modal">
-				<div class="order-modal-header">
-					<span class="lg-text">Checkout</span>
+				<div class="order-modal-header md-bm">
+					<span class="lg-text black">Checkout</span>
 					<div class="grow"></div>
-					<img src="imgs/x-black.webp" class="lg-symbol">
+					<img id="close-checkout" src="imgs/x-black.webp" class="lg-symbol">
 				</div>
-				<hr>
-				<div id="receipt-item-area"></div>
-				<hr>
-				<div class="switcher-row">
+				<hr class="md-bm">
+				<div id="receipt-item-area" class="md-bm"></div>
+				<hr class="md-bm">
+				<input class="sm-bm" type="text" placeholder="Select a location..." list="location-name">
+				<datalist id="location-name">
+					<option value="Troy">
+					<option value="Royal Oak">
+					<option value="Bloomfield">
+					<option value="Berkley">
+				</datalist>
+				<div class="switcher-row md-bm">
 					<div class="switcher-option selected-switcher-option">
 						<span class="md-text">Pickup</span>
 					</div>
@@ -53,10 +60,17 @@
 						<span class="md-text">Delivery</span>
 					</div>
 				</div>
-				<div class="spaced-row">
-					<div class="grow"></div>
-					<span class="sm-text" id="checkout-subtotal">Subtotal: $0.00</span>
-					<span class="sm-text" id="checkout-tax"></span>
+				<hr class="md-bm">
+				<div class="right-columns">
+					<span class="sm-text black sm-bm" id="checkout-subtotal">Subtotal: $0.00</span>
+					<span class="sm-text black sm-bm" id="checkout-tax">Tax: $0.00</span>
+					<span class="sm-text black sm-bm" id="checkout-delivery">Delivery: $0.00</span>
+					<span class="md-text black sm-bm" id="checkout-total">Total: $0.00</span>
+				</div>
+				<hr class="md-bm">
+				<div class="spaced-row row-center">
+					<span class="circle-btn md-text">Pay Online</span>
+					<span class="circle-btn md-text">Pay In-store</span>
 				</div>
 			</div>
 		</div>

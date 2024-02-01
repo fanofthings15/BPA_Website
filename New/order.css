@@ -6,6 +6,7 @@ span, p, a {
 }
 
 hr {
+    /* margin: 0.25em 0; */
     margin: 0;
     padding: 0;
 
@@ -340,7 +341,7 @@ select * {
 }
 
 .menu-item-subtitle {
-  color:#e03131;
+  color:#f03e3e;
   font-size: 1.5em;
   font-family: font_sports_title;
 }
@@ -424,11 +425,28 @@ select * {
     border-radius: 1em;
 
     flex-direction: column;
-    gap: 1em;
 }
 
-#order-modal * {
+/* #order-modal * {
     color: #212529;
+} */
+
+input {
+    width: 100%;
+
+    font-family: font_body;
+
+    padding: 0.5em 0.75em;
+
+    font-size: 1.5em;
+
+    box-sizing: border-box;
+    border-radius: 9999px;
+    border: 1px solid #000;
+}
+
+input:focus {
+    outline: none;
 }
 
 .order-modal-header {
@@ -437,11 +455,18 @@ select * {
     gap: 1em;
 }
 
+#close-checkout {
+    cursor: pointer;
+}
+
 #receipt-item-area {
     display: flex;
     flex-direction: column;
 
     gap: 1em;
+
+    max-height: 10em;
+    overflow-y: scroll;
 }
 
 .receipt-item {
@@ -449,6 +474,8 @@ select * {
     flex-direction: column;
 
     gap: 0.5em;
+
+    color: #212529;
 }
 
 .switcher-row {
@@ -461,6 +488,8 @@ select * {
     border-radius: 9999px;
 
     user-select: none;
+
+    cursor: pointer;
 }
 
 .switcher-option {
@@ -485,6 +514,12 @@ select * {
 
 .switcher-option * {
     display: flex;
+
+    color: #212529;
+}
+
+.black {
+    color: #212529 !important;
 }
 
 #sidebar-opener {
@@ -506,6 +541,51 @@ select * {
     border-top: 1px solid #adb5bd;
 }
 
+.pay-buttons {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+
+    width: 100%;
+
+    padding: 0 1em;
+
+    box-sizing: border-box;
+}
+
+.circle-btn {
+    padding: 0.75em;
+
+    color: #f8f9fa;
+    background-color: #c92a2a;
+
+    border-radius: 9999px;
+
+    user-select: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.circle-btn:hover{
+    background-color:#ee8730;
+    text-decoration: none;
+
+    border: 0;
+
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.row-center {
+    justify-content: center;
+}
+
 .sm-symbol {
     width: 1em;
 }
@@ -520,9 +600,29 @@ select * {
     width: 3em;
 }
 
+.sm-bm {
+    margin-bottom: 0.5em;
+}
+
+.md-bm {
+    margin-bottom: 1em;
+}
+
+.lg-bm {
+    margin-bottom: 1.5em;
+}
+
 .v-center {
     display: flex;
     align-items: center;
+}
+
+.right-columns {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 #sidebar-close {
@@ -562,6 +662,10 @@ select * {
 
     #placeholder-close {
         display: none;
+    }
+
+    #order-modal {
+        width: 80%;
     }
 }
 

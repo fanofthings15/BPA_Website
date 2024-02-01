@@ -43,6 +43,33 @@ const itemData = {
 
 const orderList = {};
 
+const getElementOrParentWithClass = function(element, className) {
+    let elementChecked = element;
+
+    while (elementChecked) {
+        if (elementChecked.classList.contains(className)) {
+            return elementChecked;
+        }
+
+        elementChecked = elementChecked.parentElement;
+    }
+}
+
+const checkIfInClass = function(element, className) {
+    let elementChecked = element;
+
+    while (elementChecked) {
+        if (elementChecked.classList.contains(className)) {
+            console.log(elementChecked)
+            return true;
+        }
+
+        elementChecked = elementChecked.parentElement;
+    }
+
+    return false;
+}
+
 window.onload = () => {
     const totalPriceElement = document.getElementById("total-price");
     const mobileTotalElement = document.getElementById("mobile-total");
@@ -170,10 +197,10 @@ window.onload = () => {
 
         for (const item of Object.values(orderList)) {
             let itemHTML = `<div class="receipt-item">
-                <span class="md-text">${item.title}</span>`;
+                <span class="md-text black">${item.title}</span>`;
 
             for (const addition of item.additions) {
-                itemHTML += `<span class="sm-text">- ${addition}</span>`;
+                itemHTML += `<span class="sm-text black">- ${addition}</span>`;
             }
 
             itemHTML += "</div>";
@@ -199,6 +226,13 @@ window.onload = () => {
         window.location.replace("/New/checkout.html");
     });
 
+    document.getElementById("close-checkout").addEventListener("click",
+                                                               (e) => {
+
+        document.getElementById("modal-container").style.display = "none";
+        document.getElementById("order-modal").style.display = "none";
+    });
+
     document.addEventListener("click", (e) => {
         // if (e.target.classList.contains("back-to-top")) {
         //     const orderingMenu = document.getElementsByClassName(
@@ -207,6 +241,28 @@ window.onload = () => {
     
         //     orderingMenu.scrollTop = 0;
         // }
+
+        targetSwitcherOption = getElementOrParentWithClass(e.target,
+                                                           "switcher-option");
+
+        if (targetSwitcherOption) {
+            const switcherRow = targetSwitcherOption.parentElement;
+
+            for (const child of switcherRow.children) {
+                if (child.classList.contains("selected-switcher-option")) {
+                    child.classList.remove("selected-switcher-option");
+                }
+            }
+
+            if (!targetSwitcherOption.classList.contains(
+                     "selected-switcher-option")
+                 ) {
+
+                targetSwitcherOption.classList.add(
+                    "selected-switcher-option"
+                );
+            }
+        }
     
         // item remove code
         if (!e.target.classList.contains("item-remove")) {
