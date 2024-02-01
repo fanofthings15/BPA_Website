@@ -256,3 +256,8 @@ button:hover{
     top: 90%;
     left: 58%;
 }
+h1{
+margin: 0;
+}
+p{margin: 1em;}
+a{margin: 1em;}

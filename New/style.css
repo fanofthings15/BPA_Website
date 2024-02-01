@@ -207,7 +207,7 @@ body {
     margin: 0;
     padding: 0;
 
-    /* background-color: #f8f9fa; */
+    background-color: #242424;
 
     font-family: font_body, sans-serif;
 
@@ -479,6 +479,7 @@ font-family: font_sports_title;
 
 main {
     padding-top: 5em;
+    background-color: #242424;
     font-family: font_body;
 }
 

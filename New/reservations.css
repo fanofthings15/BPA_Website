@@ -1,87 +1,87 @@
 @font-face {
-    font-family: Sports;
-    src: url(fonts/supers-sports.combined.otf);
+  font-family: Sports;
+  src: url(fonts/supers-sports.combined.otf);
 }
 
 @font-face {
-    font-family: font_sports_title;
-    src: url(fonts/azn-unified.oblique.otf);
+  font-family: font_sports_title;
+  src: url(fonts/azn-unified.oblique.otf);
 }
 
 @font-face {
-    font-family: font_body;
-    src: url(fonts/forgotten-futurist.rg-regular.otf);
+  font-family: font_body;
+  src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
 
 .reservation-container {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 5em;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5em;
 }
 
-  div.elem-group {
-    margin: 1em 0;
+div.elem-group {
+  margin: 1em 0;
 
-  }
-  
-  div.elem-group.inlined {
-    width: 49%;
-    float: left;
-    margin-left: 1%;
-  }
-  
-  label {
-    display: block;
-    font-family: font_body;
-    padding-bottom: 10px;
-    font-size: 1.25em;
-    color:white;
-  }
-  
-  input, select, textarea {
-    border-radius: 2px;
-    border: 2px solid #777;
-    box-sizing: border-box;
-    font-size: 1.25em;
-    font-family: font_body;
-    width: 100%;
-    padding: .75em;
-  }
-  
-  div.elem-group.inlined input {
-    width: 95%;
-    display: inline-block;
-  }
-  
-  textarea {
-    height: 250px;
-  }
-  
-  hr {
-    border: 1px dotted #ccc;
-  }
-  
-  button {
-    height: 10vh;
-    width: 100%;
-    background: var(--red);
-    border: none;
-    color: white;
-    font-size: 3em;
-    font-family: font_body;
-    cursor: pointer;
-    transition: 0.4s;
-  }
+}
 
-  option { font-family: bodytext;}
-  
-  button:hover {
-    /* border: 2px solid black; */
-    background: var(--orange);
-    transition: 0.4s;
-  }
+div.elem-group.inlined {
+  width: 49%;
+  float: left;
+  margin-left: 1%;
+}
 
- 
+label {
+  display: block;
+  font-family: font_body;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+  color:white;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: font_body;
+  width: 100%;
+  padding: .75em;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 10vh;
+  width: 100%;
+  background: var(--red);
+  border: none;
+  color: white;
+  font-size: 3em;
+  font-family: font_body;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+option { font-family: bodytext;}
+
+button:hover {
+  /* border: 2px solid black; */
+  background: var(--orange);
+  transition: 0.4s;
+}
+
+
 
 /*For Reservation Success Page*/
 .h2-title { color: white; font-family: bodytext; text-align: center;}
@@ -89,42 +89,42 @@
 .success { margin-bottom: 3em;}
 
 .success > a {
-    width: 20vw; 
-    margin: auto;
-    margin-bottom: .5em;
-    text-align: center; 
-    align-self: center;  
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+  width: 20vw; 
+  margin: auto;
+  margin-bottom: .5em;
+  text-align: center; 
+  align-self: center;  
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 border-radius: .75em 0 .75 0 ;}
 
- .success > .button { padding: .5em; font-size: 3em;}
+.success > .button { padding: .5em; font-size: 3em;}
 
 
 
 
-    .button {
-        padding: 0.75em;
-    
-        color: #f8f9fa;
-        background-color: #c92a2a;
-    
-    
-        user-select: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        white-space: nowrap;
-    
-        transition: .3s;
-    }
-    
-    .button:visited{
-        color: #e6e6e6;
-    }
-    
-    .button:hover{
-        background-color:#ee8730;
-        text-decoration: none;
-        border: 0;
-    }
+  .button {
+      padding: 0.75em;
+  
+      color: #f8f9fa;
+      background-color: #c92a2a;
+  
+  
+      user-select: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+  
+      transition: .3s;
+  }
+  
+  .button:visited{
+      color: #e6e6e6;
+  }
+  
+  .button:hover{
+      background-color:#ee8730;
+      text-decoration: none;
+      border: 0;
+  }
