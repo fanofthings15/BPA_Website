@@ -251,7 +251,7 @@ body {
     margin: auto;
     width: 100vw;
     font-size: .35em;
-    height: 50vh;
+    height: 40vh;
     
 }
 
@@ -279,6 +279,22 @@ footer img { height: 30vh;
     margin-top: 0; margin-bottom: 0;
 float: left;}
 
+.Cinfo{
+    display:block;
+    }
+
+@media screen and (max-width: 820px) {
+.Cinfo{
+display: none;
+}
+.footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: auto;
+}
+.footer-grid > div{
+    width: 90%;
+}
+}
 
 .grow {
     flex-grow: 1;
@@ -352,7 +368,12 @@ font-family: font-sports-title;
 #logoB{padding: 0; background: none;border: none;}
 
 main {
+<<<<<<< HEAD
     font-family: font-body;
+=======
+    padding-top: 5em;
+    font-family: font_body;
+>>>>>>> 373946f352c1964261f63813186e5feb3cb3477e
 }
 
 
@@ -505,7 +526,7 @@ footer .footer-list { font-size: 2em; text-align: center;}
     margin-right: 1em;
 }
 
-@media only screen and (max-width: 80em) {
+@media only screen and (max-width: 1080px) {
     .header-text {
         font-size: 1.5em;
     }
