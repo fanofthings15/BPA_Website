@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "BPA_Website",
+			"path": ".."
+		},
+		{
+			"name": "bootstrap-testing",
+			"path": "../../../../../Desktop/bootstrap-testing"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BPA_Website"
+	}
+}

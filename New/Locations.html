@@ -3,9 +3,10 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-
+        
+    
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="locations.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <link href="locations.css" rel = "stylesheet">
         <script src="hamburger.js"></script>
@@ -15,9 +16,10 @@
         <title>Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
         <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
+    
+         <!-- logo icon -->
+         <link rel="icon" href="imgs/logos/game-day-grill.ico" type="image/x-icon"/>
         
-        <!-- logo icon -->
-        <link rel="icon" href="imgs/logos/game-day-grill.ico" type="image/x-icon"/>
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <!-- <meta property="og:url" content="https://metatags.io/" /> -->
@@ -32,7 +34,6 @@
         <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
         <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
     </head>
- 
     <body>
         <header>
 			<div class="grow">
@@ -63,537 +64,58 @@
                 <button onclick="showPanel(2,'#c92a2a')">Bloomfield Hills</button>
                 <button onclick="showPanel(3,'#c92a2a')">Royal Oak</button>
             </div>
+          </nav>
 
-            <div class = "tabPanel" id = "berkley">
-                <div class = "location-grid">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2941.8129490401793!2d-83.18296642345565!3d42.49552912653156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c8a4ad8ff7ed%3A0xa50c773ebf6a1d39!2s2325%20Catalpa%20Dr%2C%20Berkley%2C%20MI%2048072!5e0!3m2!1sen!2sus!4v1701651560378!5m2!1sen!2sus">
-                            <!--Google Maps Embed to Berkley Location-->
-                        </iframe>
-                        <!-- <a class="Directions" href="https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">
-                            Driving Directions
-                        </a> -->
-                        <a class = "directions-btn" href = "https://www.google.com/maps/dir//Berkley+High+School,+Catalpa+Drive,+Berkley,+MI/@42.4955477,-83.1806714,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8824c8a4af0d7fe3:0x217632d62108336!2m2!1d-83.1806765!2d42.49567?entry=ttu" target="_blank">
-                            DIRECTIONS
-                        </a>
-                    </div>
-                    <div class = "location-text">
-                        <p><a href = "tel:2485550127" class = "phone">(248)-555-0127</a></p>
-                        <p>2325 Catalpa Dr, Berkley, MI 48072</p>
-                        
-                        <a href = "reservations.html" class = "directions-btn button">MAKE A RESERVATION</a>
+          <main>
+            <div class = "loc-row">
+              <div class = "loc-column">
+                <div class = "location">
 
-                        <div class="wrap-collabsible"> 
-                            <input id="collapsible" class="toggle" type="checkbox"> 
-                            <label for="collapsible" class="lbl-toggle">Accessibility Information</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul>
-                                        <li>Wheelchair accessible</li>
-                                        <li>Braille and audio menus available</li>
-                                        <li>Service animals are welcome</li>
-                                        <li>Booster seats available</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "tabPanel" id = "troy">
-                <div class = "location-grid">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.760527145242!2d-83.11351952348829!3d42.58160512107561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c3632d726293%3A0x65d3677a1eecaaee!2s4333%20John%20R%20Rd%2C%20Troy%2C%20MI%2048085!5e0!3m2!1sen!2sus!4v1700492383885!5m2!1sen!2sus">
-                            <!--Google Maps Embed to Troy Location-->
-                        </iframe>
-                        <!-- <a class="Directions" href="https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">
-                            Driving Directions
-                        </a> -->
-                        <a class = "directions-btn" href = "https://maps.google.com/maps/dir//4333+John+R+Rd+Troy,+MI+48085/@42.5816012,-83.1109446,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c3632d726293:0x65d3677a1eecaaee" target="_blank">
-                            DIRECTIONS
-                        </a>
-                    </div>
-                    <div class = "location-text">
-                        <p><a href = "tel:2485550127" class = "phone">(248)-555-0127</a></p>
-                        <p>4333 John R Rd, Troy, MI 48085</p>
-                        
-                        <a href = "reservations.html" class = "directions-btn button">MAKE A RESERVATION</a>
-
-                        <div class="wrap-collabsible"> 
-                            <input id="collapsible" class="toggle" type="checkbox"> 
-                            <label for="collapsible" class="lbl-toggle">Accessibility Information</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <ul>
-                                        <li>Wheelchair accessible</li>
-                                        <li>Braille and audio menus available</li>
-                                        <li>Service animals are welcome</li>
-                                        <li>Booster seats available</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class = "tabPanel" id = "bloomfield hills">
-                <div class = "location-grid">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.8892928908776!2d-83.28809872348842!3d42.578872221249014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824bf4ab369c9a9%3A0x5f250e0b95b8ed19!2s4200%20Andover%20Rd%2C%20Bloomfield%20Hills%2C%20MI%2048302!5e0!3m2!1sen!2sus!4v1700492490991!5m2!1sen!2sus">
-                            <!--Google Maps Embed to Berkley Location-->
-                        </iframe>
-                        <!-- <a class="Directions" href="https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">
-                            Driving Directions
-                        </a> -->
-                        <a class = "directions-btn" href = "https://maps.google.com/maps/dir//4200+Andover+Rd+Bloomfield+Hills,+MI+48302/@42.5788683,-83.2855238,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824bf4ab369c9a9:0x5f250e0b95b8ed19" target="_blank">
-                            DIRECTIONS
-                        </a>
-                    </div>
-                    <div class = "location-text">
-                        <p><a href = "tel:2485550127" class = "phone">(248)-555-0127</a></p>
-                        <p>4200 Andover Rd, Bloomfield Hills, MI 48302</p>
-                        
-                        <a href = "reservations.html" class = "directions-btn button">MAKE A RESERVATION</a>
-
-                        <div class="wrap-collabsible"> 
-                        <input id="collapsible" class="toggle" type="checkbox"> 
-                        <label for="collapsible" class="lbl-toggle">Accessibility Information</label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <ul>
-                                    <li>Wheelchair accessible</li>
-                                    <li>Braille and audio menus available</li>
-                                    <li>Service animals are welcome</li>
-                                    <li>Booster seats available</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <!--ROYAL OAK-->
-            <div class = "tabPanel" id = "royal oak">
-                <div class = "location-grid">
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.8673172635117!2d-83.18304038857188!3d42.536873160507355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c66430e197a7%3A0xdcb1d3339efff00c!2s5055%20Delemere%20Ave%2C%20Royal%20Oak%2C%20MI%2048073!5e0!3m2!1sen!2sus!4v1700234221856!5m2!1sen!2sus">
-                            <!--Google Maps Embed to Berkley Location-->
-                        </iframe>
-                        <!-- <a class="Directions" href="https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">
-                            Driving Directions
-                        </a> -->
-                        <a class = "directions-btn" href = "https://www.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">
-                            DIRECTIONS
-                        </a>
-                    </div>
-                    <div class = "location-text">
-                        <p><a href = "tel:2485550127" class = "phone">(248)-555-0127</a></p>
-                        <p>5055 Delemere Ave, Royal Oak, MI 48073</p>
-                        
-                        <a href = "reservations.html" class = "directions-btn button">MAKE A RESERVATION</a>
-
-                        <div class="wrap-collabsible"> 
-                        <input id="collapsible" class="toggle" type="checkbox"> 
-                        <label for="collapsible" class="lbl-toggle">Accessibility Information</label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <ul>
-                                    <li>Wheelchair accessible</li>
-                                    <li>Braille and audio menus available</li>
-                                    <li>Service animals are welcome</li>
-                                    <li>Booster seats available</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <footer class = "footer-grid">
-                <!-- <img src = "imgs/game-day-grill-logo-simple2.png" class = "footer-logo"> -->
-                <div class = "centered-title">
-                <h1>GAME DAY GRILL</h1>
-    
-                        <ul class = "inline centered">
-                            <li><img src = "imgs/social-media-logos/facebook.png"></li>
-                            <li><img src = "imgs/social-media-logos/instagram.png"></li>
-                            <li><img src = "imgs/social-media-logos/twitter.png"></li>
-                            <li><img src = "imgs/social-media-logos/github.png"></li>
-                        </ul>
-                        <ul class = "inline centered">
-                        <strong>
-                            <li><a href = "order.html">ORDER NOW</a></li>
-                            <li> | </li>
-                            <li><a href = "menu.html">MENU</a></li>
-                            <li> | </li>
-                            <li><a href="Locations.html">LOCATIONS</a></li>
-                            <li> | </li>
-                            <li><a href="reservations.html">RESERVATIONS</a></li>
-                            <li> | </li>
-                            <li><a href = "events.html">SPECIAL EVENTS</a></li>
-                            <li> | </li>
-                            <li><a href = "sports.html">SPORTS CALENDARS</a></li>
-                        
-                        </ul>
-                    <a href = "tel:2485550127" class = "contact">(248)-555-0127</a>
-                    <br>
-                    <a href = "https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" 
-                    target="_blank" class = "contact">5055 Delemere Ave, Royal Oak, MI 48073</a></strong>
-    
-                </div>
-                <div class = "centered-title">
-                    <h1 class = "contact">CHAPTER INFORMATION: </h1>
-                    <p class = "contact">Team Members: Sarah Phillips, Isaac Hatfield, Owen Murray, Tatyana Anissimov <br>
-                    Theme: Sieze the Opportunity<br>
-                    Oakland Schools Technical Campus South East, Royal Oak, Michigan, 2023</p>
-                    <a  class = "contact" href = "https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a>
-                </div>
-                </footer>
-
-            <!--<div class="tabPanel" id="Berkley">
+                <h1>BERKLEY</h1>
                 
-                <div class="Phone">(248)-555-0127</div>
-                <div class = "Phone">2325 Catalpa Dr, Berkley, MI 48072</div>
-
-                <div class="LBodyText">Free parking avalible on south side of building<br>
-                    Wheelchair accessible<br>
-                    Braille and audio menus available<br>
-                    Service animals welcome<br>
-                    Seats and booths <br>
-                    Kids' seats available
+                  <p>2325 Catalpa Dr, Berkley, MI 48072 | <a href = "tel:2485550127" class = "phone">(248)-555-0127</a> </p>
+                  
+                  <a class = "button" href = "https://www.google.com/maps/dir//Berkley+High+School,+Catalpa+Drive,+Berkley,+MI/@42.4955477,-83.1806714,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8824c8a4af0d7fe3:0x217632d62108336!2m2!1d-83.1806765!2d42.49567?entry=ttu" target="_blank">
+                    DIRECTIONS
+                  </a>
+                  <a class = "button" href = "reservations.html">MAKE A RESERVATION</a>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.8673172635117!2d-83.18304038857188!3d42.536873160507355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c66430e197a7%3A0xdcb1d3339efff00c!2s5055%20Delemere%20Ave%2C%20Royal%20Oak%2C%20MI%2048073!5e0!3m2!1sen!2sus!4v1700234221856!5m2!1sen!2sus"></iframe>
-                <a class="Directions" href="https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">Driving Directions</a>
-                <span>Create a Reservation</span>
-                <div class="Reservation">
-                    <div class="people">
-                        <p>How Many People:&ensp;</p>
-                        <select name=SelectPeople">
-                            <option value="20">20</option>
-                            <option value="19">19</option>
-                            <option value="18">18</option>
-                            <option value="17">17</option>
-                            <option value="16">16</option>
-                            <option value="15">15</option>
-                            <option value="14">13</option>
-                            <option value="13">13</option>
-                            <option value="12">12</option>
-                            <option value="11">11</option>
-                            <option value="10">10</option>
-                            <option value="9">9</option>
-                            <option value="8">8</option>
-                            <option value="7">7</option>
-                            <option value="6">6</option>
-                            <option value="5">5</option>
-                            <option value="4">4</option>
-                            <option value="3">3</option>
-                            <option value="2">2</option>
-                            <option value="1">1</option>
-                        </select>
-                    </div>
 
-                <div class="Time">
-                    <p>What Time:&ensp;</p>
+                <div class = "location">
+                  <h1>TROY</h1>
+                  
+                  <p>4333 John R Rd, Troy, MI 48085 | <a href = "tel:2485550128" class = "phone">(248)-555-0128</a> </p>
+                  <a  class = "button" href = "https://maps.google.com/maps/dir//4333+John+R+Rd+Troy,+MI+48085/@42.5816012,-83.1109446,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c3632d726293:0x65d3677a1eecaaee" target="_blank">
+                    DIRECTIONS</a>
+              </div>
 
-                    <select name=Time">
-                        <option value="12:00 AM">12:00 AM</option>
-                        <option value="11:30 PM">11:30 PM</option>
-                        <option value="11:00 PM">11:00 PM</option>
-                        <option value="10:30 PM">10:30 PM</option>
-                        <option value="10:00 PM">10:00 PM</option>
-                        <option value="9:30 PM">9:30 PM</option>
-                        <option value="9:00 PM">9:00 PM</option>
-                        <option value="8:30 PM">8:30 PM</option>
-                        <option value="8:00 PM">8:00 PM</option>
-                        <option value="7:30 PM">7:30 PM</option>
-                        <option value="7:00 PM">7:00 PM</option>
-                        <option value="6:30 PM">6:30 PM</option>
-                        <option value="6:00 PM">6:00 PM</option>
-                        <option value="5:30 PM">5:30 PM</option>
-                        <option value="5:00 PM">5:00 PM</option>
-                        <option value="4:30 PM">4:30 PM</option>
-                        <option value="4:00 PM">4:00 PM</option>
-                        <option value="3:30 PM">3:30 PM</option>
-                        <option value="3:00 PM">3:00 PM</option>
-                        <option value="2:30 PM">2:30 PM</option>
-                        <option value="2:00 PM">2:00 PM</option>
-                        <option value="1:30 PM">1:30 PM</option>
-                        <option value="1:00 PM">1:00 PM</option>
-                        <option value="12:30 PM">12:30 PM</option>
-                        <option value="12:00 PM">12:00 PM</option>
-                    </select>
+                <div class = "location">
+                  <h1>ROYAL OAK</h1>
+                  
+                  <p>5055 Delemere Ave, Royal Oak, MI 48073 | <a href = "tel:2485550129" class = "phone">(248)-555-0129</a> </p>
+                  <a class = "button" href = "https://www.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">
+                    DIRECTIONS
+                </a></div>
+
+                <div class = "location">
+                  <h1>BLOOMFIELD HILLS</h1>
+                  
+                  <p>4200 Andover Rd, Bloomfield Hills, MI 48302 | <a href = "tel:2485550130" class = "phone">(248)-555-0130</a> </p>
+                  <a class = "button" href = "https://maps.google.com/maps/dir//4200+Andover+Rd+Bloomfield+Hills,+MI+48302/@42.5788683,-83.2855238,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824bf4ab369c9a9:0x5f250e0b95b8ed19" target="_blank">
+                    DIRECTIONS
+                  </a>
                 </div>
-                    <input type="text" id="EmailIN" name="EmailIN" placeholder="Please Add Your Email">
-                    <button onclick="Reserve()">Lock In Reservation</button>
-                        <script>
-                            function Reserve() {
-                                document.getElementById("submit").innerHTML = "Thank you for Reserving your spot, extra information was sent to your email!";
-                            }
-                        </script> 
-                </div>
-                <p id="submit"></p>
+              </div>
+
+
+                <div class = "loc-column">
+                  <iframe class = "map" src="https://www.google.com/maps/d/u/2/embed?mid=1hdkZUUo-848_BuB1tFlsMcbVCaV9d1w&ehbc=2E312F&noprof=1"></iframe>
+                 </div>
+                
+              </div>
+              
             </div>
+          </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="tabPanel" id="Troy">
-                <a class="Directions" href="https://maps.google.com/maps/dir//4333+John+R+Rd+Troy,+MI+48085/@42.5816012,-83.1109446,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c3632d726293:0x65d3677a1eecaaee" target="_blank">Driving Directions</a>
-                <div class="Phone">(248)-555-0117</div>
-                <div class="LBodyText">Free parking avalible on south side of building<br>
-                    Wheelchair accessible<br>
-                    Braille and audio menus available<br>
-                    Service animals welcome<br>
-                    Seats and booths <br>
-                    Kids' seats available
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.760527145242!2d-83.11351952348829!3d42.58160512107561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c3632d726293%3A0x65d3677a1eecaaee!2s4333%20John%20R%20Rd%2C%20Troy%2C%20MI%2048085!5e0!3m2!1sen!2sus!4v1700492383885!5m2!1sen!2sus"></iframe>
-                <span>Create a Reservation</span>
-                <div class="Reservation">
-                    <div class="people">
-                        <p>How Many People:&ensp;</p>
-                        <select name=SelectPeople">
-                            <option value="20">20</option>
-                            <option value="19">19</option>
-                            <option value="18">18</option>
-                            <option value="17">17</option>
-                            <option value="16">16</option>
-                            <option value="15">15</option>
-                            <option value="14">13</option>
-                            <option value="13">13</option>
-                            <option value="12">12</option>
-                            <option value="11">11</option>
-                            <option value="10">10</option>
-                            <option value="9">9</option>
-                            <option value="8">8</option>
-                            <option value="7">7</option>
-                            <option value="6">6</option>
-                            <option value="5">5</option>
-                            <option value="4">4</option>
-                            <option value="3">3</option>
-                            <option value="2">2</option>
-                            <option value="1">1</option>
-                        </select>
-                    </div>
-
-                <div class="Time">
-                    <p>What Time:&ensp;</p>
-
-                    <select name=Time">
-                        <option value="12:00 AM">12:00 AM</option>
-                        <option value="11:30 PM">11:30 PM</option>
-                        <option value="11:00 PM">11:00 PM</option>
-                        <option value="10:30 PM">10:30 PM</option>
-                        <option value="10:00 PM">10:00 PM</option>
-                        <option value="9:30 PM">9:30 PM</option>
-                        <option value="9:00 PM">9:00 PM</option>
-                        <option value="8:30 PM">8:30 PM</option>
-                        <option value="8:00 PM">8:00 PM</option>
-                        <option value="7:30 PM">7:30 PM</option>
-                        <option value="7:00 PM">7:00 PM</option>
-                        <option value="6:30 PM">6:30 PM</option>
-                        <option value="6:00 PM">6:00 PM</option>
-                        <option value="5:30 PM">5:30 PM</option>
-                        <option value="5:00 PM">5:00 PM</option>
-                        <option value="4:30 PM">4:30 PM</option>
-                        <option value="4:00 PM">4:00 PM</option>
-                        <option value="3:30 PM">3:30 PM</option>
-                        <option value="3:00 PM">3:00 PM</option>
-                        <option value="2:30 PM">2:30 PM</option>
-                        <option value="2:00 PM">2:00 PM</option>
-                        <option value="1:30 PM">1:30 PM</option>
-                        <option value="1:00 PM">1:00 PM</option>
-                        <option value="12:30 PM">12:30 PM</option>
-                        <option value="12:00 PM">12:00 PM</option>
-                    </select>
-                </div>
-                    <input type="text" id="EmailIN" name="EmailIN" placeholder="Please Add Your Email">
-                    <button onclick="Reserve()">Lock In Reservation</button>
-                        <script>
-                            function Reserve() {
-                                document.getElementById("submit").innerHTML = "Thank you for Reserving your spot, extra information was sent to your email!";
-                            }
-                        </script> 
-                </div>
-                <p id="submit"></p>
-            </div>
-
-            <div class="tabPanel" id="Bloomfield-Hills">
-                <a class="Directions" href="https://maps.google.com/maps/dir//4200+Andover+Rd+Bloomfield+Hills,+MI+48302/@42.5788683,-83.2855238,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824bf4ab369c9a9:0x5f250e0b95b8ed19" target="_blank">Driving Directions</a>
-                <div class="Phone">(248)-555-0115</div>
-                <div class="LBodyText">Free parking avalible on south side of building<br>
-                    Wheelchair accessible<br>
-                    Braille and audio menus available<br>
-                    Service animals welcome<br>
-                    Seats and booths <br>
-                    Kids' seats 
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.8892928908776!2d-83.28809872348842!3d42.578872221249014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824bf4ab369c9a9%3A0x5f250e0b95b8ed19!2s4200%20Andover%20Rd%2C%20Bloomfield%20Hills%2C%20MI%2048302!5e0!3m2!1sen!2sus!4v1700492490991!5m2!1sen!2sus"></iframe>
-                <span>Create a Reservation</span>
-                <div class="Reservation">
-                    <div class="people">
-                        <p>How Many People:&ensp;</p>
-                        <select name=SelectPeople">
-                            <option value="20">20</option>
-                            <option value="19">19</option>
-                            <option value="18">18</option>
-                            <option value="17">17</option>
-                            <option value="16">16</option>
-                            <option value="15">15</option>
-                            <option value="14">13</option>
-                            <option value="13">13</option>
-                            <option value="12">12</option>
-                            <option value="11">11</option>
-                            <option value="10">10</option>
-                            <option value="9">9</option>
-                            <option value="8">8</option>
-                            <option value="7">7</option>
-                            <option value="6">6</option>
-                            <option value="5">5</option>
-                            <option value="4">4</option>
-                            <option value="3">3</option>
-                            <option value="2">2</option>
-                            <option value="1">1</option>
-                        </select>
-                    </div>
-
-                <div class="Time">
-                    <p>What Time:&ensp;</p>
-
-                    <select name=Time">
-                        <option value="12:00 AM">12:00 AM</option>
-                        <option value="11:30 PM">11:30 PM</option>
-                        <option value="11:00 PM">11:00 PM</option>
-                        <option value="10:30 PM">10:30 PM</option>
-                        <option value="10:00 PM">10:00 PM</option>
-                        <option value="9:30 PM">9:30 PM</option>
-                        <option value="9:00 PM">9:00 PM</option>
-                        <option value="8:30 PM">8:30 PM</option>
-                        <option value="8:00 PM">8:00 PM</option>
-                        <option value="7:30 PM">7:30 PM</option>
-                        <option value="7:00 PM">7:00 PM</option>
-                        <option value="6:30 PM">6:30 PM</option>
-                        <option value="6:00 PM">6:00 PM</option>
-                        <option value="5:30 PM">5:30 PM</option>
-                        <option value="5:00 PM">5:00 PM</option>
-                        <option value="4:30 PM">4:30 PM</option>
-                        <option value="4:00 PM">4:00 PM</option>
-                        <option value="3:30 PM">3:30 PM</option>
-                        <option value="3:00 PM">3:00 PM</option>
-                        <option value="2:30 PM">2:30 PM</option>
-                        <option value="2:00 PM">2:00 PM</option>
-                        <option value="1:30 PM">1:30 PM</option>
-                        <option value="1:00 PM">1:00 PM</option>
-                        <option value="12:30 PM">12:30 PM</option>
-                        <option value="12:00 PM">12:00 PM</option>
-                    </select>
-                </div>
-                    <input type="text" id="EmailIN" name="EmailIN" placeholder="Please Add Your Email">
-                    <button onclick="Reserve()">Lock In Reservation</button>
-                        <script>
-                            function Reserve() {
-                                document.getElementById("submit").innerHTML = "Thank you for Reserving your spot, extra information was sent to your email!";
-                            }
-                        </script> 
-                </div>
-                <p id="submit"></p>
-            </div>
-
-            <div class="tabPanel" id="Royal-Oak">
-                <a class="Directions" href="https://maps.google.com/maps/dir//5055+Delemere+Ave+Royal+Oak,+MI+48073/@42.5371064,-83.1801436,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8824c66430e197a7:0xdcb1d3339efff00c" target="_blank">Driving Directions</a>
-                <div class="Phone">(248)-555-0127</div>
-                <div class = "Phone">5055 Delemere Ave, Royal Oak, MI 48073</div>
-                <div class="LBodyText">Free parking avalible on south side of building<br>
-                    Wheelchair accessible<br>
-                    Braille and audio menus available<br>
-                    Service animals welcome<br>
-                    Seats and booths <br>
-                    Kids' seats available
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.8673172635117!2d-83.18304038857188!3d42.536873160507355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c66430e197a7%3A0xdcb1d3339efff00c!2s5055%20Delemere%20Ave%2C%20Royal%20Oak%2C%20MI%2048073!5e0!3m2!1sen!2sus!4v1700234221856!5m2!1sen!2sus"></iframe>
-                <span>Create a Reservation</span>
-                <div class="Reservation">
-                    <div class="people">
-                        <p>How Many People:&ensp;</p>
-                        <select name=SelectPeople">
-                            <option value="20">20</option>
-                            <option value="19">19</option>
-                            <option value="18">18</option>
-                            <option value="17">17</option>
-                            <option value="16">16</option>
-                            <option value="15">15</option>
-                            <option value="14">13</option>
-                            <option value="13">13</option>
-                            <option value="12">12</option>
-                            <option value="11">11</option>
-                            <option value="10">10</option>
-                            <option value="9">9</option>
-                            <option value="8">8</option>
-                            <option value="7">7</option>
-                            <option value="6">6</option>
-                            <option value="5">5</option>
-                            <option value="4">4</option>
-                            <option value="3">3</option>
-                            <option value="2">2</option>
-                            <option value="1">1</option>
-                        </select>
-                    </div>
-
-                <div class="Time">
-                    <p>What Time:&ensp;</p>
-
-                    <select name=Time">
-                        <option value="12:00 AM">12:00 AM</option>
-                        <option value="11:30 PM">11:30 PM</option>
-                        <option value="11:00 PM">11:00 PM</option>
-                        <option value="10:30 PM">10:30 PM</option>
-                        <option value="10:00 PM">10:00 PM</option>
-                        <option value="9:30 PM">9:30 PM</option>
-                        <option value="9:00 PM">9:00 PM</option>
-                        <option value="8:30 PM">8:30 PM</option>
-                        <option value="8:00 PM">8:00 PM</option>
-                        <option value="7:30 PM">7:30 PM</option>
-                        <option value="7:00 PM">7:00 PM</option>
-                        <option value="6:30 PM">6:30 PM</option>
-                        <option value="6:00 PM">6:00 PM</option>
-                        <option value="5:30 PM">5:30 PM</option>
-                        <option value="5:00 PM">5:00 PM</option>
-                        <option value="4:30 PM">4:30 PM</option>
-                        <option value="4:00 PM">4:00 PM</option>
-                        <option value="3:30 PM">3:30 PM</option>
-                        <option value="3:00 PM">3:00 PM</option>
-                        <option value="2:30 PM">2:30 PM</option>
-                        <option value="2:00 PM">2:00 PM</option>
-                        <option value="1:30 PM">1:30 PM</option>
-                        <option value="1:00 PM">1:00 PM</option>
-                        <option value="12:30 PM">12:30 PM</option>
-                        <option value="12:00 PM">12:00 PM</option>
-                    </select>
-                </div>
-                    <input type="text" id="EmailIN" name="EmailIN" placeholder="Please Add Your Email">
-                    <button onclick="Reserve()">Lock In Reservation</button>
-                        <script>
-                            function Reserve() {
-                                document.getElementById("submit").innerHTML = "Thank you for Reserving your spot, extra information was sent to your email!";
-                            }
-                        </script> 
-                </div>
-                <p id="submit"></p>
-            </div> -->
-    </main>
-    <script src="Tabs.js"></script>
-</body>
+    </body>
 </html>

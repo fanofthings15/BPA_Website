@@ -1,0 +1,354 @@
+ /* ::-webkit-scrollbar {
+    display: none;
+  } */
+  @font-face {
+    font-family: sports_title;
+    src: url(fonts/azn-unified.oblique.otf);
+}
+
+.button { transform: skewX(-20deg) translateX(-0.55em);}
+
+.location-grid {
+    display: grid;
+    grid-template-rows: repeat(1, 3fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 20vh;
+   }
+
+   .location-grid > div { 
+
+    /*353535*/
+    color: white;
+    font-size: 1.5em;
+    padding: 0em;
+    grid-column: span 1;
+    text-align: center;
+    
+   }
+.directions-btn { 
+    text-align: center; 
+    background-color: #c92a2a; 
+    border-radius: 0.75em 0 0.75em 0;
+    padding: 2%;
+    margin: 5%;
+    user-select: none;
+    font-size: 100%;
+    white-space: nowrap;
+    
+}
+
+.directions-btn:hover{
+    background-color: #ee8730;
+    /*#e1642d;*/
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.location-text 
+{
+    background-color: #171717;
+    border-radius: .5em;
+}
+
+.location-grid .directions-btn { color: white; text-decoration: none; }
+
+
+
+input[type='checkbox'] { display: none; } 
+.wrap-collabsible { margin: 5% 0; }
+ .lbl-toggle { display: block; 
+    font-weight: bold; 
+    font-family: bodytext; font-size: 1.2rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    padding: 1rem; 
+    color: white; 
+    background: var(--red); 
+    cursor: pointer; 
+    border-radius: 7px; 
+    transition: all 0.4s ease-out; 
+    width: 80%; 
+    margin: auto;
+    user-select: none;} 
+    
+.lbl-toggle:hover { color: #FFF; background-color: var(--orange);} 
+.lbl-toggle::before { content: ' '; 
+    display: inline-block;
+        border-top: 5px solid transparent; 
+        border-bottom: 5px solid transparent; 
+        border-left: 5px solid currentColor; 
+        vertical-align: middle; 
+        margin-right: .7rem; 
+        transform: translateY(-2px); 
+        transition: transform .2s ease-out; } 
+.toggle:checked+.lbl-toggle::before { transform: rotate(90deg) translateX(-3px); } 
+.collapsible-content { max-height: 0px; overflow: hidden; transition: max-height .25s ease-in-out; } 
+.toggle:checked + .lbl-toggle + .collapsible-content { max-height: 350px; }
+.toggle:checked+.lbl-toggle { border-bottom-right-radius: 0; border-bottom-left-radius: 0; } 
+.collapsible-content .content-inner { background: #353535; 
+    /* border-bottom: 1px solid rgba(0, 105, 255, .45);  */
+    border-bottom-left-radius: 7px; 
+    border-bottom-right-radius: 7px; 
+    padding: .5rem 1rem; 
+    width: 80%; margin: auto;
+    font-size: .5em; text-align: left;} 
+.collapsible-content p { margin-bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.BodyText{
+    width: 100em;
+    height: 50em;
+    margin: 1.25em 0 0 2em;
+
+    background-color: aqua;
+}
+.Locations{
+    width: 20em;
+    height: 50em;
+    margin: 1.25em 0 0 0;
+}
+.OtherLcards{
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    height: 7em;
+    background-color: yellow;
+}
+#blank{
+    height: 21em;
+    opacity: 0;
+}
+
+#OLC2, #OLC3, #OLC4{
+     margin-left: .5em; 
+    margin-bottom: .5em;
+}
+
+.tabContainer{
+    width: 98%;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 43em;
+    margin-top: 3ifrem;
+
+}
+
+.tabContainer .buttonContainer{
+    height: 8%;
+    border-radius: 7px 7px 7px 7px; 
+}
+.buttonContainer{
+    margin-bottom: .6em;
+}
+.tabContainer .buttonContainer button{
+    z-index: 50;
+    width: 25%;
+    height: 120%;
+    float: left;
+    border-radius: .5em .5em 0 0 ;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    padding: 0;
+    font-family: bodytext, serif;
+    font-size: 28px;
+    background-color:rgba(102, 102, 102, 0.164);
+    color: white;
+}
+
+.tabContainer .buttonContainer button:hover{
+background-color:rgba(255, 255, 255, 0.274);
+}
+
+.tabContainer .tabPanel{
+    z-index: 100;
+    height: 106%;
+    background-color:#121212;
+    background-image: url(imgs/wood.jpg);
+    background-size: cover;
+    background-position: 24em 2em;
+    color: white;
+    text-align: center;
+    padding-top: 5vh; 
+    box-sizing: border-box;
+    font-family: bodytext, serif;
+    font-size: 2em;
+    display: none;
+    border-radius: 0px 0px 7px 7px;
+}
+
+iframe{
+    border: 0;
+    /* position: absolute;
+    top: 11em;
+    left: 3em; */
+    display: flex;
+    height:60vh;
+    width: 40vw;
+    border-radius: 1em;
+    text-align: center;
+    margin:auto;
+
+    /* 1em 1em 0 0 */
+}
+.phone{
+    /* width: 15em;
+    height: auto;
+    display: flex;
+    position: relative;
+    left: 9.5em;
+    top: -2em;
+    font-size: 3em;
+    text-align: left;
+    text-shadow: 2px 1px 2px black; */
+    color:#c92a2a
+}
+.LBodyText{
+    width: 21em;
+    height: auto;
+    display: flex;
+    position: relative;
+    top: -1em;
+    left: 14.4em;
+    font-size: 2em;
+    text-align: left;
+    text-shadow: 2px 1px 2px black;
+}
+.Directions{
+    text-decoration: none;
+    display: flex;
+    /* width: 500px;
+    position: relative;
+    top: 15em;
+    left: 1.52em; */
+    width: 75vh;
+    padding: 0.75em;
+    color: #ffffff;
+    background-color: #c92a2a;
+    font-size: 1.5em;
+    border-radius: 0 0 0.75em 0.75em;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.Directions:hover{
+    text-decoration: none;
+    display: flex;
+    width: 500px;
+    position: relative;
+    top: 15em;
+    left: 1.52em;
+    padding: 0.75em;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 1.5em;
+    border-radius: 0 0 0.75em 0.75em;
+    justify-content: center;
+    transition: 0.4s;
+}
+span{
+    position: absolute;
+    left: 65%;
+    top: 80%;
+    font-size: 2em;
+    font-family: sports_title;
+}
+.Reservation{
+    position: absolute;
+    top:85%;
+    left: 53%;
+    display: inline;
+    width: 60em;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
+}
+.people{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.Time{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.Reservation p{
+    font-size: 1.4em;
+    padding: 0;
+    margin: 0;
+}
+select{
+    color: white;
+    background-color:#c92a2a;
+    border: 0;
+    border-radius: 0.75em 0 0.75em 0;
+}
+input{
+    background-color:#c92a2a;
+    color: white;
+    border: 0;
+    border-radius: 0.75em 0 0.75em 0;
+}
+button{
+    color: white;
+    background-color:#c92a2a;
+    border: 0;
+    border-radius:0.75em 0 0.75em 0;
+    transition: .3s;
+}
+button:hover{
+    color: black;
+    background-color:white;
+    border: 0;
+    transition: .3s;
+    border-radius:0.75em 0 0.75em 0;
+}
+::placeholder{
+    color: white;
+    opacity: 80%;
+}
+#submit{
+    position: absolute;
+    top: 90%;
+    left: 58%;
+}

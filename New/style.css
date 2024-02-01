@@ -11,18 +11,81 @@
     font-family: Sports;
     src: url(fonts/supers-sports.combined.otf);
 }
+.font-sports{
+    font-family: Sports;
+}
 
 @font-face {
     font-family: font_sports_title;
     src: url(fonts/azn-unified.oblique.otf);
+}
+.font-sports-title{
+    font-family: sports_title;
 }
 
 @font-face {
     font-family: font_body;
     src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
+.font-body{
+    font-family: bodytext;
+}
 
-html { scroll-behavior: smooth;}
+html { scroll-behavior: smooth; background-color: #242424;}
+
+.title{
+    font-size: 2em;
+    color:white;
+}
+
+.caps
+{
+    text-transform: uppercase;
+}
+
+nav{margin: 0; background-color: red;}
+
+.nav-item {
+    font-size: 120%;
+    margin: 5px;
+    border-radius: 10px 0 10px 0;
+    background-color: #c92a2a;
+    transition: background-color .2s;
+    transform: skewX(-20deg) translateX(-0.55em);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.nav-item:hover{
+    background-color: #ee8730;
+    transition: background-color .2s;
+}
+
+.dropdown-menu
+{
+    transform: skew(20deg) translateX(.75em);
+}
+
+.dropdown-item
+{
+    color: black; 
+}
+.dropdown-item:hover{
+    transition: background-color 2s;
+    background-color: #ee8730; 
+    color:blue;
+}
+
+@media screen and (max-width: 430px) {
+  .title{
+    display:none;
+  }
+  }
+
+
+
+
 
 
 
@@ -31,6 +94,7 @@ html { scroll-behavior: smooth;}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    
   }
   
   /* Track */
@@ -50,6 +114,8 @@ html { scroll-behavior: smooth;}
   }
 
 
+
+
 body {
     width: 100vw;
     height: 100vh;
@@ -58,7 +124,6 @@ body {
     padding: 0;
 
     /* background-color: #f8f9fa; */
-    background-color: #242424;
 
     font-family: font_body, sans-serif;
 
@@ -138,24 +203,7 @@ body {
     transform: scale(1.05);
     transition: 0.4s;
     
-}
-
-.card#C1:hover{
-    /* background-image: url(imgs/Ipad.jpeg);
-    background-position: 100% 65%;
-    color: black; */
-}
-.card#C2:hover{
-    /* background-image: url(imgs/Burger.jpeg);
-    background-position: 25% 65%; */
-}
-.card#C3:hover{
-    /* background-image: url(imgs/Location.jpeg);
-    background-position: 25% 65%; */
-}
-.card#C4:hover{
-    /* background-image: url(imgs/People.jpeg);
-    background-position: 25% 65%; */
+    transition: background-color 0.4s;
 }
 
 .centered { width: 80%; margin: auto; text-align: center;} 
@@ -191,7 +239,7 @@ body {
     margin: auto;
     width: 100vw;
     font-size: .35em;
-    height: 40vh;
+    height: 50vh;
     
 }
 
@@ -249,6 +297,7 @@ header div {
 
     display: flex;
     align-items:center;
+
 }
 
 
@@ -260,6 +309,7 @@ header div {
     font-family: font_sports_title; 
     color: white;
     white-space: nowrap;
+    
 }
 
 /*Inline lists for footer links*/

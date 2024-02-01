@@ -3,55 +3,199 @@
     src: url(fonts/azn-unified.oblique.otf);
 }
 
-.main-grid {
-    display: grid;
-    grid-template-rows: repeat(3, 3fr);
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2em;
+.flex-container
+{
+  display: flex;
+  flex-flow: row;
+}
+.flex-item
+{
+  display: flex;
+  flex-flow: column;
+}
+
+.hero
+{
+    background-image: url(imgs/main/hero-darkened.webp);
+    /* background-image: url(imgs/main/bacon-burger.jpg); */
+    background-size: cover;
     text-align: center;
-    margin: auto;
-    margin-bottom: 1em;
-    border-radius: .5em;
-  }
-  .main-grid > div {
-    background-color:#353535;
-    color: white;
-    font-size: 1.5em;
-    padding: 0.75em;
-    grid-column: span 1;
+    align-items: center;
+    height: 75vh;
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-container
+{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75vw;
+  font-size: 2em;
+  align-items: center;
+ 
+}
+
+.hero-item {
+  width: 48%;
+  height: 15vh;
+  margin-bottom: 2%;
+  text-align: center; 
+  align-items: center;
+  overflow: hidden;
+  align-items: center;
+  text-decoration: none;
+  color:white;
+}
+
+a:link{
+  text-decoration: none;
+  color:white;
+}
+a:visited{text-decoration: none;}
+
+.hero-button
+{
+  text-decoration: none;
+  color:white;
+  font-size: 170%;
+  background-color: #c92a2a;
+}
+
+
+
+.hero-title
+{
+  font-size: 2.5em;
+  -webkit-text-stroke-width: 3px; 
+  -webkit-text-stroke-color: black;
+  color:white;
+}
+
+@media screen and (max-width: 1048px) {
+  .hero-title{
+    background-color:red;
+    font-size: 1.5em; 
   }
 
+  .main-grid-inner { flex-direction: row;}
+
+}
+
+
+
+.hero-item:nth-child(3n - 2) {
+  width: 100%;
+}
+
+main{ padding: 0;}
+
+.review-row { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  
+}
+
+.review-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  background-color: #4e4e4e;
+  font-size: 1.25em;
+  text-align: center;
+  justify-content: center;
+  min-width: 25em;
+
+  margin: .25em;
+}
+
+.review-column + .review-column
+{
+  margin-right: .25em;
+}
+.stars 
+{
+  font-size: 2em;
+  color: white;
+}
+
+.main-grid {
+  display:flex;
+  flex-flow: column;
+  text-align: center;
+  margin: auto;
+  border-radius: .5em;
+}
+.main-grid > div {
+  background-color:#353535;
+  color: white;
+  font-size: 1.5em;
+  padding: 0.75em;
+  grid-column: span 1;
+  width: 97%;
+}
+
+
+.main-grid-inner {
+  display:flex;
+  flex-flow: row;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  /* padding-bottom: em; */
+ }
+
+
+ @media screen and (max-width: 1500px) {
   .main-grid-inner {
-    display: grid;
-    grid-template-rows: repeat(1, 3fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
+    display:flex;
+    flex-flow: column;
     margin-left: 1em;
     margin-right: 1em;
    }
+ }
 
-   .main-grid-inner > div { 
-    background-color: #353535;
-    /*353535*/
-    color: white;
-    font-size: 1.5em;
-    padding: 0em;
-    grid-column: span 1;
-    
-   }
+ .main-grid-inner > div { 
+  background-color: #4e4e4e;
+  /*353535*/
+  color: white;
+  font-size: 1.5em;
+  padding: 0em;
+  grid-column: span 1;
+  padding-bottom: 1em;
+  
+ }
 
    .main-grid-inner > div > h1 { color: var(--red); font-family: font_sports_title; text-align: center; font-size: 3em; padding: 0; margin: 0}
    .main-grid-inner > div > p { margin: 1em 0; }
 
-   .main-grid-inner > div > img { aspect-ratio: 4/3; height: 16em; object-fit: cover; display: flex; justify-content: center;}
+.main-grid-inner > div > img { 
+  aspect-ratio: 4/3; 
+  height: 16em; 
+  margin-top: 10%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;}
 
-   .main-grid-inner-text { text-align: center;}
-   .main-grid-inner-text ul {list-style-type: none; text-align: center;}
+ .main-grid-inner-text { text-align: center;}
+ .main-grid-inner-text ul {list-style-type: circle; text-align: center;}
 
-   .main-grid-inner-image { text-align: right;}
+ .main-grid-inner-image { text-align: left;}
 
 .main-grid-inner-image > img{ object-fit: cover;}
 
+.res{ flex-direction: row;}
 
 /*
 .EventStyle1{
@@ -141,47 +285,20 @@
     text-decoration: none;
 }
 
-.EButton{
-    width: 40%;
-    height: 5em;
-    background-color: #c92a2a;
-    margin:2em 30% 0 30%;
-    text-align: center;
-    height: auto;
-    width: auto;
-    padding: 0.75em;
-    background-color: #c92a2a;
-    border-radius: 0.75em 0 0.75em 0;
-    font-size: 2em;
-    transform: skewX(-20deg);
-    text-decoration: none;
-    
+.res{
+  flex-flow: column-reverse;
 }
-.EButton a{
-    font-size: 1.75em;
-    text-align: center;
-    text-decoration: none;
-    color: white;   
-}
-.ReviewCon{
-    border-radius: 1em;
-    background-color: #2e2e2e;
-    margin:4em 2em 2em 4em;
-    padding: 1em 2em;
-    width: calc(100% -4em);
-    height: 20em;
-    display: flex;
-    box-sizing: border-box;
-    gap: 2em;
-    justify-content: space-evenly;
-}
-.Review{
-width: 25%;
-height: auto;
-color: white;
-font-size: 1.5em;
-text-align: center;
-}
-.Review p{
-    margin: 3em 0 0 0;
 } */
+
+@media screen and (max-width: 810px) {
+.main-grid-inner > div > img { 
+  aspect-ratio: 4/3; 
+  width: 100%;
+  height: auto;
+  margin: none;
+  /* height: 16em;  */
+  object-fit: cover;
+  display: flex;
+  justify-content: center;}
+  .main-grid-inner > div > h1 {font-size: 12vw;}
+}
