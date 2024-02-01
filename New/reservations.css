@@ -72,6 +72,8 @@
     cursor: pointer;
     transition: 0.4s;
   }
+
+  option { font-family: bodytext;}
   
   button:hover {
     /* border: 2px solid black; */
@@ -82,8 +84,7 @@
  
 
 /*For Reservation Success Page*/
-
-h2 { color: white; font-family: bodytext; text-align: center;}
+.h2-title { color: white; font-family: bodytext; text-align: center;}
 
 .success { margin-bottom: 3em;}
 

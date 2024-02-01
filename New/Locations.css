@@ -12,6 +12,9 @@
     height: 85vh;
     overflow:hidden;
 }
+.button{
+    margin: 5px;
+}
 
 .location{
     text-align: center;

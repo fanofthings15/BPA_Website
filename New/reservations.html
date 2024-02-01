@@ -9,7 +9,15 @@
         <link href="style.css" rel="stylesheet">
         <link href = "reservations.css" rel = "stylesheet">
 
-        <title>Menu - Game Day Grill: Burgers & More</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+      
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
+
+        <title>Reservations - Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
         <meta name="description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
         
@@ -32,21 +40,46 @@
     </head>
 
     <body>
-      <header>
-        <div class="grow">
-            <a id="logoB" href="index.html">
-                <img src = "imgs/logos/game-day-grill-logo-simple2.png" class = "logo">
-            </a>
-            <p class="header-text">Game Day Grill</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark" style = "background-color: #242424;">
+            <div class="container-fluid">
+      
+              <a class="navbar-brand" href="index.html">
+                  <img src="imgs/logos/game-day-grill-logo-simple2.png" width="80" height="80" class="d-inline-block" alt="game day grill logo">
+                </a>
+                <span class = "font-sports-title title">Game Day Grill</span>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-body caps">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="order.html">ORDER NOW</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">MENU</a>
+                  </li>
 
-        </div>
-        <div class="spaced-row">
-            <a href="order.html" class="button sm" >Order Now</a>
-            <a href="menu.html" class="button sm">Menu</a>
-            <a href="locations.html" class="button sm">Locations</a>
-            <a href="events.html" class="button sm">Special Events</a>
-        </div>
-    </header>
+                  <li class="nav-item">
+                    <a class="nav-link" href="locations.html">LOCATIONS</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
         <main>
             <h1 class = "centered-title">RESERVATIONS</h1>
 
@@ -68,23 +101,27 @@
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
                     </div>
-                    <div class="elem-group">
+                    <div class="elem-group inlined">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
                     </div>
-                    <div class="elem-group">
+                    <div class="elem-group inlined">
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" name="visitor_phone" placeholder="123-456-7890" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
                     </div>
                     <hr>
+
+
                     <div class="elem-group inlined">
-                    <label for="adult">Party Size:</label>
-                    <input type="number" id="size" name="total_adults" placeholder="Party Size" min="1" required>
+                        <label for="adult">Party Size:</label>
+                        <input type="number" id="size" name="total_adults" placeholder="Party Size" min="1" required>
                     </div>
                     <div class="elem-group inlined">
-                    <label for="checkin-date">Day of Reservation:</label>
-                    <input type="date" id="checkin-date" name="checkin" required>
+                        <label for="checkin-date">Day of Reservation:</label>
+                        <input type="date" id="checkin-date" name="checkin" required>
                     </div>
+
+
                     <div class="elem-group">
                     <label for="res-time">Time of Reservation:</label>
                     <select id="res-time" name="res-time" required>
@@ -100,7 +137,6 @@
                         <option value="8:00PM">8:00PM</option>
                         <option value="9:00PM">9:00PM</option>
                         <option value="10:00PM">10:00PM</option>
-                        <option value="11:00PM">11:00PM</option>
                     </select>
                     </div>
                     <hr>
