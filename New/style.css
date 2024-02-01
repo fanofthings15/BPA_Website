@@ -17,19 +17,23 @@
 }
 
 @font-face {
-    font-family: font_sports_title;
+    font-family: font-sports-title;
     src: url(fonts/azn-unified.oblique.otf);
 }
 .font-sports-title{
-    font-family: sports_title;
+    font-family: font-sports-title;
 }
 
 @font-face {
-    font-family: font_body;
+    font-family: font-body;
     src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
 .font-body{
-    font-family: bodytext;
+    font-family: font-body;
+}
+
+.sm-text {
+    font-size: 1em;
 }
 
 .sm-text {
@@ -115,7 +119,86 @@
     max-width: 50%;
 }
 
-html { scroll-behavior: smooth; background-color: #242424;}
+.md-text {
+    font-size: 1.5em;
+}
+
+.lg-text {
+    font-size: 2.5em;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.white {
+    color: #f8f9fa;
+}
+
+.content-columns {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+}
+
+.centered-row {
+    justify-content: center;
+    align-items: center;
+}
+
+.infocard {
+    padding: 1em;
+
+    background-color: #333333;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+
+    color: #f8f9fa;
+
+    font-size: 1.5em;
+
+    box-sizing: border-box;
+}
+
+.infocard span {
+    text-align: center;
+
+    color: #f8f9fa;
+}
+
+.column-spacer {
+    margin: 0.25em;
+}
+
+.full-width-infocard {
+    width: 100%;
+}
+
+.infocard-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2em;
+
+    flex-wrap: wrap;
+}
+
+.infocard-row-img {
+    max-width: 100%;
+
+    flex-grow: 1;
+}
+
+.infocard-row-text {
+    max-width: 50%;
+}
+
+html { scroll-behavior: smooth; background-color: #121215;}
 
 .title{
     font-size: 2em;
@@ -129,7 +212,7 @@ html { scroll-behavior: smooth; background-color: #242424;}
 
 nav{margin: 0; background-color: red;}
 
-.nav-item {
+.nav-item, .nav-item:visited {
     font-size: 120%;
     margin: 5px;
     border-radius: 10px 0 10px 0;
@@ -158,7 +241,6 @@ nav{margin: 0; background-color: red;}
 .dropdown-item:hover{
     transition: background-color 2s;
     background-color: #ee8730; 
-    color:blue;
 }
 
 @media screen and (max-width: 430px) {
@@ -209,7 +291,7 @@ body {
 
     /* background-color: #f8f9fa; */
 
-    font-family: font_body, sans-serif;
+    font-family: font-body, sans-serif;
 
     scrollbar-width: none;
     overflow-x: hidden;
@@ -315,7 +397,7 @@ body {
 .Cards .card p{
     position: relative;
     top: 1em;
-    font-family: font_body;
+    font-family: font-body;
     font-size: 4em;
     opacity: 100%;
     z-index: 5;
@@ -331,7 +413,7 @@ body {
 .centered { width: 80%; margin: auto; text-align: center;} 
 
 .centered-title {
-    font-family: font_sports_title; 
+    font-family: font-sports-title; 
     color: white;
     margin: auto;
     width: 80%;
@@ -342,7 +424,7 @@ body {
  }
 
  .centered-subtitle {
-    font-family: font_body;
+    font-family: font-body;
     color: #ffffff;
     margin: auto;
     margin-top: 0;
@@ -353,7 +435,7 @@ body {
     
  }
 
- .contact {  color: white; font-family: font_body;}
+ .contact {  color: white; font-family: font-body;}
 
  footer {
     background-color: #c92a2a;
@@ -444,7 +526,7 @@ header div {
     padding: 0;
     margin: 0.25em;
     font-size: 3em;
-    font-family: font_sports_title; 
+    font-family: font-sports-title; 
     color: white;
     white-space: nowrap;
     
@@ -452,13 +534,13 @@ header div {
 
 /*Inline lists for footer links*/
 .inline { margin-top: .5em; margin-bottom: .5em;}
-.inline li {display: inline-block; font-family: font_body; text-decoration: none;}
+.inline li {display: inline-block; font-family: font-body; text-decoration: none;}
 .inline a { color: white;}
 .inline img {height: 1.5em; margin: .25em;} 
 
 .lg {
     font-size: 4em;
-font-family: font_sports_title;
+font-family: font-sports-title;
 }
 
 
@@ -478,8 +560,7 @@ font-family: font_sports_title;
 #logoB{padding: 0; background: none;border: none;}
 
 main {
-    padding-top: 5em;
-    font-family: font_body;
+    font-family: font-body;
 }
 
 
@@ -610,7 +691,7 @@ footer .footer-list { font-size: 2em; text-align: center;}
 
     box-sizing: border-box;
 
-    background-color: #171717;
+    background-color: #000022;
 
     /* display: flex; */
     display: none;
