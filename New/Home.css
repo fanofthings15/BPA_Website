@@ -3,6 +3,46 @@
     src: url(fonts/azn-unified.oblique.otf);
 }
 
+.wrapper-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.wrapper {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2em;
+}
+
+.card-header {
+  font-size: 3em;
+  font-family: font_sports_title;
+
+  color: var(--text-red);
+}
+
+.new-review-row {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 2em;
+}
+
+.new-review-row .infocard {
+  flex-grow: 1;
+
+  width: calc((100% / 3) - (4em / 3));
+  min-width: 12em;
+}
+
 .flex-container
 {
   display: flex;
@@ -152,7 +192,6 @@ main{ padding: 0;}
 .main-grid-inner {
   display:flex;
   flex-flow: row;
-  margin-bottom: 1em;
   /* padding-bottom: em; */
  }
 

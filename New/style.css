@@ -1,6 +1,7 @@
 /*COLORS*/
 :root {
     --red: #c92a2a;
+    --text-red: #f03e3e;
     --orange: #ee8730;
   }
 
@@ -29,6 +30,89 @@
 }
 .font-body{
     font-family: bodytext;
+}
+
+.sm-text {
+    font-size: 1em;
+}
+
+.md-text {
+    font-size: 1.5em;
+}
+
+.lg-text {
+    font-size: 2.5em;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.white {
+    color: #f8f9fa;
+}
+
+.content-columns {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+}
+
+.centered-row {
+    justify-content: center;
+    align-items: center;
+}
+
+.infocard {
+    padding: 1em;
+
+    background-color: #333333;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+
+    color: #f8f9fa;
+
+    font-size: 1.5em;
+
+    box-sizing: border-box;
+}
+
+.infocard span {
+    text-align: center;
+
+    color: #f8f9fa;
+}
+
+.column-spacer {
+    margin: 0.25em;
+}
+
+.full-width-infocard {
+    width: 100%;
+}
+
+.infocard-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2em;
+
+    flex-wrap: wrap;
+}
+
+.infocard-row-img {
+    max-width: 100%;
+
+    flex-grow: 1;
+}
+
+.infocard-row-text {
+    max-width: 50%;
 }
 
 html { scroll-behavior: smooth; background-color: #242424;}
@@ -131,19 +215,6 @@ body {
     overflow-x: hidden;
 }
 
-.wrapper-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    box-sizing: border-box;
-    padding: 1em;
-}
-
-.wrapper {
-    width: 80%;
-}
-
 
 
 .button {
@@ -180,6 +251,44 @@ body {
     border: 0;
 
     transform: scale(1.05) skewX(-20deg);
+    transition: 0.4s;
+}
+
+.navbar-button {
+    padding: 0.75em;
+
+    color: #f8f9fa;
+    background-color: #e03131;
+
+    border-radius: 0.75em 0 0.75em 0;
+
+    /* 2.5em per 90 degrees of skew, so for 20, its (20/90, 0.222)% of 2.5 */
+
+    transform: skewX(-20deg);
+
+    user-select: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    text-align: center;
+
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+/* .button:visited{
+    color: #f1f3f5;
+} */
+
+
+.navbar-button:hover{
+    background-color:#ee8730;
+    text-decoration: none;
+
+    border: 0;
+
     transition: 0.4s;
 }
 
