@@ -3,6 +3,46 @@
     src: url(fonts/azn-unified.oblique.otf);
 }
 
+.wrapper-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.wrapper {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2em;
+}
+
+.card-header {
+  font-size: 3em;
+  font-family: font_sports_title;
+
+  color: var(--text-red);
+}
+
+.new-review-row {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 2em;
+}
+
+.new-review-row .infocard {
+  flex-grow: 1;
+
+  width: calc((100% / 3) - (4em / 3));
+  min-width: 12em;
+}
+
 .flex-container
 {
   display: flex;
@@ -146,17 +186,11 @@ main{ padding: 0;}
 .main-grid-inner {
   display:flex;
   flex-flow: row;
-  margin-bottom: 1em;
   /* padding-bottom: em; */
  }
 
 
- @media screen and (max-width: 1500px) {
-  .main-grid-inner {
-    display:flex;
-    flex-flow: column;
-   }
- }
+ 
 
  .main-grid-inner > div { 
   background-color: #1f1f27;
@@ -176,6 +210,7 @@ main{ padding: 0;}
   aspect-ratio: 4/3; 
   height: 16em; 
   margin-top: 10%;
+  margin:10%,0px,0px,0px;
   object-fit: cover;
   display: flex;
   justify-content: center;}
@@ -189,7 +224,23 @@ main{ padding: 0;}
 
 .res{ flex-direction: row;}
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1500px) {
+  .main-grid-inner {
+    display:flex;
+    flex-flow: column;
+   }
+   .res{
+    flex-flow: column-reverse;
+  }
+  .main-grid-inner > div > img { 
+    margin: auto;
+  }
+ }
+
+
+
+
+@media screen and (max-width: 1080px) {
 .main-grid-inner > div > img { 
   aspect-ratio: 4/3; 
   width: 100%;
@@ -199,5 +250,5 @@ main{ padding: 0;}
   object-fit: cover;
   display: flex;
   justify-content: center;}
-  .main-grid-inner > div > h1 {font-size: 12vw;}
+  .main-grid-inner > div > h1 {font-size: 10vw;}
 }

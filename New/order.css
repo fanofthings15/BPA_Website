@@ -64,18 +64,6 @@ select * {
     justify-content: right;
 }
 
-.sm-text {
-    font-size: 1em;
-}
-
-.md-text {
-    font-size: 1.5em;
-}
-
-.lg-text {
-    font-size: 2.5em;
-}
-
 .xl-text {
     font-size: 4em;
 }
@@ -341,7 +329,7 @@ select * {
 }
 
 .menu-item-subtitle {
-  color:#f03e3e;
+  color:var(--text-red);
   font-size: 1.5em;
   font-family: font_sports_title;
 }
