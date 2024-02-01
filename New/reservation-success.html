@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="style.css" rel="stylesheet">
         <link href = "reservations.css" rel = "stylesheet">
+        <script src="hamburger.js"></script>
 
         <title>Menu - Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
@@ -32,21 +33,27 @@
     </head>
 
     <body>
-      <header>
-        <div class="grow">
-            <a id="logoB" href="index.html">
-                <img src = "imgs/logos/game-day-grill-logo-simple2.png" class = "logo">
-            </a>
-            <p class="header-text">Game Day Grill</h1>
-
-        </div>
-        <div class="spaced-row">
-            <a href="order.html" class="button sm" >Order Now</a>
-            <a href="menu.html" class="button sm">Menu</a>
-            <a href="locations.html" class="button sm">Locations</a>
-            <a href="events.html" class="button sm">Special Events</a>
-        </div>
-    </header>
+        <header>
+			<div class="grow">
+				<a id="logoB" href="index.html">
+					<img src = "imgs\logos\game-day-grill.ico" alt = "Game Day Grill Logo" class = "logo">
+				</a>
+				<p class="header-text">Game Day Grill</h1>
+			</div>
+			<div class="navbar-buttons spaced-row">
+				<a href="order.html" class="button sm" >Order Now</a>
+				<a href="menu.html" class="button sm">Menu</a>
+				<a href="locations.html" class="button sm">Locations</a>
+				<a href="events.html" class="button sm">Special Events</a>
+			</div>
+			<img id="hamburger-button" src="imgs/hamburger.webp">
+    	</header>
+		<div id="hamburger-menu">
+			<a href="order.html" class="button sm" >Order Now</a>
+			<a href="menu.html" class="button sm">Menu</a>
+			<a href="locations.html" class="button sm">Locations</a>
+			<a href="events.html" class="button sm">Special Events</a>
+		</div>
         <main>
             <h1 class = "centered-title">SUCCESS!</h1>
             <h2>Your reservation has been booked. Can't wait to see you!</h2>
