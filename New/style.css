@@ -487,6 +487,10 @@ footer .footer-list { font-size: 2em; text-align: center;}
     width: 100%;
 }
 
+.navbar-buttons {
+    margin-right: 1em;
+}
+
 @media only screen and (max-width: 80em) {
     .header-text {
         font-size: 1.5em;
