@@ -103,6 +103,8 @@ main{ padding: 0;}
   justify-content: center;
   width: 100%;
   color: white;
+
+  gap: 1em;
   
 }
 
@@ -117,7 +119,7 @@ main{ padding: 0;}
   justify-content: center;
   min-width: 25em;
 
-  margin: .25em;
+  box-sizing: border-box;
 }
 
 .review-column + .review-column
@@ -150,8 +152,6 @@ main{ padding: 0;}
 .main-grid-inner {
   display:flex;
   flex-flow: row;
-  margin-left: 1em;
-  margin-right: 1em;
   margin-bottom: 1em;
   /* padding-bottom: em; */
  }
@@ -161,8 +161,6 @@ main{ padding: 0;}
   .main-grid-inner {
     display:flex;
     flex-flow: column;
-    margin-left: 1em;
-    margin-right: 1em;
    }
  }
 

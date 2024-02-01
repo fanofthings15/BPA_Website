@@ -131,6 +131,19 @@ body {
     overflow-x: hidden;
 }
 
+.wrapper-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.wrapper {
+    width: 80%;
+}
+
 
 
 .button {
@@ -367,7 +380,10 @@ p {
     background-repeat: no-repeat;
     background-color: #171717;
     overflow: hidden;
-   
+
+    max-width: 100%;
+
+    /* margin-bottom: 1em; */
 }
 
 .presented-text {
@@ -503,6 +519,18 @@ footer .footer-list { font-size: 2em; text-align: center;}
     #hamburger-button {
         display: block;
     }
+
+    .left-half-center {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 2em;
+
+        background-color: rgba(0, 0, 0, 0.3);
+    }
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
+}
