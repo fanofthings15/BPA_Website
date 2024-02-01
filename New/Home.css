@@ -3,6 +3,46 @@
     src: url(fonts/azn-unified.oblique.otf);
 }
 
+.wrapper-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.wrapper {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2em;
+}
+
+.card-header {
+  font-size: 3em;
+  font-family: font_sports_title;
+
+  color: var(--text-red);
+}
+
+.new-review-row {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 2em;
+}
+
+.new-review-row .infocard {
+  flex-grow: 1;
+
+  width: calc((100% / 3) - (4em / 3));
+  min-width: 12em;
+}
+
 .flex-container
 {
   display: flex;
@@ -152,7 +192,6 @@ main{ padding: 0;}
 .main-grid-inner {
   display:flex;
   flex-flow: row;
-  margin-bottom: 1em;
   /* padding-bottom: em; */
  }
 
@@ -175,8 +214,8 @@ main{ padding: 0;}
   
  }
 
-   .main-grid-inner > div > h1 { color: var(--red); font-family: font_sports_title; text-align: center; font-size: 3em; padding: 0; margin: 0}
-   .main-grid-inner > div > p { margin: 1em 0; }
+ .main-grid-inner > div > h1 { color: var(--red); font-family: sports_title; text-align: center; font-size: 3em; padding: 0; margin: 0}
+ .main-grid-inner > div > p { margin: 1em 0; }
 
 .main-grid-inner > div > img { 
   aspect-ratio: 4/3; 
@@ -194,6 +233,37 @@ main{ padding: 0;}
 .main-grid-inner-image > img{ object-fit: cover;}
 
 .res{ flex-direction: row;}
+
+
+
+
+@media screen and (max-width: 1500px) {
+
+.main-grid-inner-image {align-items: center; width: 100%;}
+.main-grid-inner > div > img { margin: auto;}
+.main-grid-inner {
+  display:flex;
+  flex-flow: column;
+  
+}
+
+.res{
+  flex-flow: column-reverse;
+}
+}
+
+@media screen and (max-width: 810px) {
+.main-grid-inner > div > img { 
+  aspect-ratio: 4/3; 
+  width: 100%;
+  height: auto;
+  margin: none;
+  /* height: 16em;  */
+  object-fit: cover;
+  display: flex;
+  justify-content: center;}
+  .main-grid-inner > div > h1 {font-size: 12vw;}
+}
 
 /*
 .EventStyle1{
@@ -281,12 +351,12 @@ main{ padding: 0;}
     font-size: 2em;
     transform: skewX(-20deg);
     text-decoration: none;
-}
+} */
 
 .res{
   flex-flow: column-reverse;
 }
-} */
+
 
 @media screen and (max-width: 810px) {
 .main-grid-inner > div > img { 
