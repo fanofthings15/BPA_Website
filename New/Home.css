@@ -56,6 +56,8 @@
 
 .hero
 {
+    background-image: url(imgs/main/hero-darkened.webp);
+    /* background-image: url(imgs/main/bacon-burger.webp); */
     background-size: cover;
     text-align: center;
     align-items: center;
@@ -117,6 +119,10 @@ a:visited{text-decoration: none;}
 }
 
 @media screen and (max-width: 1048px) {
+  .hero-title{
+    background-color:red;
+    font-size: 1.5em; 
+  }
 
   .main-grid-inner { flex-direction: row;}
 
@@ -147,7 +153,7 @@ main{ padding: 0;}
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  background-color: #1f1f27;;
+  background-color: #4e4e4e;
   font-size: 1.25em;
   text-align: center;
   justify-content: center;
@@ -193,7 +199,7 @@ main{ padding: 0;}
  
 
  .main-grid-inner > div { 
-  background-color: #1f1f27;
+  background-color: #4e4e4e;
   /*353535*/
   color: white;
   font-size: 1.5em;
@@ -203,7 +209,7 @@ main{ padding: 0;}
   
  }
 
-   .main-grid-inner > div > h1 { color: var(--red); font-family: font-sports-title; text-align: center; font-size: 3em; padding: 0; margin: 0}
+   .main-grid-inner > div > h1 { color: var(--red); font-family: font_sports_title; text-align: center; font-size: 2em; padding: 0; margin: 0}
    .main-grid-inner > div > p { margin: 1em 0; }
 
 .main-grid-inner > div > img { 
