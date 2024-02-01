@@ -4,41 +4,14 @@
 }
 
 @font-face {
-    font-family: font_sports_title;
+    font-family: sports_title;
     src: url(fonts/azn-unified.oblique.otf);
 }
 
 @font-face {
-    font-family: font_body;
+    font-family: bodytext;
     src: url(fonts/forgotten-futurist.rg-regular.otf);
 }
-@media (max-width: 767px) {
-    .picturefour {
-        width: calc(50% - 10px);
-    }
-    .picturethree {
-        width: calc(50% - 10px);
-    }
-    .picturefive {
-        width: calc(50% - 10px);
-    }
-    .picturesix {
-        width: calc(50% - 10px);
-    }
-    .picture {
-        width: calc(50% - 10px);
-    }
-    .picturetwo {
-        width: calc(50% - 10px);
-    }
-    .pictureseven {
-        width: calc(50% - 10px);
-    }
-    .pictureeight {
-        width: calc(50% - 10px);
-    }
-}
-
 body {
     width: 100vw;
 
@@ -63,10 +36,7 @@ p {
 .sm {
     font-size: 1.25em;
 }
-container {
-    display:flex;
-    flex-wrap: wrap;
-}
+
 header {
     width: 100%;
     height: 5em;
@@ -104,12 +74,7 @@ header div {
 
 .header-text {
     padding: 0;
-    margin: 0.25em;
-    font-size: 3em;
-    font-family: font_sports_title; 
-    color: white;
-    white-space: nowrap;
-    text-align: center;
+    margin: 0;
 }
 
 .grow {
@@ -120,6 +85,8 @@ header div {
     display: flex;
 
     gap: 1em;
+
+    transform: skewX(-20deg);
 }
 
 main {
@@ -152,9 +119,12 @@ main {
     margin-top: 2em;
     font-size: 2.5em;
     text-align: center;
+    color: #FFFF;
     margin-bottom: 2em;
 }
-.color-change-button { /* all the buttons for calendars */
+
+
+.color-change-button { /* all the buttons for calenders */
     background-color:#c92a2a;
     color:white;
     padding: 10px 10px 10px 10px;
@@ -174,7 +144,7 @@ main {
 }
 .michigan-state { /* michigan state picture */
     border-style: solid;
-   border-color:  #BEC0C2;
+    border-color: green;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -213,7 +183,7 @@ main {
 .michigan { /*michigan picture */
     align-items: center;
     border-style: solid;
-    border-color: #BEC0C2;
+    border-color: #00274C;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -234,16 +204,16 @@ main {
 .picturethree:hover .red-wings {
     background-color:#A9A9A9;
 }
-.red-wings { /* red wings picture */
+.red-wings {
     border-style: solid;
-    border-color:  #BEC0C2;
+    border-color: red;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
     object-fit: cover;
     transition: background-color 0.5s ease;
 }
-.picturefour { /* lions */
+.picturefour {
     display: inline-block;
     /* padding: 50px 0px 50px 50px;  */
     margin-left: 5em;
@@ -258,9 +228,9 @@ main {
 .picturefour:hover .lions {
     background-color:#A9A9A9;
 }
-.lions { /* lions picture */
+.lions {
     border-style: solid;
-    border-color: #BEC0C2;
+    border-color: #0076B6;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -300,6 +270,7 @@ main {
     transition: transform 0.5s ease;
     width:250;
     height:400;
+    margin-left: 5em;
     margin-bottom: 5em;
 }
 .picturesix:hover {
@@ -307,12 +278,12 @@ main {
     height: 250;
     transform: scale(1.1);
 }
-.picturesix:hover .detroit-tigers {
+.picturesix:hover .detriot-tigers {
     background-color:#A9A9A9;
 }
-.detroit-tigers { /* tigers picture */
+.detriot-tigers {
     border-style: solid;
-    border-color:  #BEC0C2;
+    border-color: #FA4616;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -337,9 +308,9 @@ main {
 .pictureseven:hover .eastern {
     background-color:#A9A9A9;
 }
-.eastern { /* eastern picture */
+.eastern {
     border-style: solid;
-    border-color: #BEC0C2;
+    border-color: #046A38;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;
@@ -364,9 +335,9 @@ main {
 .pictureeight:hover .western {
     background-color:#A9A9A9;
 }
-.western { /*western picture */
+.western {
     border-style: solid;
-    border-color: #BEC0C2;
+    border-color: #532E1F;
     border-width: 5px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 1em;

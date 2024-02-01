@@ -359,7 +359,7 @@ p {
 .presented {
     height: 40em;
     /*background-color: #ced4da;*/
-    background-image: url("imgs/main/bacon-burger.jpg");
+    background-image: url("imgs/main/bacon-burger.webp");
     /* background-size: contain; */
     background-size: cover;
     /* background-position: 100% 80%; */
