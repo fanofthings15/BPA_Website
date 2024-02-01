@@ -8,8 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="style.css" rel="stylesheet">
         <link href="checkout.css" rel="stylesheet">
-        <script src="script.js"></script>
-        <script src="checkout.js"></script>
 
         <title>Order - Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
@@ -30,6 +28,12 @@
         <meta property="twitter:title" content="Game Day Grill: Burgers & More" />
         <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
         <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
+
+        <script>
+            window.onload = () => {
+                document.getElementById("informed-text").innerText = `Your order will be ready in 15-20 minutes for pick-up in store at our ${localStorage.location} location.`
+            }
+        </script>
     </head>
 
     <body>
@@ -50,7 +54,7 @@
         <main>
             <div class="container">
                 <p class="lg-text">Your order has been submitted.</p>
-                <p class="md-text">Your order will be ready in 15-20 minutes for pick-up in store.</p>
+                <p class="md-text" id="informed-text">Your order will be ready in 15-20 minutes for pick-up in store.</p>
             </div>
         </main>
     </body>

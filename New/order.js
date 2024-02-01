@@ -290,7 +290,7 @@ window.onload = () => {
 
                 document.getElementById("delivery-address").style.display = "block";
 
-                document.getElementById("delivery-pay-local").innerText = "Pay in cash"
+                document.getElementById("checkout-pay-local").innerText = "Pay in cash"
             } else {
                 localStorage.finalPage = "pickup.html";
 
@@ -301,7 +301,7 @@ window.onload = () => {
 
                 document.getElementById("delivery-address").style.display = "none";
 
-                document.getElementById("delivery-pay-local").innerText = "Pay in-store"
+                document.getElementById("checkout-pay-local").innerText = "Pay in-store"
             }
 
             document.getElementById("checkout-total").innerText =
@@ -338,6 +338,7 @@ window.onload = () => {
 
         localStorage.location = document.getElementById("location").value;
         localStorage.address = document.getElementById("delivery-address").value;
+        localStorage.totalPrice = totalPrice;
 
         window.location.replace(localStorage.finalPage);
     });
@@ -347,6 +348,7 @@ window.onload = () => {
 
         localStorage.location = document.getElementById("location").value;
         localStorage.address = document.getElementById("delivery-address").value;
+        localStorage.totalPrice = totalPrice;
 
         window.location.replace("pay.html");
     });
