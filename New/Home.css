@@ -41,6 +41,7 @@
 
   width: calc((100% / 3) - (4em / 3));
   min-width: 12em;
+  background-color: #2f2f3b;
 }
 
 .flex-container
@@ -119,10 +120,6 @@ a:visited{text-decoration: none;}
 }
 
 @media screen and (max-width: 1048px) {
-  .hero-title{
-    background-color:red;
-    font-size: 1.5em; 
-  }
 
   .main-grid-inner { flex-direction: row;}
 
@@ -153,7 +150,7 @@ main{ padding: 0;}
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  background-color: #4e4e4e;
+  background-color:  #2f2f3b;
   font-size: 1.25em;
   text-align: center;
   justify-content: center;
@@ -180,7 +177,7 @@ main{ padding: 0;}
   border-radius: .5em;
 }
 .main-grid > div {
-  background-color:#353535;
+  background-color: #121215;
   color: white;
   font-size: 1.5em;
   padding: 0.75em;
@@ -199,7 +196,7 @@ main{ padding: 0;}
  
 
  .main-grid-inner > div { 
-  background-color: #4e4e4e;
+  background-color: #1f1f27;
   /*353535*/
   color: white;
   font-size: 1.5em;

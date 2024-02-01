@@ -1,14 +1,3 @@
-VIDEOS:
-BURGER:
-https://www.pexels.com/video/close-up-view-of-delicious-grilled-burger-4131833/
-
-GRILL:
-https://www.pexels.com/video/person-grilling-meat-4781575/
-
-SODA:
-https://www.pexels.com/video/close-up-video-of-a-cola-with-ice-8518236/
-
-
 
 BURGERS: 
 https://www.flickr.com/photos/30478819@N08/48692486086
