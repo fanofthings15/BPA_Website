@@ -45,7 +45,7 @@
 				<hr class="md-bm">
 				<div id="receipt-item-area" class="md-bm"></div>
 				<hr class="md-bm">
-				<input class="sm-bm" type="text" placeholder="Select a location..." list="location-name">
+				<input class="sm-bm" type="text" placeholder="Select a location..." list="location-name" id="location">
 				<datalist id="location-name">
 					<option value="Troy">
 					<option value="Royal Oak">
@@ -60,6 +60,7 @@
 						<span class="md-text">Delivery</span>
 					</div>
 				</div>
+				<input class="md-bm" placeholder="Delivery Address" id="delivery-address">
 				<hr class="md-bm">
 				<div class="right-columns">
 					<span class="sm-text black sm-bm" id="checkout-subtotal">Subtotal: $0.00</span>
@@ -69,8 +70,8 @@
 				</div>
 				<hr class="md-bm">
 				<div class="spaced-row row-center">
-					<span class="circle-btn md-text">Pay Online</span>
-					<span class="circle-btn md-text">Pay In-store</span>
+					<span class="circle-btn md-text" id="checkout-pay-online">Pay Online</span>
+					<span class="circle-btn md-text" id="checkout-pay-local">Pay In-store</span>
 				</div>
 			</div>
 		</div>
@@ -232,7 +233,7 @@
 						<div class="flex-menu-grid">
 							<div class="menu-item">
 								<span class = "menu-item-subtitle">CLASSIC CHEESEBURGER - 14</span>
-								<p>A 1/3 pound of fresh ground beef patty with American cheese, tomatoes, lettuce, onion, ketchup, mustard, and pickles, all on a toasted sesame seed bun.</p>
+								<p>A 1/3 pound of fresh ground beef patty with American cheese, tomatoes, lettuce, onion, ketchup, mustard, and pickles, all on a toasted sesame seed bun. Comes with fries.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
@@ -241,7 +242,7 @@
 							</div>
 							<div class="menu-item">
 								<span class ="menu-item-subtitle">MUSHROOM AND SWISS BURGER - 15</span>
-								<p>Fresh ground beef patty burger topped with swiss cheese and sauteed mushrooms.</p>
+								<p>Fresh ground beef patty burger topped with swiss cheese and sauteed mushrooms. Comes with fries.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
@@ -250,7 +251,7 @@
 							</div>
 							<div class="menu-item">
 								<span class ="menu-item-subtitle">BBQ BURGER - 16</span>
-								<p>A grilled patty topped with bacon, cheddar, caramelized onions, and tangy barbecue sauce in a toasted bun.</p>
+								<p>A grilled patty topped with bacon, cheddar, caramelized onions, and tangy barbecue sauce in a toasted bun. Comes with fries.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
@@ -259,7 +260,7 @@
 							</div>
 							<div class="menu-item">
 								<span class ="menu-item-subtitle">SLIDERS - 12</span>
-								<p>All the flavor of our classic burgers, at half the size. Comes in threes of plain, classic cheeseburger, BBQ, veggie, or variety (Plain, Cheese, BBQ).</p>
+								<p>All the flavor of our classic burgers, at half the size. Comes in threes of plain, classic cheeseburger, BBQ, veggie, or variety (Plain, Cheese, BBQ). Comes with fries.</p>
 								<!-- <p>All the flavor of our classic burgers, at half the size. Comes in threes.</p> -->
 								<div class="grow"></div>
 								<div class="item-add-row">
@@ -276,7 +277,7 @@
 							</div>
 							<div class="menu-item">
 								<span class ="menu-item-subtitle">CALIFORNIA BURGER - 16</span>
-								<p>Fresh ground beef patty with cheese, tomatoes, lettuce, and avocado with aoli on a toasted brioche bun.</p>
+								<p>Fresh ground beef patty with cheese, tomatoes, lettuce, and avocado with aoli on a toasted brioche bun. Comes with fries.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>
@@ -285,7 +286,7 @@
 							</div>
 							<div class="menu-item">
 								<span class ="menu-item-subtitle">VEGGIE BURGER - 15</span>
-								<p>A delicious, meat-free take on the classic burger. Made with a fresh vegetable blend with your choice of toppings. </p>
+								<p>A delicious, meat-free take on the classic burger. Made with a fresh vegetable blend with your choice of toppings. Comes with sweet potato fries.</p>
 								<div class="grow"></div>
 								<div class="item-add-row">
 									<div class="item-add-fill"></div>

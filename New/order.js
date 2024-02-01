@@ -3,8 +3,13 @@ const switchMs = 5000;
 let orderSlideshowDots;
 let orderSlideshowImgs;
 let activeSlide = 0;
+let subtotalPrice = 0;
+let taxPrice = 0;
+let deliveryPrice = 5;
 let totalPrice = 0;
 let checkingOut = false;
+
+localStorage.finalPage = "pickup.html";
 
 const itemData = {
     "onionRings": {"price": 6, "title": "Onion Rings", "additions": []},
@@ -13,12 +18,12 @@ const itemData = {
     "cheeseCurds": {"price": 6, "title": "Cheese Curds", "additions": []},
     "friedPickles": {"price": 5, "title": "Fried Pickles", "additions": ["Queso Dip"]},
     "softPretzelBites": {"price": 6, "title": "Soft Pretzel Bites", "additions": ["Melted Cheese Dip"]},
-    "classicCheeseburger": {"price": 14, "title": "Classic Cheeseburger", "additions": []},
-    "mushroomSwissBurger": {"price": 15, "title": "Mushroom Swiss Burger", "additions": []},
-    "bbqBurger": {"price": 16, "title": "BBQ Burger", "additions": []},
-    "sliders": {"price": 12, "title": "Sliders", "additions": []},
-    "californiaBurger": {"price": 16, "title": "California Burger", "additions": []},
-    "veggieBurger": {"price": 15, "title": "Veggie Burger", "additions": []},
+    "classicCheeseburger": {"price": 14, "title": "Classic Cheeseburger", "additions": ["Fries"]},
+    "mushroomSwissBurger": {"price": 15, "title": "Mushroom Swiss Burger", "additions": ["Fries"]},
+    "bbqBurger": {"price": 16, "title": "BBQ Burger", "additions": ["Fries"]},
+    "sliders": {"price": 12, "title": "Sliders", "additions": ["Fries"]},
+    "californiaBurger": {"price": 16, "title": "California Burger", "additions": ["Fries"]},
+    "veggieBurger": {"price": 15, "title": "Veggie Burger", "additions": ["Sweet Potato Fries"]},
     "kabobs": {"price": 11, "title": "Kabobs", "additions": []},
     "hotDogs": {"price": 8, "title": "Hot Dogs", "additions": []},
     "porkChops": {"price": 15, "title": "Pork Chops", "additions": ["Mashed Potatoes"]},
@@ -71,7 +76,7 @@ const checkIfInClass = function(element, className) {
 }
 
 window.onload = () => {
-    const totalPriceElement = document.getElementById("total-price");
+    const subtotalPriceElement = document.getElementById("total-price");
     const mobileTotalElement = document.getElementById("mobile-total");
     const orderListElement = document.getElementById("order-list");
     
@@ -177,10 +182,16 @@ window.onload = () => {
 
             orderListElement.innerHTML += itemBoxHTML;
 
-            totalPrice += item.price;
+            subtotalPrice += item.price;
 
-            totalPriceElement.innerText = `$${totalPrice}`;
-            mobileTotalElement.innerHTML = `$${totalPrice}`;
+            // subtotalPrice = subtotalPrice.toFixed(2);
+
+            taxPrice = subtotalPrice * 0.06;
+
+            totalPrice = subtotalPrice + taxPrice;
+
+            subtotalPriceElement.innerText = `$${subtotalPrice}`;
+            mobileTotalElement.innerHTML = `$${subtotalPrice}`;
 
             orderList[itemId] = {"title": item.title,
                                  "price": item.price,
@@ -191,7 +202,7 @@ window.onload = () => {
     document.getElementById("checkout-button").addEventListener("click",
                                                                 (e) => {
 
-        if (totalPrice <= 0) return;
+        if (subtotalPrice <= 0) return;
 
         let receiptHTML = "";
 
@@ -211,7 +222,13 @@ window.onload = () => {
         document.getElementById("receipt-item-area").innerHTML = receiptHTML;
 
         document.getElementById("checkout-subtotal").innerText =
-            `Subtotal: $${totalPrice}`;
+            `Subtotal: $${subtotalPrice.toFixed(2)}`;
+
+        document.getElementById("checkout-tax").innerText =
+            `Tax: $${taxPrice.toFixed(2)}`;
+
+        document.getElementById("checkout-total").innerText =
+            `Total: $${totalPrice.toFixed(2)}`;
 
         document.getElementById("modal-container").style.display = "flex";
         document.getElementById("order-modal").style.display = "flex";
@@ -219,7 +236,7 @@ window.onload = () => {
         return;
 
         localStorage.orderList = orderList;
-        localStorage.totalPrice = totalPrice;
+        localStorage.subtotalPrice = subtotalPrice;
 
         checkingOut = true;
 
@@ -262,6 +279,33 @@ window.onload = () => {
                     "selected-switcher-option"
                 );
             }
+
+            if (targetSwitcherOption.children[0].innerText == "Delivery") {
+                localStorage.finalPage = "delivery.html";
+
+                totalPrice += deliveryPrice;
+
+                document.getElementById("checkout-delivery").innerText =
+                    `Delivery: $${deliveryPrice.toFixed(2)}`;
+
+                document.getElementById("delivery-address").style.display = "block";
+
+                document.getElementById("delivery-pay-local").innerText = "Pay in cash"
+            } else {
+                localStorage.finalPage = "pickup.html";
+
+                totalPrice -= deliveryPrice;
+
+                document.getElementById("checkout-delivery").innerText =
+                    `Delivery: $0.00`;
+
+                document.getElementById("delivery-address").style.display = "none";
+
+                document.getElementById("delivery-pay-local").innerText = "Pay in-store"
+            }
+
+            document.getElementById("checkout-total").innerText =
+                `Total: $${totalPrice.toFixed(2)}`;
         }
     
         // item remove code
@@ -275,12 +319,36 @@ window.onload = () => {
     
         const price = orderList[itemId].price;
     
-        totalPrice -= price;
+        subtotalPrice -= price;
+
+        // subtotalPrice = subtotalPrice.toFixed(2);
+
+        taxPrice = subtotalPrice * 0.06;
+
+        totalPrice = subtotalPrice + taxPrice;
     
-        totalPriceElement.innerText = `$${totalPrice}`;
-        mobileTotalElement.innerHTML = `$${totalPrice}`;
+        subtotalPriceElement.innerText = `$${subtotalPrice}`;
+        mobileTotalElement.innerHTML = `$${subtotalPrice}`;
     
         delete orderList[itemId];
+    });
+
+    document.getElementById("checkout-pay-local").addEventListener("click", (e) => {
+        checkingOut = true;
+
+        localStorage.location = document.getElementById("location").value;
+        localStorage.address = document.getElementById("delivery-address").value;
+
+        window.location.replace(localStorage.finalPage);
+    });
+
+    document.getElementById("checkout-pay-online").addEventListener("click", (e) => {
+        checkingOut = true;
+
+        localStorage.location = document.getElementById("location").value;
+        localStorage.address = document.getElementById("delivery-address").value;
+
+        window.location.replace("pay.html");
     });
 }
 

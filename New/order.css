@@ -465,7 +465,7 @@ input:focus {
 
     gap: 1em;
 
-    max-height: 10em;
+    max-height: 6em;
     overflow-y: scroll;
 }
 
@@ -516,6 +516,10 @@ input:focus {
     display: flex;
 
     color: #212529;
+}
+
+#delivery-address {
+    display: none;
 }
 
 .black {
