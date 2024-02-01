@@ -1,4 +1,4 @@
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
     const hamburgerButton = document.getElementById("hamburger-button");
     const hamburgerMenu = document.getElementById("hamburger-menu");
 
@@ -17,4 +17,4 @@ window.onload = () => {
 
         enabled = !enabled;
     });
-}
+});
