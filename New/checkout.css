@@ -1,3 +1,8 @@
+body 
+{
+    background-color: #121215;
+}
+
 span, p, a {
     color: #f8f9fa;
 
@@ -29,6 +34,7 @@ span, p, a {
     align-items: flex-start;
 
     gap: 1em;
+    
 }
   
 * {
